@@ -1,2 +1,2 @@
-# The Official "gh-pages" Website of KJSCE Codecell!
-[KJSCE Codecell Website](https://kjsce-codecell.github.io)
+# The Official Website of KJSCE Codecell!
+[KJSCE Codecell Website](https://kjscecodecell.com)
