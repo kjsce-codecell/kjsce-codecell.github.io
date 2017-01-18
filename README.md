@@ -1,2 +1,2 @@
 # The Official Website of KJSCE Codecell!
-[KJSCE Codecell Website](https://kjscecodecell.com)
+[KJSCE Codecell Website](http://kjscecodecell.com)
