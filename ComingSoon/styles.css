@@ -1,0 +1,72 @@
+body{
+	background: black;
+	font-family: Verdana;
+}
+
+@-webkit-keyframes 'blink' {
+	0% { opacity:0 }
+	25% { opacity:1 }
+	50% { opacity: 1 }
+	75% { opacity: 1 }
+	100% { opacity: 0 }
+}
+@-webkit-keyframes 'roll' {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg);}
+}
+
+code{
+	background: #222;
+	display: block;
+	white-space: pre-wrap;
+	border: 2px solid #FFF;
+	padding: 2px;
+	color: white;
+	line-height: 3px;
+	font-family: "Lucida Console",Monaco, monospace;
+	opacity: 0.9;
+	height:50vh;
+	margin: 2% 10% 0% 10%;
+
+}
+
+#cursor{
+	display: inline-block;
+	height: 20px;
+	width: 10px;
+	margin-left: 6px;
+	padding: 0px;
+	border: 0px;
+	background: white;
+
+	animation: blink 1.5s infinite;
+
+
+}
+.homeAddress{
+	
+	color:  lightblue;
+	font-weight: 800;
+
+}
+.rotate{
+	display:inline-block;
+	height:18px;
+	width:1.4px;
+	margin-left: 10px;
+	background: white;
+	animation: roll 2s infinite;
+}
+.code-elem{ color: #D0A;}
+.code-str{ color: yellow; }
+.code-comment{ color: lightgrey; }
+h2{
+	color: green;
+}
+h1{
+	text-align: center;
+	color: white;
+	font-weight: 300;
+	padding: 4%;
+	font-size: 50px;
+}
