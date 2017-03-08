@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@mixin background-size($all) {
+  -webkit-background-size: $all;
+  -moz-background-size: $all;
+  -ms-background-size: $all;
+  -o-background-size: $all;
+  background-size: $all;
+}
+
+@mixin flex($val) {
+  flex: $val;
+  -webkit-flex: $val;
+  -moz-flex: $val;
+}
+
+@mixin display-flex {
+  display: flex;
+  display: -webkit-flex;
+  -moz-display: flex;
+}
+
+@mixin flex-props($flow, $justify, $content, $items) {
+  flex-flow: $flow;
+  justify-content: $justify;
+  align-content: $content;
+  align-items: $items;
+
+  -webkit-flex-flow: $flow;
+  -webkit-justify-content: $justify;
+  -webkit-align-content: $content;
+  -webkit-align-items: $items;
+
+  -moz-flex-flow: $flow;
+  -moz-justify-content: $justify;
+  -moz-align-content: $content;
+  -moz-align-items: $items;
+}
+
+@import "colors.sass";
+@import "normalize.scss";
+@import "fonts.scss";
+
+@import "basics.sass";
+@import "sprites.sass";
+@import "animations.scss";
+
+@import "workshops-style.sass";
+
+main {
+  width: 100%;
+  overflow: hidden;
+}

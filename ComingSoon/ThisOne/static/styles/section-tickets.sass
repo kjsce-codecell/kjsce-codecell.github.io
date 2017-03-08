@@ -1,0 +1,180 @@
+// The ask
+.section-tickets
+  background: $white
+  padding: 60px 0 0 0
+
+  /* This leaves room for the progressbar */
+  .container
+    padding-bottom: 80px
+
+  h1
+    margin-bottom: 60px
+    
+  .ticket-svg
+    display: block
+    position: relative
+    
+    svg
+      max-width: 50px
+
+  .buy-ticket
+    width: 50%
+    float: left
+    margin: 0 40px 0 -40px
+    padding-top: 10px
+
+    .price
+      font-size: 34px
+      margin: 0 auto
+      text-align: center
+      padding: 0 205px 0 60px
+      width: 580px
+
+  .ticket-includes
+    width: 50%
+    float: left
+    font-size: 18px
+
+    h2
+      font-size: 18px
+      font-weight: bold
+
+    p
+      text-align: left
+      margin-top: 14px
+
+      &.note
+        font-size: 13px
+        line-height: 20px
+
+      a
+        color: $blue
+        text-decoration: underline
+
+    ul
+      line-height: 195%
+      padding: 0
+      padding-left: 20px
+      list-style-type: square
+
+
+.illustration-tickets
+  position: relative
+  background: url(images/illustration-tickets.png) no-repeat -100px 0
+  width: 580px
+  height: 214px
+
+  .button
+    position: absolute
+    top: 15px
+    left: 60px
+    border: 2px solid $blue
+    border-radius: 3px
+    font-size: 18px
+    font-weight: bold
+    padding: 17px 40px 15px
+    background: $yellow
+
+    &:before
+      content: ""
+      @extend .sprite
+      position: absolute
+      top: -17px
+      left: 12px
+      width: 21px
+      height: 23px
+      background-position: -0px -220px
+
+    &:hover
+      background: lighten($yellow, 10%)
+
+
+.tickets-content-buy
+  clear: both
+
+
+.tickets-content-gone
+  text-align: center
+  clear: both
+
+  figure
+    margin: 0 0 30px 0
+    text-align: center
+    img
+      width: 50%
+      max-width: 311px
+  h2
+    line-height: 140%
+  p
+    text-align: center
+
+
+.tickets-progress
+  position: relative
+  padding-right: 37px /* Leave some room for the bird */
+
+  .progressbar
+    box-sizing: border-box
+    position: relative
+    display: inline-block
+    margin: 0
+    height: 43px
+    font-size: 16px
+    line-height: 43px
+    text-align: right
+    padding-left: 30px
+    padding-right: 50px
+    color: $blue
+    background: $yellow
+    min-width: 60%
+    white-space: nowrap
+
+    transition: width 0.5s linear
+
+  .sprite.progressbar-bird
+    position: absolute
+    top: 0
+    right: -37px
+    width: 74px
+    height: 43px
+    background-position: -374px -50px
+    z-index: 10
+
+@media(max-width: 768px)
+  .tickets-progress .progressbar
+    .hidden-tablet
+      display: none
+
+
+@media(max-width: 480px)
+  .tickets-progress .progressbar
+    .hidden-mobile
+      display: none
+
+
+.progressbar-flag, .progressbar-flag-in, .progressbar-flag-name
+  background: url(images/progress-flag@2x.png) no-repeat 0px 0px
+  background-size: 30px 225px
+
+.progressbar-flag
+  position: absolute
+  z-index: 2
+  right: -5px
+  bottom: 28px
+  height: 75px
+  background-position: 100% 0px
+
+.progressbar-flag-in
+  height: 75px
+  padding-left: 30px
+  background-position: 0% -150px
+
+.progressbar-flag-name
+  height: 75px
+  line-height: 38px
+  font-size: 16px
+  color: $yellow
+  padding: 11px 15px 0px 5px
+  background-position: 0% -75px
+  background-repeat: repeat-x
+  white-space: nowrap

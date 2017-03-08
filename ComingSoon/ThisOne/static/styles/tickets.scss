@@ -1,0 +1,190 @@
+.ticketsPaymentModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    overflow: auto;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(20px, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.6)));
+    background: -webkit-radial-gradient(center center, rgba(0, 0, 0, 0.3) 20px, rgba(0, 0, 0, 0.6));
+    background: -moz-radial-gradient(center center, rgba(0, 0, 0, 0.3) 20px, rgba(0, 0, 0, 0.6));
+    background: -o-radial-gradient(center center, rgba(0, 0, 0, 0.3) 20px, rgba(0, 0, 0, 0.6));
+    background: radial-gradient(center center, rgba(0, 0, 0, 0.3) 20px, rgba(0, 0, 0, 0.6));
+}
+
+.ticketsPaymentModal * {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.ticketsPaymentModal,.ticketsPaymentModal .ticketsPaymentModal-h {
+    width: 100%;
+    height: 100%;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h {
+    display: table;
+    text-align: center;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 40px 0;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c {
+    width: 520px;
+    padding: 30px 30px 10px;
+    margin: 0 auto;
+    background: #FFF;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-brand {
+    padding-bottom: 20px;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-brand h1 {
+    font: bold 28px Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-brand img {
+    display: block;
+    margin: 0 auto;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-iframe {
+    background: url(images/tickets-loading.gif) no-repeat center center;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-iframe iframe {
+    border: 0;
+    width: 100%;
+    height: 510px;
+    border: 0;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-iframe-hidden {
+    height: 60px;
+    margin: 20px 0;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-iframe-hidden iframe {
+    display: none;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 9999;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-close a {
+    display: block;
+    font-size: 0;
+    text-indent: -9999em;
+    width: 30px;
+    height: 30px;
+    background: url(images/tickets-close.png) no-repeat 0 0;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-close a:focus {
+    outline: 0;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-security {
+    width: 580px;
+    margin: 20px auto 0;
+    padding: 12px 0;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-security p {
+    padding-left: 20px;
+    background: url(images/tickets-lock.png) no-repeat 0 0;
+    display: inline;
+    color: #CCC;
+    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 580px) {
+    .ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i {
+        padding: 0;
+    }
+
+    .ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c {
+        width: auto;
+        border: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+    }
+
+    .ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-security {
+        width: auto;
+        margin: 20px;
+    }
+}
+
+
+
+/* Overrides */
+.ticketsPaymentModal {
+    background: none;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-brand {
+    display: none;
+}
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-brand h1 {
+    display: none;
+}
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c {
+    border: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
+    border-radius: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-c .ticketsPaymentModal-close {
+    position: absolute;
+    top: 5px;
+    right: -1px;
+    z-index: 9999;
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-security {
+    width: 520px;
+    background: rgba(43, 51, 56, 0.7);
+}
+
+.ticketsPaymentModal .ticketsPaymentModal-h .ticketsPaymentModal-i .ticketsPaymentModal-security p {
+    font-family: "InputMono", "Consolas", "Lucida Console", "Courier", monospace;
+    color: #ffffff;
+}
