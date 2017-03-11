@@ -1,0 +1,479 @@
+#workshops
+  background: $yellow
+  position: relative
+  height: auto
+
+#map
+  height: 300px
+  border-top: 2px solid $blue
+  .map-wrap
+    position: absolute
+    left: 50%
+    margin-left: -280px
+    right: 0
+    height: 300px
+    z-index: 100
+
+#map-holder
+  height: 300px
+
+.blue
+  background: url(../images/pipes.png) no-repeat right bottom $blue
+  width: 50%
+  height: 100%
+  position: absolute
+  z-index: 2
+  top: 0
+  right: 50%
+  margin-right: 280px
+
+.clouds
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1
+  pointer-events: none
+
+main
+  max-width: 1070px
+  padding: 0 30px
+  margin: 0 auto
+  position: relative
+  z-index: 10
+
+.section-header
+  overflow: hidden
+  padding: 30px 0
+
+  .logo
+    display: block
+    height: 60px
+    width: 194px
+    background: url(../images/logo-workshops.png) no-repeat top left
+    background-size: 100%
+    text-indent: -9999px
+    overflow: hidden
+    float: left
+  
+  .event
+    float: left
+    overflow: hidden
+    font-size: 1.125em
+    padding: 34px 0 34px 68px
+    li
+      display: inline-block
+      list-style: none
+      margin-right: 35px
+      &:last-child
+        margin-right: 0
+      &:before
+        content: ""
+        display: inline-block
+        width: 22px
+        height: 22px
+        background: url(../images/workshops-sprite.png) no-repeat
+        background-size: 44px
+        position: relative
+        top: 3px
+        margin-right: 10px
+      &.date:before
+        background-position: left
+      &.place:before
+        background-position: right
+      a
+        color: $blue
+
+.intro
+  padding-left: 260px
+  font-size: 1.4em
+  line-height: 1.6em
+  margin-bottom: 70px
+
+.workshop
+  padding-left: 260px
+  padding-right: 290px
+  position: relative
+  margin-bottom: 30px
+
+  header
+    background: $blue
+    color: $yellow
+    height: 94px
+    padding: 26px 20px
+    cursor: pointer
+    position: relative
+
+    &:after
+      content: "+"
+      position: absolute
+      top: 8px
+      right: 10px
+      display: block
+      width: 10px
+      height: 10px
+      z-index: 1000
+
+    h2
+      line-height: 1.25em
+      font-size: 1.4em
+
+    small
+      font-size: 1.15em
+      opacity: .6
+      font-style: italic
+      .time
+        display: none
+
+  .description
+    border: 2px solid $blue
+    border-top: none
+    font-size: 1.15em
+    line-height: 1.5em
+    -webkit-transition: max-height ease-in-out .5s, border-bottom ease-in-out .5s
+    -moz-transition: max-height ease-in-out .5s, border-bottom ease-in-out .5s
+    transition: max-height ease-in-out .5s, border-bottom ease-in-out .5s
+    max-height: 0px
+    overflow: hidden
+    margin-top: -2px
+
+    p
+      text-align: left
+      padding: 15px 20px
+
+  &.sponsors
+    overflow: hidden
+    margin-bottom: 30px
+  .sponsor
+    border: 2px solid $blue
+    border-right: 1px solid $blue
+    width: 50%
+    float: left
+    max-width: 250px
+    &:nth-child(even)
+      border-left: 1px solid $blue
+      border-right: 2px solid $blue
+    &:only-child
+      border: 2px solid $blue
+
+    img
+      width: 100%
+      display: block
+
+  article.open
+    header:after
+      content: "-"
+    .description
+      max-height: 10000px
+      margin-top: 0
+
+  > .time
+    position: absolute
+    left: 0
+    top: 30px
+    width: 260px
+    color: $yellow
+    text-align: right
+    padding-right: 65px
+
+    &:after
+      content: ""
+      display: block
+      width: 10px
+      height: 10px
+      background: $yellow
+      border: 2px solid $blue
+      position: absolute
+      top: 6px
+      right: 31px
+
+  .attend
+    position: absolute
+    top: 0
+    right: 0
+    width: 292px
+    border: 2px solid $blue
+    min-height: 92px
+    background: #ffd456
+    -webkit-transition: width ease-in-out .25s, min-height ease-in-out .25s
+    -moz-transition: width ease-in-out .25s, min-height ease-in-out .25s
+    transition: width ease-in-out .25s, min-height ease-in-out .25s
+
+    .progressBar
+      display: none
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 2px
+      background: #fff
+      .percentage
+        height: 2px
+        width: 0%
+        background: #ff4b27
+
+    
+    .btn
+      text-align: center
+      color: $blue
+      display: block
+      cursor: pointer
+      height: 90px
+      font-weight: bold
+      padding: 24px 0
+      font-size: 1.4em
+      line-height: 1.25em
+      text-decoration: none
+      small
+        display: block
+        font-weight: normal
+        font-size: 0.8em
+        opacity: .6
+        font-style: italic
+
+      &.available
+        cursor: pointer
+        background: none
+        &:hover
+          background: rgba(255,255,255,.6)
+      &.unavailable
+        cursor: default
+        padding-top: 34px
+      &.pending
+        cursor: default
+      &.loading
+        cursor: default
+        color: rgba(255,255,255,0.0)
+        background: url(images/workshop-loading.gif) no-repeat 50% 50%
+    .form
+      display: none
+      padding: 20px
+      text-align: left
+      p
+        text-align: left
+        max-height: 0px
+        overflow: hidden
+        opacity: 0
+        -webkit-transition: max-height ease-in-out .25s 1s, opacity ease-in-out .25s 1s
+        -moz-transition: max-height ease-in-out .25s 1s, opacity ease-in-out .25s 1s
+        transition: max-height ease-in-out .25s 1s, opacity ease-in-out .25s 1s
+      .close
+        display: block
+        width: 30px
+        height: 30px
+        border: 2px solid $blue
+        position: absolute
+        bottom: -2px
+        right: -2px
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAOdJREFUeNrs17ERwyAMBVDQ0WedbJGRjEbKFlknE5DGuSNEgL7EhSY0BtunZwo+OJZSwo5GYVPbBqd6cLne3t3jvLKz/ked5+Muw9XLuRqzA+3WocnLufpqD/pVp4WjUATFW1SsTQLCDryHcnufOogFV6Oj5YTiEDpbx1ocRnvLqUWCMMvc6atQDazFIRSJzKwMEhWKZvUMV6OWTaIYn7ngYzIjKOFoEQrj5EDZE6/JgWZh322XGltmrEVN2U4rAt+C04rAt+C0CIVxzQkESqQBDp1AUFRdJw12o2BEVXXi/xfmV+0lwACYZFJDj6pL6QAAAABJRU5ErkJggg==) center center no-repeat
+        background-size: 50%
+        text-indent: -9999px
+        overflow: hidden
+        cursor: pointer
+      form
+        position: relative
+        padding-right: 100px
+        margin-bottom: 20px
+        input
+          width: 100%
+          border: 2px solid $blue
+          height: 46px
+          padding: 0 10px
+          font-size: 1.15em
+          -webkit-appearance: none
+          border-radius: 0
+        button
+          width: 100px
+          border: none
+          background: $blue
+          color: $yellow
+          position: absolute
+          display: block
+          height: 46px
+          top: 0
+          right: 0
+          cursor: pointer
+          font-size: 1.15em
+          background-image: url(images/workshop-loading-small.gif)
+          background-repeat: no-repeat
+          background-position: 200% 50% 
+          background-color: $blue
+
+        &.loading
+          button
+            cursor: default
+            text-indent: 999px
+            background-position: 50% 50%
+
+      .error-box, .success-box
+        display: block
+        color: #ffffff
+        padding: 12px 20px
+        margin-bottom: 20px
+
+      .error-box
+        background: #BE391D
+      .success-box
+        background: #298B93
+
+    &.open
+      width: 460px
+      min-height: 186px
+      z-index: 10
+      .btn
+        display: none
+      .form
+        display: block
+        p
+          max-height: 1000px
+          opacity: 1
+
+  footer
+    border: 2px solid $blue
+    border-top: none
+    height: 94px
+    position: relative
+    padding-top: 10px
+    padding-left: 110px
+    font-size: 1.15em
+    line-height: 1.5em
+    background: #fff
+
+    h3, h4
+      font-size: 1em
+      line-height: 1.5em
+
+    h4
+      opacity: .6
+
+    a
+      color: $blue
+      opacity: .6
+
+    .avatar
+      width: 92px
+      height: 92px
+      position: absolute
+      top: 0
+      left: 0
+      border-right: 2px solid $blue
+
+@media only screen and (max-width: 1070px)
+  /*main*/
+  #map .map-wrap
+    position: relative
+    left: 0
+    margin-left: 256px
+  .blue
+    margin-right: 0
+    right: auto
+    left: 0
+    width: 256px
+    background-image: none
+  .workshop
+    padding-right: 0
+    header
+      margin-right: 260px
+    .attend
+      width: 262px
+
+@media only screen and (max-width: 1000px)
+  .clouds
+    display: none
+  .workshop
+    header
+      margin-right: 0
+    header
+      text-align: center
+    .attend
+      position: relative
+      top: auto
+      right: auto
+      width: 100%
+      border-top: none
+      &.open
+        width: 100%
+
+@media only screen and (max-width: 730px)
+  .intro
+    padding: 0 30px
+    margin-bottom: 30px
+  #map .map-wrap
+    margin-left: 0
+  .blue
+    display: none
+  .section-header
+    background: $blue
+    padding: 30px 0 0
+    .logo
+      float: none
+      margin: 0 auto 30px
+    .event
+      background: $yellow
+      width: 100%
+      margin: 0
+      padding: 30px 0 40px
+      text-align: center
+  main
+    padding: 0
+  .workshop
+    padding: 0 30px
+    header
+      height: auto
+      padding-bottom: 20px
+      small
+        .time
+          display: inline
+          position: relative
+    > .time
+      display: none
+
+@media only screen and (max-width: 460px)
+  .intro
+    padding: 0 15px
+    margin-bottom: 30px
+    font-size: 1.2em
+  .section-header
+    .event
+      li
+        display: block
+        margin: 0
+        &:first-child
+          margin-bottom: 15px
+  .workshop
+    padding: 0 10px
+    footer
+      height: auto
+      padding: 20px
+      text-align: center
+      .avatar
+        display: none
+    .attend
+      .form
+        form
+          padding-right: 0
+          input
+            margin-bottom: 2px
+          button
+            display: block
+            position: relative
+            width: 100%
+  .sponsors
+    .time
+      display: block
+      position: relative
+      color: $blue
+      width: auto
+      right: auto
+      top: auto
+      text-align: center
+      padding: 15px 0
+      font-size: 1.4em
+      &:after
+        display: none
+    .sponsor
+      float: none
+      width: 100%
+      max-width: 1000px
+      border: 2px solid $blue !important

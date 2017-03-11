@@ -1,0 +1,492 @@
+@import 'nib'
+.shake
+	display inline-block
+	transform-origin center center
+	&.shake-constant
+		animation-name shake-base
+		animation-duration 100ms
+		animation-iteration-count infinite
+		animation-timing-function ease-in-out
+		animation-delay 0s
+		animation-play-state running
+@keyframes shake-base
+	0%
+		transform translate(0px, 0px) rotate(0deg)
+	2%
+		transform translate(-0.5px, 1.5px) rotate(0.5deg)
+	4%
+		transform translate(-0.5px, 1.5px) rotate(-0.5deg)
+	6%
+		transform translate(-2.5px, -1.5px) rotate(0.5deg)
+	8%
+		transform translate(-2.5px, -2.5px) rotate(-1.5deg)
+	10%
+		transform translate(1.5px, 1.5px) rotate(-1.5deg)
+	12%
+		transform translate(-2.5px, -0.5px) rotate(-0.5deg)
+	14%
+		transform translate(1.5px, -2.5px) rotate(-0.5deg)
+	16%
+		transform translate(0.5px, 1.5px) rotate(0.5deg)
+	18%
+		transform translate(-2.5px, -0.5px) rotate(0.5deg)
+	20%
+		transform translate(-0.5px, -0.5px) rotate(-1.5deg)
+	22%
+		transform translate(-2.5px, -1.5px) rotate(-1.5deg)
+	24%
+		transform translate(-1.5px, -2.5px) rotate(-1.5deg)
+	26%
+		transform translate(0.5px, -0.5px) rotate(-1.5deg)
+	28%
+		transform translate(-0.5px, -1.5px) rotate(-0.5deg)
+	30%
+		transform translate(-2.5px, 1.5px) rotate(0.5deg)
+	32%
+		transform translate(-2.5px, -2.5px) rotate(-0.5deg)
+	34%
+		transform translate(-1.5px, 0.5px) rotate(-1.5deg)
+	36%
+		transform translate(1.5px, -1.5px) rotate(-1.5deg)
+	38%
+		transform translate(0.5px, -0.5px) rotate(-0.5deg)
+	40%
+		transform translate(-0.5px, 0.5px) rotate(0.5deg)
+	42%
+		transform translate(0.5px, -2.5px) rotate(-0.5deg)
+	44%
+		transform translate(0.5px, -2.5px) rotate(-0.5deg)
+	46%
+		transform translate(-1.5px, 1.5px) rotate(-1.5deg)
+	48%
+		transform translate(0.5px, -2.5px) rotate(-0.5deg)
+	50%
+		transform translate(-1.5px, -0.5px) rotate(-1.5deg)
+	52%
+		transform translate(-2.5px, -0.5px) rotate(-1.5deg)
+	54%
+		transform translate(1.5px, 0.5px) rotate(-1.5deg)
+	56%
+		transform translate(0.5px, 0.5px) rotate(-1.5deg)
+	58%
+		transform translate(0.5px, 1.5px) rotate(-0.5deg)
+	60%
+		transform translate(-0.5px, -2.5px) rotate(-0.5deg)
+	62%
+		transform translate(-2.5px, -1.5px) rotate(-0.5deg)
+	64%
+		transform translate(-1.5px, 0.5px) rotate(0.5deg)
+	66%
+		transform translate(0.5px, -0.5px) rotate(-1.5deg)
+	68%
+		transform translate(-1.5px, -0.5px) rotate(-1.5deg)
+	70%
+		transform translate(-0.5px, -2.5px) rotate(-1.5deg)
+	72%
+		transform translate(-2.5px, -0.5px) rotate(-1.5deg)
+	74%
+		transform translate(-2.5px, 0.5px) rotate(0.5deg)
+	76%
+		transform translate(1.5px, -1.5px) rotate(-1.5deg)
+	78%
+		transform translate(1.5px, -2.5px) rotate(0.5deg)
+	80%
+		transform translate(-2.5px, -2.5px) rotate(-0.5deg)
+	82%
+		transform translate(-2.5px, -1.5px) rotate(0.5deg)
+	84%
+		transform translate(0.5px, -2.5px) rotate(-0.5deg)
+	86%
+		transform translate(-2.5px, 0.5px) rotate(-0.5deg)
+	88%
+		transform translate(-2.5px, -0.5px) rotate(-0.5deg)
+	90%
+		transform translate(-1.5px, -1.5px) rotate(-1.5deg)
+	92%
+		transform translate(-0.5px, -1.5px) rotate(-0.5deg)
+	94%
+		transform translate(0.5px, -0.5px) rotate(-0.5deg)
+	96%
+		transform translate(-2.5px, -2.5px) rotate(0.5deg)
+	98%
+		transform translate(-0.5px, 1.5px) rotate(-0.5deg)
+
+@keyframes obelisk-fly
+	0%
+		transform translateY( 0px)
+	100%
+		transform translateY( -1000px)
+
+@keyframes obelisk-drop-shadow
+	0%
+		filter drop-shadow(0px 0px 0px rgba(black,.0))
+	100%
+		filter drop-shadow(0px 0px 8px rgba(black,.8))
+
+@keyframes obelisk-wing-right
+	85%
+		transform rotateY(0deg) 
+	90%
+		transform translateY(-2px)
+	100%
+		transform translateY(0)
+
+@keyframes obelisk-wing-left
+	100%
+		transform rotateY(0) 
+	90%
+		transform translateY(-2px)
+	100%
+		transform translateY(0)
+@keyframes obelisk-fire
+	0%
+		transform scale(0)
+	95%
+		transform scale(1.2)
+	98%
+		transform scale(.9)
+	99%
+		transform scale(1.1)
+	100%
+		transform scale(1)
+
+.obelisk-group
+	animation-name obelisk-fly
+	animation-duration 1.5s
+	animation-iteration-count 1
+	animation-timing-function cubic-bezier(.675, .005, .245, .415)
+	animation-delay 2.5s
+	animation-play-state paused
+	animation-fill-mode forwards
+	position relative
+	z-index 100
+	.obelisk
+		animation-name obelisk-drop-shadow
+		animation-duration 2s
+		animation-iteration-count 1
+		animation-delay 0s
+		animation-play-state paused
+		animation-fill-mode forwards
+	&.launch
+		animation-play-state running
+		.obelisk
+			animation-play-state running
+		.wing-left
+		.wing-right
+		.fire_center
+		.fire_right
+		.fire_left 
+			svg
+				animation-play-state running
+			
+.fires-obelisk
+	.fire_center
+	.fire_right
+	.fire_left
+		svg
+			animation-name obelisk-fire 
+			animation-duration 500ms
+			animation-iteration-count 1 
+			animation-delay 2s
+			animation-play-state paused
+			animation-timing-function ease-in-out
+			animation-fill-mode forwards
+			transform-origin top center 0
+			transform scale(0)
+.wings-obelisk
+	.wing-left
+	.wing-right
+		svg
+			animation-name obelisk-wing-left
+			animation-duration 2s
+			animation-iteration-count 1
+			animation-timing-function ease-in
+			animation-delay 0
+			animation-play-state paused
+			animation-fill-mode forwards
+	.wing-right
+		svg
+			animation-name obelisk-wing-right
+.wings-obelisk
+.fires-obelisk
+	width (140+35)px
+	margin 0 auto 
+	absolute top 55px left 0
+	right 0
+	// border solid 1px red
+	z-index 2
+	.wing-right
+	.wing-left
+	.wing-space
+		height 125px
+		width 70px
+		display inline-block
+		vertical-align bottom
+		overflow-x hidden
+		// border solid 1px red
+		padding-top 40px
+		svg
+			filter drop-shadow(0px 10px 5px rgba(black,.5))
+	.wing-space
+		width 16px
+	.wing-right
+		svg
+			transform-origin bottom left 0
+			transform rotateY(-90deg)
+	.wing-left
+		svg
+			transform-origin bottom right 0
+			transform rotateY(90deg)
+	.fire_center
+		width 50px
+	.fire_left
+	.fire_right
+		float right
+		width 10px
+		margin-top 13px
+	.fire_left
+		float left
+		margin-left 1px
+.fires-obelisk
+	top 145px
+	z-index 1
+.illustration 
+	.obelisk
+		z-index 3
+.button-obelisk
+	width 28px
+	absolute top 183px left 50%
+	margin-left -498px
+	z-index 10
+	&:hover
+		cursor pointer
+		.circle-top
+			relative bottom -5px
+	&.down
+		.circle-top
+			relative bottom -5px
+			&:after
+				content ''
+				width 40px
+				height 32px
+				display block
+				relative top -7px left -8px
+				border-radius 50%
+				border solid 5px rgba(#07374A,.5)
+	.circle-top
+	.circle-bottom
+		width 28px
+		height 28px
+		border-radius 50%
+		border solid 2px #07374A
+		display block
+	.circle-top
+		background #fd411c
+		overflow hidden
+	.circle-bottom
+		background #da4525
+		relative top -22px
+		z-index -1
+
+// Windows 
+.windows-1
+	width 128px 
+	height 69px
+	absolute top 7px left 50%
+	margin-left 280px
+	svg 
+		width 100%
+		height 100%
+
+.windows-2
+	width 87px 
+	height 73px
+	absolute bottom 200px left 50%
+	margin-left 116px
+	svg 
+		width 100%
+		height 100%
+
+.windows-3
+	width 100px 
+	height 84px
+	absolute bottom 239px left 50%
+	margin-left -246px
+	svg 
+		width 100%
+		height 100%
+
+.windows-1
+.windows-2
+.windows-3
+	@media only screen and (max-width: 1004px)
+		display none
+// Hacker
+@keyframes code_l
+	0%
+	5%
+		transform translateX(-35px)
+	15%
+	20%
+		transform translateX(0px)
+	45% 
+	100% 
+		transform translateX(35px)
+@keyframes dash_l
+	0%
+	20%
+		stroke-dashoffset -242
+	60% 
+	100% 
+		stroke-dashoffset 100
+@keyframes code_r
+	0%
+	5%
+		transform translateX(35px)
+	15%
+	20%
+		transform translateX(0px)
+	45% 
+	100% 
+		transform translateX(-35px)
+@keyframes dash_r
+	0%
+	20%
+		stroke-dashoffset -242
+	60% 
+	100% 
+		stroke-dashoffset 100
+
+.hackers
+	absolute top 103px left 50%
+	margin-left -112px
+	z-index 10
+	width 221px
+	height 90px
+	@media (max-width: 768px)
+		display none
+	// Left
+	.display_left
+		width 30px
+		height 22px
+		// border solid 1px red
+		absolute top 19px left 7px
+		svg
+			width 100%
+			height 100%
+		for i in (1..15)
+			.code_{i}
+				transform translateX(35px)
+				animation code_l 10s linear
+				animation-iteration-count infinite
+				animation-delay i*40 ms
+	.cable_left
+		width 51px
+		height 65px
+		absolute top 19px left 39px
+		svg
+			width 100%
+			height 100%
+		.cable-left-2
+		.cable-left-3
+		.cable-left-4
+			animation dash_l 10s linear
+			animation-iteration-count infinite
+			stroke-dashoffset -242
+			stroke-dasharray 10,20,10,325
+		.cable-left-3
+			stroke-dasharray 0,15,11,26,12,274
+		.cable-left-4
+			stroke-dasharray 0,0,0,70,19,274
+	
+	// right
+	.display_right
+		width 30px
+		height 22px
+		// border solid 1px red
+		absolute top 5px right 7px
+		svg
+			width 100%
+			height 100%
+		for i in (1..14)
+			.code_{i}
+				transform translateX(35px)
+				animation code_r 10s linear
+				animation-iteration-count infinite
+				animation-delay i*40 ms
+	.cable_right
+		width 52px
+		height 67px
+		absolute top 20px right 35px
+		svg
+			width 100%
+			height 100%
+		.cable-right-2
+		.cable-right-3
+		.cable-right-4
+			animation dash_r 10s linear
+			animation-iteration-count infinite
+			stroke-dashoffset -242
+			stroke-dasharray 10,20,10,325
+		.cable-right-3
+			stroke-dasharray 0,15,11,26,12,274
+		.cable-right-4
+			stroke-dasharray 0,0,0,70,19,274
+// FLower
+.flower
+	width 100px
+	height 75px
+	absolute top 160px left 50%
+	margin-left -328px
+	&-base 
+		absolute bottom 0 right 0
+		z-index 10
+		width 95px
+		height 35px
+		svg 
+			width 100%
+			height 100%
+	.flower-petal
+		&-1
+		&-2
+			transform-origin right bottom
+		&-3
+		&-4
+			transform-origin left bottom
+	&-petal
+		&-1,&-2,&-3,&-4
+			transition all .3s ease-in
+			svg 
+				width 100%
+				height 100%
+
+		&-1 
+			absolute top 27px left 0
+			z-index 8
+			width 47px
+			height 33px
+		&-2
+			absolute top 18px left 5px
+			z-index 9
+			width 47px
+			height 36px
+		&-3
+			absolute top 0px right 28px
+			z-index 9
+			width 27px
+			height 49px
+		&-4
+			absolute top 3px right 22px
+			z-index 8
+			width 27px
+			height 49px
+	
+	&-inner 
+		absolute bottom 30px right 50px
+		z-index 1
+		width 25px
+		height 35px
+		svg 
+			width 100%
+			height 100%
+	

@@ -1,0 +1,80 @@
+
+// Early Bird Promo
+.section-earlybird
+  background: $white
+  color: $text
+  padding: 60px 0
+
+  h1
+    margin-bottom: 30px
+    
+  .ticket-svg
+    display: block
+    position: relative
+    
+    svg
+      max-width: 50px
+      
+  p
+    font-size: 17px
+    font-weight: bold
+
+  .main-menu
+    margin: 60px auto 0px auto
+    padding: 0
+    max-width: 400px
+    position: relative
+
+  .countdown
+    margin: 0
+    margin-bottom: 30px
+    max-width: 400px
+
+  .signup-form
+    margin-bottom: 0
+
+
+.birdie
+  position: absolute
+  display: block
+
+  &.birdie-countdown
+    background-position: -340px 0px
+    top: -30px
+    left: -7px
+    width: 27px
+    height: 32px
+
+  &.birdie-flying
+    background-position: -380px 0px
+    top: -46px
+    right: -54px
+    width: 39px
+    height: 30px
+    -webkit-animation: levitate 2s infinite ease-in-out
+    -moz-animation: levitate 2s infinite ease-in-out
+    animation: levitate 2s infinite ease-in-out
+
+@-webkit-keyframes levitate
+  0%
+    -webkit-transform: translateY(-5px)
+  50%
+    -webkit-transform: translateY(0px)
+  100%
+    -webkit-transform: translateY(-5px)
+
+@-moz-keyframes levitate
+  0%
+    -moz-transform: translateY(-5px)
+  50%
+    -moz-transform: translateY(0px)
+  100%
+    -moz-transform: translateY(-5px)
+
+@keyframes levitate
+  0%
+    transform: translateY(-5px)
+  50%
+    transform: translateY(0px)
+  100%
+    transform: translateY(-5px)

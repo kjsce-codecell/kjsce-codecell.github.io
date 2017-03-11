@@ -1,0 +1,70 @@
+#section-header
+  background: $blue
+  padding: 32px 0 0 0
+  &:after
+    content: ""
+    display: block
+    height: 0
+    clear: both
+  #logo
+    display: block
+    width: 126px
+    height: 60px
+    overflow: hidden
+    text-indent: -9999px
+    background: url(../images/logo-coc.png)
+    background-size: 100%
+    float: left
+  h1
+    float: right
+    font-size: 1em
+    color: $yellow
+    padding-top: 42px
+    a
+      color: $blue
+      text-decoration: none
+      background: $yellow
+      border-radius: 2px
+      padding: 0 5px
+
+.wrap
+  max-width: 1040px
+  padding: 0 15px
+  margin: 0 auto
+
+#tldr
+  background: $blue
+  color: #fff
+  font-size: 1.25em
+  padding: 96px 0
+  margin-bottom: 32px
+
+  p
+    margin-bottom: 16px
+
+#code
+  max-width: 1040px
+  padding: 0 15px
+  margin: 0 auto
+  p
+    text-align: left
+    margin-bottom: 16px
+    &:last-child
+      margin-bottom: 64px
+  cite
+    font-size: 1.25em
+    display: block
+    padding: 0 24px
+    line-height: 1.6em
+    margin: 32px 0
+    border-left: 4px solid $yellow
+  h2
+    margin-top: 32px
+    margin-bottom: 8px
+
+footer
+  background: $yellow
+  color: $blue
+  padding: 64px 0
+  font-size: 1.25em
+@media only screen and (max-width: 460px)

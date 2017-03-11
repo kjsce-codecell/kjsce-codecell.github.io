@@ -1,0 +1,77 @@
+@import 'nib'
+
+.cerrados
+	bottom 55px
+	.octopus-eye-left
+	.octopus-eye-right
+		&:after
+			top -11px
+
+@keyframes pestaneo
+	0%
+		top -6px
+		right 0
+	52%
+		right 0
+	60%
+		right 9px
+	65%
+		right 9px
+	69%
+		right 0
+	90%
+		top -6px
+	95% 
+		top -11px
+	100%
+		top -6px
+@keyframes pestaneo-cejas
+	0%
+		bottom 58px
+	90%
+		bottom 58px
+	95% 
+		bottom 55px
+	100%
+		bottom 58px
+.footer-illustration-wrapper
+	position relative
+.octopus-eyes
+	width 60px
+	height 15px
+	// border solid 1px red
+	absolute bottom 58px left 50%
+	z-index 100
+	margin-left -126px
+	animation-name pestaneo-cejas
+	animation-duration 2s
+	animation-iteration-count infinite
+	animation-timing-function ease-in
+	animation-delay 0
+	animation-play-state running
+	&:hover
+		@extend .cerrados
+	.octopus-eye-left
+	.octopus-eye-right
+		overflow hidden
+		width 20px
+		height 15px
+		position relative
+		border-top solid 3px white
+		&:after
+			content ''
+			width 11px
+			height 11px 
+			border-radius 50%
+			background white
+			absolute right 0 top -6px 
+			animation-name pestaneo
+			animation-duration 2s
+			animation-iteration-count infinite
+			animation-timing-function ease-in
+			animation-delay 0
+			animation-play-state running
+	.octopus-eye-left
+		float left
+	.octopus-eye-right
+		float right

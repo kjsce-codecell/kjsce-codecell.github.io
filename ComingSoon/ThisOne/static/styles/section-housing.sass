@@ -1,0 +1,198 @@
+// Recommended hotels
+.section-housing
+  background: $blue
+  color: $white
+  padding: 60px 0
+
+.hotels-svg
+  display: block
+  position: relative
+
+  svg
+    max-width: 50px
+
+.housing-list
+  @extend ul.block-list
+  margin-top: 35px
+  margin-left: -30px
+  margin-right: -30px
+
+
+.housing
+  background: $gray
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  margin-bottom: 2px
+
+  &.hotel-belair
+    background-image: url(../images/hotels/hotel-belair.jpg)
+
+  &.hotel-dazzler
+    background-image: url(../images/hotels/hotel-dazzler.jpg)
+
+  &.hotel-intersur
+    background-image: url(../images/hotels/hotel-intersur.jpg)
+
+  &.hotel-loi
+    background-image: url(../images/hotels/hotel-loisuites.jpg)
+
+  &.hotel-melia
+    background-image: url(../images/hotels/hotel-melia.jpg)
+
+  &.hotel-urban
+    background-image: url(../images/hotels/hotel-urban.jpg)
+
+
+  .description
+    margin-left: 50%
+    padding: 26px 22px 24px 29px
+    background: transparentize($yellow, 0.05)
+
+  h2
+    line-height: 140%
+    font-size: 18px
+    font-weight: bold
+    color: $blue
+    margin: 0 0 1px
+
+    a
+      color: $blue
+
+  p
+    line-height: 140%
+    font-size: 18px
+    text-align: left
+
+    a
+      color: $white
+
+  .description-inner
+    margin: 0 150px 0 0
+
+  .price-and-rating
+    float: right
+    min-width: 130px
+    margin: 3px 3px 0 0
+
+    .price
+      font-size: 48px
+      line-height: 100%
+
+      sup
+        display: inline-block
+        padding-top: 12px
+        margin-left: 2px
+        font-size: 18px
+        line-height: 18px
+        vertical-align: top
+
+    .rating
+
+      .icon
+        margin-right: 4px
+
+        &:last-child
+          margin: 0
+
+
+.md-perspective,
+.md-perspective body 
+  height: 100%
+  overflow: hidden
+
+
+.md-perspective body  
+  background: #222
+  -webkit-perspective: 600px
+  -moz-perspective: 600px
+  perspective: 600px
+
+
+.md-modal 
+  position: fixed
+  top: 50%
+  left: 50%
+  width: 100%
+  max-width: 630px
+  min-width: 320px
+  height: auto
+  z-index: 2000
+  visibility: hidden
+  -webkit-backface-visibility: hidden
+  -moz-backface-visibility: hidden
+  backface-visibility: hidden
+  -webkit-transform: translateX(-50%) translateY(-50%)
+  -moz-transform: translateX(-50%) translateY(-50%)
+  -ms-transform: translateX(-50%) translateY(-50%)
+  transform: translateX(-50%) translateY(-50%)
+
+
+.md-show 
+  visibility: visible
+
+.md-overlay 
+  position: fixed
+  width: 100%
+  height: 100%
+  visibility: hidden
+  top: 0
+  left: 0
+  z-index: 1000
+  opacity: 0
+  background: rgba(255, 191, 25, 0.8)
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  transition: all 0.3s
+
+
+.md-show ~ .md-overlay 
+  opacity: 1
+  visibility: visible
+
+/* Content styles */
+.md-content 
+  color: #67919c
+  background: white
+  position: relative
+  margin: 0 auto
+    
+.md-content button.md-close 
+  width: 40px
+  height: 40px
+  display: block
+  background: url(images/close-button.png) center no-repeat #132431
+  border: 0
+  color: #ffbf19
+  position: absolute
+  top: 0
+  right: 0
+
+
+/* Effect: flip */
+.md-effect-flip.md-modal 
+  -webkit-perspective: 1300px
+  -moz-perspective: 1300px
+  perspective: 1300px
+
+
+.md-effect-flip .md-content 
+  -webkit-transform-style: preserve-3d
+  -moz-transform-style: preserve-3d
+  transform-style: preserve-3d
+  -webkit-transform: rotateY(-70deg)
+  -moz-transform: rotateY(-70deg)
+  -ms-transform: rotateY(-70deg)
+  transform: rotateY(-70deg)
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  transition: all 0.3s
+  opacity: 0
+
+
+.md-show.md-effect-flip .md-content 
+  -webkit-transform: rotateY(0deg)
+  -moz-transform: rotateY(0deg)
+  -ms-transform: rotateY(0deg)
+  transform: rotateY(0deg)
+  opacity: 1

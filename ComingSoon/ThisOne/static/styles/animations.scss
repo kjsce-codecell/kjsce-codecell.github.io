@@ -1,0 +1,238 @@
+@import "mixins";
+@import "component";
+@import "animate";
+
+.wow {
+  visibility: hidden
+}
+
+#cloudx1, #cloudx4 {
+  fill: #f7d043;
+}
+
+#cloudx2, #cloudx5 {
+  fill: #f1bc05;
+}
+
+#cloudx3 {
+  fill: #f5d24d;
+}
+
+.cloudx1, .cloudx2, .cloudx3, .cloudx4, .cloudx5 {
+  width: 138px;
+  height: 100%;
+  position: absolute;
+}
+
+.cloudx2, .cloudx4 {
+  width: 108px;
+}
+
+.cloudx3 {
+  width: 64px;
+}
+
+.cloudx1 {
+  top: 5%;
+  @include animation(fly 45s linear infinite);
+}
+
+.cloudx2 {
+  left: 200px;
+  top: 20%;
+  opacity: 0.6;
+  @include animation(fly 75s linear infinite);
+}
+
+.cloudx3 {
+  left: -250px;
+  top: 35%;
+  opacity: 0.8; 
+  @include animation(fly 60s linear infinite);
+}
+
+.cloudx4 {
+  left: 470px;
+  top: 50%;
+  opacity: 0.75;
+  @include animation(fly 50s linear infinite);
+}
+
+.cloudx5 {
+  left: -150px;
+  top: 65%;
+  opacity: 0.8; 
+  @include animation(fly 60s linear infinite);
+}
+
+@include keyframes(fly) {
+  0% {margin-left: 50%;}
+  100% {margin-left: -50%;}
+}
+
+/** SPEAKER **/
+.speaker-svg-animation {
+  @include animation(speaker 1s both);
+}
+
+.sound-animation {
+  @include animation(speak 1.5s 1s both);
+}
+
+@include keyframes(speak) {
+  0% {
+    stroke-dashoffset: 60px;
+    stroke-dasharray: 20px 20px;
+  }
+  100% {
+    stroke-dasharray: 20px 20px;
+    stroke-dashoffset: 0;
+  }
+}
+
+@include keyframes(speaker) {
+  0% {
+  }
+
+  10%, 20% {
+    -webkit-transform: rotate3d(0, 0, 1, -3deg);
+            transform: rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: rotate3d(0, 0, 1, 3deg);
+            transform: rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: rotate3d(0, 0, 1, -3deg);
+            transform: rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+  }
+}
+
+/** AGENDA **/
+
+.agenda-svg-animation-tab {
+  @include animation(showLeft 1s both);
+}
+
+.agenda-svg-animation-tab2 {
+  @include animation(showLeft 1.1s both);
+}
+
+.agenda-svg-animation-tab3 {
+  @include animation(showLeft 1.2s both);
+}
+
+.agenda-svg-animation-tab4 {
+  @include animation(showLeft 1.3s both);
+}
+
+@include keyframes(showLeft) {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-300px, 0, 0);
+            transform: translate3d(-300px, 0, 0);
+  }
+
+  60% {
+    -webkit-transform: translate3d(25px, 0, 0);
+            transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    opacity: 1;
+    -webkit-transform: translate3d(5px, 0, 0);
+            transform: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+/** TICKETS **/
+
+.ticket-svg-animation {
+  @include animation(showUp 1s both);
+}
+
+@include keyframes(showUp) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(100%));
+  }
+
+  100% {
+    opacity: 1;
+    @include transform(translateY(0%));
+  }
+}
+
+/** Hear **/
+
+.heart-svg-animation {
+  @include animation(pulse-heart 2s both);
+}
+
+@include keyframes(pulse-heart) {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1;   
+  }
+  25% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1; 
+  }
+   75% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;   
+  }
+}
+
+/** HOTELS **/
+
+.z-animation {
+  @include animation(zic-zac 1s both);
+}
+
+.z-animation2 {
+  @include animation(zic-zac 1s .5s both);
+}
+
+.z-animation3 {
+  @include animation(zic-zac .5s 1s both);
+}
+
+@include keyframes(zic-zac) {
+  0% {
+    stroke-dashoffset: 100px;
+    stroke-dasharray: 100px 100px;
+  }
+  100% {
+    stroke-dasharray: 100px 100px;
+    stroke-dashoffset: 0;
+  }
+}

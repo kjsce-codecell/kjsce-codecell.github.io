@@ -1,0 +1,79 @@
+// 7-Ups
+.sprite
+  background: url(images/sprite.png?20141025) no-repeat -1000px -1000px
+  background-size: 500px 250px
+  display: inline-block
+  overflow: hidden
+  vertical-align: top
+
+  &.logo
+    width: 207px
+    height: 100px
+    background-position: 0 0
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+  .sprite
+    background-image: url(images/sprite@2x.png?20141025)
+
+
+.icon
+  @extend .sprite
+  width: 20px
+  height: 20px
+
+  &.icon-date
+    background-position: -0px -110px
+  &.icon-place
+    background-position: -30px -110px
+  &.icon-video
+    width: 25px
+    background-position: -60px -110px
+  &.icon-tickets-yellow
+    width: 25px
+    background-position: -90px -110px
+  &.icon-game
+    width: 18px
+    height: 25px
+    margin-top: -3px
+    background-position: -200px -110px
+  &.icon-star
+    background-position: -128px -109px
+  &.icon-send-yellow
+    width: 25px
+    height: 23px
+    background-position: -160px -110px
+
+
+.large-icon
+  @extend .sprite
+  width: 50px
+  height: 55px
+
+  &.icon-speakers
+    width: 70px
+    background-position: 2px -150px
+
+  &.icon-calendar
+    background-position: -78px -150px
+
+  &.icon-tickets
+    background-position: -138px -150px
+
+  &.icon-housing
+    background-position: -208px -150px
+
+  &.icon-sponsors
+    background-position: -277px -150px
+
+  &.icon-party
+    background-position: -350px -150px
+
+  &.icon-nodejs
+    background-position: -414px -150px
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+  .sprite
+    background-image: url(images/sprite@2x.png?20141025)
+
+    @include background-size(500px 250px)

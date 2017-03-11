@@ -1,0 +1,162 @@
+.button-watch
+  display: none
+
+#stream .realTime
+  overflow: hidden
+  
+.streaming
+  #game-holder
+    display: none
+  #header-content
+    display: none
+  #stream.container
+    padding: 30px 0 0 0
+    .heading
+      padding-bottom: 20px
+      &:after
+        content: ""
+        display: block
+        height: 0
+        clear: both
+      .jsconf
+        display: block
+        width: 123px
+        height: 66px
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAABxCAYAAADmp16oAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAEmhJREFUeNrsnQuUFNWZx7+e7pnpeclDQAQBeWsgsGhAiYpICA8BV0QQswdIRD2iro/oBmMSHycqerKIiYKSbHQXZLMKyCMaRYizPLJEkZUMCgLDiLwRhte8enp6uvf7amriyHbfutVd1T0U/98532mYqrpVffv+7/2++yofMfmzl66MZme3JwU+tul9u7Tu3aowT3XerpNVod9u3VOuOifn0IEjRRvWfE7ACSJsrx1Yv3QnsgI0Eij62fxARd8B46xEPe/SNnRXpyJlYh+dqqWfbz5Mod59uyU6J7hrGxVuLJZ/jkX2O0aQ7UFkA2gky+oEO6IewaI+FYmSStStlywgX309ct5ZfMgCoC1siBoAjwkbogbgLI6x4/3Rz6r+fZ+2NK1DIUQNgBeELaJe0Lct/eBCiBoAT7jiEDUAHhM2RA2Ax4QNUQPgwRh7cf8LaHy7fIgaAK+02OP7dsuCqAHwaIwNUQNwjggbogbAY8KGqAHwmLAhagA8JmyIGgCPCRuiBsBjwoaoAfCYsCFqADwm7C+On45B1AB4TNhbDh6LQdQAeDTGhqgBOAeEDVED4DFhQ9QAeEzYEDUAHhM2RA2Ax4QNUQPgMWFD1AB4i8B5696Pxvx+iBoAr7XYEDUAHo2xAQAQNgAAwgYAQNgAAAgbAABhAwBhAwAgbAAAhA0AgLABABA2ABA2AADCBgBA2AAACBsAAGEDACBsACBsAACEDQCAsAEALhBAFqROr3b11OfCKHVpFaXOraPUIhijGP/9VI2Pyqt8tP9kFn16yE+fsdVGkF8AwrbFjf3qaNa4Gq1zB80uooqQL+l7dWwRpSmDwjS2bx1d3DqqdU112EdrSwP0+qYcWrc7QLEYCiCAsC3J8ceoKKinlmQl3TIvRj8ZHqIffCdMAZuBTH5OjEZ/q86wkgN+evTtPNqy349SCBBjZ5KrukWo+L4KmjrIvqjPpF/Help5ZyXNuLoWGQsg7Exxw7fraNHUKmpb6Jz/nMVuw89GhujRESFkMICw082gLhH6zYRqCrjkNd99TS3dOwQtN4Cw00br/BjNn+yeqBuZyXH70J7oMgcQdlp45PshR93vRPjYLZ9zU7VRkQAAYbtIhxZRuuWycNruJxXIA0MRb4PUwQQVBZMvqyO/jarvRLWP/vhpNn1+xE9Rbni7nh81hrY6t7Ie567nU17ZkEvPFweR8QDCdpNRLEpd/rA5h574U5Cqwt8cIZ/1fpBu7BemJ68PUYu8+G52yUE/Pbwsj7Ydxpg2gLBdpSAnRpdcoPfecJlN9pMVeXFnkkW4JV6yJYc27wvQkulVdEHR1613qM5Hv/pzLv3bxlyjxQYAMbbLiBudpTk9bd76XMvpoV+UZ9Ht/5n/dwGv3x2gYS8W0vy/QNQALXbaaFek3zstizt0+GS/36gEyljkiz/JQSYDCDvdyLxzXQpzY3SyRq95f24NOscAhG0vLs51Lq1TNlZ+Xdq+3liaCYDbdLxmgriHraQ9YZOljKcOrF8a8rSw/VnOTe44fFpfqLddGaY1O7I9vwyTC5UUqAvZ2tDX/TOVbIfYDnIBw+wa5/O8NX9MZhvGNoitU5xzyvljB9smtvf4d3gPrngC9p7IMnqtg9nWZfWa7hF67oYaYxlmpN5ThUpEfDPbSLNQtVWcXsXnb+bPd9kWcuE6gFKUUt534I9n2G6VyNDi9PPZvmvaDL42CP8xAdJT/dFe/XFlWZ+94o5K6t+x3guFqivbIv7nPrbfsI2xELURCbENYZvFtpuvf5oNPYTJ5f8E/vicbZqGqM/kA/GcIGwFq7Zl2zpfRP3OXZX0+tQq+m7XyNlaqO7gj8+krpLoJslkpLfjUbblnF42SpKt/L+dP5awFSWZxFtEGMdWsqwk29jOyC6ySuvN26ro3RmVNHFAmHICZ02hktb2t2x5DiU5mu0xlCTt/B/MH6+kkITEjSvOaWHrCPZ0yEev/TV5b/LbHeppzk01tOnh0/TQsPSsEkuhUM3gj0dcSPphswMIqPNfCuTLFl7SR6Z73ptN8rQn2xXU0Ln2vNm38ZWceM52nkU0Z3u9uC6XxvevM1Z6Jcv5BTF68LqGzRSWleTQS5xm2bGs5lSouvPHHIvTZEhlNVsJ2zE2GZDvbrbKHRXXyXkT2eZDvmpHT6I5xfE32P6Jhdu0E+dEE8G/0fRk9IpbUFnro3vezKfFt1WmvNlCNl8/iV3zCf3D9PrHOfRCcZCOVvqaw9d82oyLE7GY7R4uVEfjVAri0rzEdofi+usgbEvGKo7JaqT7zhC1EsTYGmza66f7l+Y7NpQlS0GnDQrThgcraPrgWu056S611hdRw5BWIt4XVy+eqAX+uyxYf4itSpHGt1CKLLlMcWxzo4utC1psTVZszabj1QX00sRqw7V2AllBJss5R1wSoXsX52eq9Z6kiOvkiz7IhUoZh/DxCnMMe0iCU9olUeG0MAu7xJEtTZPnPGlaqbigfO9TSaQ9WOGhlHGae+NcIzHtMNNdlqE/qeblvA/YPtaZnMNpXCWOW4LDvVTdPXztUI2vVsrPsR/CtomsyBr+UhHNHl9Nw3o5N5wl2xrLMNnUhfnGJg1pZoTi2AYuKNs009lnEWfrCE6mSU6lhqG2wRoeZZSvKTZDgRWa4pIMXqsQ2HS2V5ucL4J70vRqEullE58n8e8uxX2zzfv6k/yNRmicJx1rC+CKJ4G0qlMXFtCMN/Jpn4Pzw6VzTobIdNeAO8gVimPv2UhHVdPVW4jNZ47flrHNlbpOs2zKOd9jWybPymmcr3FNZ4WoyXyGxueSkQLpLJxs0QgOFNHy+RdY3NftWns3YuwUkS2QhrxQRD9dmUdHKpzJRtnIcMEU51x9jdarg+niJqLEoVsdVzxDPn8sZfsdWc9us2rV1pouvIoeFsfLzOd6gj/mkbpTsSky/fYXKdzXCUohbAeo43Zo4aYcunJ2Ef34rTxH3GhpuZ/7x5p0fYWeFse320hLhlukZ/wWtlGmKy2dZjIU9g8JRC2ieZttvEPfpw/bCyl8Z+l93m9O6Xw8ifvfZI5HZ0LYlRwKHGn8zzkbY+dlx6imzueYwN/8JMcwiZd/dGWYRlxSl3Rv96hL64wpqf/zhes/Tw8L1/pL3YS4UL2bxP1lUsV1FuccMiuYsFlJ9LFokKaxuJ7i59md4Hh3C2FLfH19kvkprXZ785nt3NcJypr+55wVtowp19Q5n+5fygKGdWoZpTuvqqXJl9cZlYhdpg8Op0PYqtZrD4vDtQnvLL7v8MfdFvHiXfwMa864TmLVhZS4B16qU+noei6JykzCgmnmv6UiWc72X2zSgXgeNXTs3Wvx1dokELZ4EgsSXDPP9HDi8Te2H+q02BB2GpCOtV+8k0dzioN019W1dPvgWltzxr/Xu45accwtWxpnSNi7XM6imYpjsr742nhLP2UoisUtnVnSC58o9hmQYqz7JtuP49xfer87WoQO1Qk8Ghka25ugklP1LWzla7fYzVxPxdh1EV+ze6bjLMxn3g/S9+cW0aeH9GNweZvnwM6urxDrYdFiutVaS8t4g8pFV63n5mPSIm5VXN8+wX2zLL6zjNfLDLtbFPe3Gik4ZDMvpLq/WHFKaTJ57Clhu+FaO8XuY1k0/ncF9LGNNd5pWNvdw+kCpYm4narVNW/ZdT3jxMrx6GRx35+yoOeloJmjfH21zbzoYuE5Q9iBZr7fvnTWydTUqGbI3aW1e/sSm7uj5GdI2H0tBLtDIw2V+3okwd+tOrDWady3m8Phi1VosPOcF/Z5QXfHf2XySK92qbWiXx7PopIDejVQG3eXeVoVqF0Zunep1Qwyc0ipaxJhRHcHvnN3hytDq9/BWy32RS2jtqdtFuXqC6GiVj8elwkjs26ooVV3V9Irt9RQbopdjroTWgLu/jpWseYeF++t6rQr0ykeFi51IjGo5mPLbp/lKeZbmcO/w3F+phOeELa40/cMqaXi+ypp7qRqan+evjuq28JVhHxaO4rKs8iQ1YYHKmjKwLCxKkta7KfGpjaBpE2h3neqq8+YsPeaq7YyIWydTrtuVl0aSXxn3c7CdLbYZUnrqDmJenDXCD0zroZ6tv264D/LLeWPFhVoCVF2LNHhcIV1az2ke4SeHPPNZ2nk1svDxi6mL661v5G5vLtLt1OsstbVXv5eThRQcwrnU9LinWEnzc/tTVdgmYshuqToDlsJe1cSItql8V2lt73A4fClp9PxdbMRtmwZ9NioGmOnkjMZ3jtCDwytpTnFahEN7FxP/TSFvUMx9VOmdD4+OkRj+qi72GcOD1ELjumfXR3U3o1FWnyZLqrrYks87iKqlmevjXSuJfWkDdm2eFOT/19M6sUQZSk+++kEG0L4KPVRAKspuLaGCM2VZt2cjq8zLmwp6OLiikiKFB1fsl9YMBCjf/0gGNc97cGt6osT9UcZ5LW1iWLp/+YQID9Hz6WXiSdXc8sur8pdtzug9Cp6tYvS0+zCD7axe6nLr9W9SBVv2khnpOKYxCxbbHgKuoU5GTHIgpegiyHASc0YvSlWK83OPmGLqJffUUkDLtJrZSXuvp5bUdnwQFrcyrCPWuXFjM36x/cL2xrqWrMj/tcur/IZr8QdbeO92H0vrKdF06oM13z159m0/XAWnajxGUNaLfn5xJUf1CVCl3eqJ58Nz1quX1fq6s+jGi7Syk1zcsVExSmyx/WZmdnFKlLSyfYk3Fcnep+dntDj2shExoQtG/Jv5ZZTV9iCvNpW3PJUkBVYO79KXG4feydoLOSwO3TWuVXU2ObIKaSSOFblaowtAUQiX/9SzTRutagglsT5m9VuKj6LykTG3/soTvmbi8J2uuOsl1vCzmiv+Gx2rStC6Z0G+vIGdax+6HQW3bdEfxKJG4hL/+u1uW7fRuU2DmUB9bAQmGxqMMvCnY8nbKuafJDF8X+2KLerk4iPq81pqqnE2E5PTknGtW8ewhbX95GVeWm7n7jwK0qsX0whrvrjf8rLWL78+4c52pNYUuAzxTHJpJUs3uvM+dXfcL/ZxvE/N5J62+G5XDDjTfvcb/Fcz3L6RQkqkztJvXjkM77n5iREWeqAEJ0ew05p5l/Ge8UlZu7fMdcYL3YT2WH0oeV52j3Y8qKANgVRun9obVrzQ+aS/3JVWiqVVdSwlzUp3HHZqO8UC0oKbQU1vL5VBGK1h9lBSrxs0mrapswj38n3fMOMl2NmXD7GIrYWnnArPjbfNNrSYSG6MtTVLIQt/HJV0Hh5vLzYzi0eZlFv2W+vFfzVn4NUXp1FT4yuScsWwf+7z09TFhZQOD2v/ZINBX5O6nFZQcapB9ipQ9mmcMt5Ot5B2QCBRSJrrIcr0pDx4vttfp9lnPaSJONjnY4vRzu63Bzqyrgr3jSmnMku+fMcczv9jmkZHpOtfZdsSe5VPa9uzKGx8wuVY99O8IfNOTTptYK09TmY+1TPdNoxYvshp/2BxXkiWif3f5LdP6cqRGQ1sUSndbSK0Q/bfGbXhrqajbAbxf18cS7d/PsC2u7Q+K30ul//SiEtL0nthY8S7458udDYuPDgKWezTJ5x0qsF9C/sUYTq0tuRyIVxroX7agfpfBrBaS7SuK/sSHKj6d6nirzEblSCeF5HlLotdroXf+zyhLAb+fDLAI2cV2hs77sxya2BRCzSSo9hUTtVSUTMjQuvmlNkPNuq7dlJz+WWOP+9bdk07fUCo+JJwxZIKpHJntmyzdCHSSYhixTkFUGXcFrFNu4rbxiRzfeXmXG0HaSnRDZBvILTmcEWSlFEqbrizWqoq9nE2P/vV4s1bO8rJotAru0Rocs6NSyZ7NAiZmzT2/i6ndO1PvqqwkelR/207XCWMQPMTbdZxNz4bPImD3muKy6OUO92UWOcXaakysy1xmmj4lqXV/to99Es2snP+OGeAP11j9/teeB2xb2eP65kl1WENs7swJLOM5mtlXuGq/2VWehkRpnEyqv5+tok7/sFNezsKbHmzWYFI2PUsm9YoXma/NIydLZHuiGoYXrq23ztQRu3ktZ8haKS2KeRxqds/5Hg2GqHW+yUhroEnzmcUU/gbObXXBAecCNhc9GGxKchjZbRyftK7Rzke1Z58Qfj7/dHSvwiPnll0EDPtdig+WBOCT2ZgftKY1Pl4ax1bairWcbYAHgdt4e6IGwAMoOrQ10QNgCZwfX95iBsANJPdwgbAO+h6jhLeagLwgag+bniZU7cAMNd3iCGLDirkNl+cxIcK3fiBsb0p47XTHiIErzvCDR7ZDbYa+y+7URWgEb+T4ABABaP4AuvV3iJAAAAAElFTkSuQmCC) no-repeat
+        background-size: 100%
+        overflow: hidden
+        text-indent: -9999px
+        float: left
+      .closeStream
+        float: right
+        margin-top: 16px
+        color: $darkBlue
+        background: $yellow
+        border: 2px solid $blue
+        padding: 10px 13px 8px 13px
+
+    #video
+      float: left
+
+    .dashboard
+      float: right
+      width: 270px
+      background: $blue
+      border: 2px solid $darkBlue
+      height: 405px
+      color: #fff
+      position: relative
+      text-align: left
+
+      .break
+        text-align: center
+        padding: 35px 15px 15px 15px
+        &:before
+          content: ""
+          display: block
+          width: 120px
+          height: 120px
+          margin: 0 auto 30px
+          background: url(../images/breaks.png) no-repeat
+          background-size: 360px
+        h3
+          color: $yellow
+          margin-bottom: 5px
+        .sponsor
+          display: block
+          width: 164px
+          height: 30px
+          margin: 0 auto
+          overflow: hidden
+          text-indent: -9999px
+          background: url(../images/break-sponsors.png) no-repeat
+        &.checkin
+          &:before
+            background-position: left
+          h3
+            display: none
+          .sponsor
+            display: none
+        &.coffee
+          h3:before
+            content: "Coffee"
+          &:before
+            background-position: left
+          .sponsor
+            background-position: bottom
+        &.lunch
+          h3:before
+            content: "Lunch"
+          &:before
+            background-position: right
+          .sponsor
+            background-position: center
+        &.party
+          h3:before
+            content: "Party"
+          &:before
+            background-position: center
+          .sponsor
+            background-position: top
+
+
+      .person
+        .social:after
+          content: ""
+          display: block
+          height: 0
+          clear: both
+        .avatar
+          width: 92px
+          height: 92px
+          border-right: 2px solid $darkBlue
+          border-bottom: 2px solid $darkBlue
+          float: left
+        .share
+          float: right
+          width: 174px
+          .share-btn
+            display: block
+            height: 46px
+            line-height: 46px
+            color: #fff
+            background: $twitterBlue
+            border-bottom: 2px solid $darkBlue
+            text-align: center
+            &.fb
+              background: #4666ac
+        .info
+          padding: 15px
+          h2
+            font-size: 1.125em
+            line-height: 1.3em
+          h3
+            font-size: 1em
+            color: $aqua
+            padding: .4em 0 .2em 0
+          a
+            color: $yellow
+            text-decoration: none
+      .next
+        background: $darkBlue
+        padding: 15px
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        h4
+          text-transform: uppercase
+          font-size: .875em
+          color: $yellow
+          margin-bottom: 5px
+        h2
+          font-size: 1em
+          line-height: 1.4em
+        h3
+          font-size: 1em
+          line-height: 1.4em
+          color: $aqua
+
+body:not(.streaming)
+  #stream
+    display: none

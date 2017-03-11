@@ -1,0 +1,317 @@
+// The calendar for both days of JSConf
+
+$hour_start: 8
+$hour_end: 22
+
+.section-calendar
+  background: $blue
+  color: $white
+  padding: 60px 0
+
+  h1
+    margin-bottom: 40px
+
+.agenda-svg
+  display: block
+  position: relative
+  
+  svg
+    max-width: 50px
+
+.talk-list
+  position: relative
+  padding: 0
+  
+  &:after
+    content: ""
+    width: 2px
+    background: $darkBlue
+    position: absolute
+    top: 4px 
+    bottom: 4px
+    left: 50%
+    margin-left: -1px
+    z-index: 1
+  
+  li
+    @extend ul.block-list
+    position: relative
+    z-index: 3
+    margin-bottom: 30px
+
+    &:before
+      content: ""
+      position: absolute
+      top: 3px
+      left: 49.5%
+      border: 2px solid $darkBlue
+      display: block
+      width: 10px
+      height: 10px
+      background: $blue
+      z-index: 2
+    
+    .break-icon,
+    .checkin-icon,
+    .party-icon
+      width: 47.5px
+      height: 27.5px
+      position: absolute
+      top: -6px
+      left: 50%
+      margin-left: -24px
+      z-index: 100
+      &:after
+        content: ''
+        width: 126px 
+        height: 25px 
+        background: $yellow
+        position: absolute
+        top: 1px
+        left: 50%
+        z-index: -10
+      svg 
+        width: 100%
+        height: 100%
+    .party-icon
+      top: -14px
+      width: 32px
+      height: 40px
+      margin-left: -13px
+      &:after
+        top: 11px
+    .break-icon
+      width: 37px
+      height: 37px
+      top: -7px
+      margin-left: -17px
+      &:after
+        top: 5px
+
+    .more
+      width: 30px
+      height: 30px
+      right: -2px
+      position: absolute
+      bottom: -2px
+      border: 2px solid $darkBlue
+      color: $darkBlue
+      text-align: center
+      line-height: 30px
+      font-size: 1.5em
+      text-decoration: none
+      &:hover
+        text-decoration: none
+
+    .time 
+      width: 49.5%
+      float: left
+      text-align: right
+      padding-right: 30px
+      -webkit-transition: padding-right ease-in-out .25s, -webkit-transform .25s ease-in-out
+      -moz-transition: padding-right ease-in-out .25s, -moz-transform .25s ease-in-out
+      transition: padding-right ease-in-out .25s, transform .25s ease-in-out
+      span
+        background: #ff4a25
+        font-size: .8em
+        padding: 0 7px
+        position: relative
+        &:after 
+          content: ""
+          border: 5px solid transparent
+          border-left: 5px solid #ff4a25
+          display: block
+          position: absolute
+          height: 0
+          width: 0
+          left: 100%
+          top: 4px
+
+    .actions
+      position: absolute
+      left: 100%
+      top: 0
+      a
+        margin-top: -2px
+        display: block
+      .md-close
+        background: url(images/close-button.png) no-repeat center
+        border: 2px solid $darkBlue
+        width: 50px
+        height: 50px 
+        display: block
+        padding: 0
+        margin-bottom: 100px
+      .share
+        display: block
+        width: 127px
+        height: 50px
+        line-height: 50px
+        text-align: center
+        font-size: 1em
+        border: 2px solid $darkBlue
+        &.twitter
+          color: $twitterBlue
+        &.facebook
+          color: #5a86e5
+
+
+    .subject
+      width: 49.5%
+      float: right
+      padding-left: 30px
+      @extend ul.block-list
+      -webkit-transition: -webkit-transform .25s ease-in-out
+      -moz-transition: -moz-transform .25s ease-in-out
+      transition: transform .25s ease-in-out
+      position: relative
+      z-index: 5
+      &.icon
+        color: $darkBlue
+        font-size: 12px
+        z-index: 100
+        h5
+          line-height: 19px
+        &.party
+          h5
+            line-height: 20px
+        &.break
+          h5 
+            line-height: 23px
+
+      .description
+        min-height: 96px
+        border: 2px solid $darkBlue
+        padding: 15px 15px 0px 15px
+        margin-left: 92px
+        position: relative
+        cursor: pointer
+        background: $blue
+
+        h5
+          margin-bottom: 10px
+      
+      .avatar
+        border: 2px solid $darkBlue
+        position: absolute
+        top: -2px
+        left: -96px
+
+    h5
+      font-size: 1.15em
+      line-height: 1.15em
+
+    h6
+      font-size: 1em
+      color: $green-talks
+      margin-bottom: 10px
+      .pill
+        background: $green-talks
+        color: #fff
+        font-size: .75em
+        text-transform: uppercase
+        padding: 0 5px
+
+    .details
+      visibility: hidden
+      opacity: 0
+      max-height: 0
+      -webkit-transition: visibility ease-in-out .5s, opacity ease-in-out .5s, max-height ease-in-out .5s
+      -moz-transition: visibility ease-in-out .5s, opacity ease-in-out .5s, max-height ease-in-out .5s
+      transition: visibility ease-in-out .5s, opacity ease-in-out .5s, max-height ease-in-out .5s
+
+      p
+        text-align: left
+        font-size: 1em
+        padding: 10px 0
+
+      h6
+        color: $yellow
+
+        a 
+          color: $yellow
+          text-decoration: none
+
+    &.open
+      .subject, .time
+        -webkit-transform: translateX(-127px)
+        -moz-transform: translateX(-127px)
+        transform: translateX(-127px)
+      .description
+        cursor: text
+      &:before
+        opacity: 0
+      .time
+        padding-right: 0
+      .details
+        opacity: 1
+        visibility: visible
+        max-height: 12000px
+      .more
+        display: none
+      .actions 
+        display: block
+    &.highlight
+      .subject .description,
+      .avatar,
+      .more,
+      .actions a,
+      &:before
+        border: 2px solid $yellow
+      .more
+        color: $yellow
+
+    &.odd
+      .time
+        float: right
+        text-align: left
+        padding-left: 30px
+        padding-right: 0
+      .subject
+        float: left
+        padding-left: 0
+        padding-right: 30px
+        .description
+          margin-left: 0
+          margin-right: 92px
+        .avatar
+          left: auto
+          right: -96px
+      .actions
+        left: auto
+        right: 100%
+      &.open
+        .subject, .time
+          -webkit-transform: translateX(128px)
+          -moz-transform: translateX(128px)
+          transform: translateX(128px)
+        .time
+          padding-left: 0
+
+
+
+
+// These classes define when an event bar starts or ends
+$minutes: 0 5 10 15 20 25 30 35 40 45 50 55
+
+@function pad_time($time)
+  @if $time < 10
+    @return #{0}#{$time}
+  @else
+    @return #{$time}
+
+
+@for $hour from $hour_start through ($hour_end - 1)
+  @each $minute in $minutes
+    $offset: (($hour - $hour_start) / ($hour_end - $hour_start + 1)) * 100.0% + ($minute / 60.0) / ($hour_end - $hour_start + 1) * 100.0%
+
+    .event-starts-#{pad_time($hour)}#{pad_time($minute)}
+      left: $offset
+    .event-ends-#{pad_time($hour)}#{pad_time($minute)}
+      right: 100.0% - $offset
+
+.event-starts-#{pad_time($hour_end)}00
+  left: 100% - 100.0% / ($hour_end - $hour_start + 1)
+.event-ends-#{pad_time($hour_end)}00
+  right: 100.0% / ($hour_end - $hour_start + 1)
+
