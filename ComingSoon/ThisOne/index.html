@@ -14,18 +14,18 @@
   <!-- Facebook Stuff -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Codecell KJSCE" />
-  <meta property="og:title" content="KJSCE Codecell 2014" />
-  <meta property="og:description" content="Codecell KJSCE will be a full day event on November 29th, with programmers and designers from all over the world" />
-  <meta property="og:image" content="/static/images/social/Codecellar-facebook.png" />
-  <meta property="og:url" content="" />
-  <meta property="fb:app_id" content="851866321490729" />
+  <meta property="og:title" content="KJSCE Codecell 2016-17" />
+  <meta property="og:description" content="KJSCE Codecell, Codechef Campus Chapter" />
+  <meta property="og:image" content="/static/images/social/Codecell-facebook.png" />
+  <meta property="og:url" content="http://www.kjscecodecell.com/" />
+  <meta property="fb:app_id" content="985614248239979" />
 
   <!-- Twitter Stuff -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:site" content="@Codecellar" />
+  <meta property="twitter:site" content="" />
   <meta property="twitter:title" content="KJSCE Codecell 2014" />
-  <meta property="twitter:description" content="Codecell KJSCE will be a full day event on November 29th, with programmers and designers from all over the world" />
-  <meta property="twitter:image" content="/static/images/social/Codecellar-twitter.png" />
+  <meta property="twitter:description" content="KJSCE Codecell, Codechef Campus Chapter" />
+  <meta property="twitter:image" content="/static/images/social/Codecell-twitter.png" />
   <meta property="twitter:url" content="" />
 
   <link rel="icon" href="static/styles/images/favicon.png" type="image/png" />
@@ -67,14 +67,14 @@ var streamingStart = Date.UTC(2014, 10, 29, 11, 00);
 var streamingEnd = Date.UTC(2014, 10, 29, 23, 59);
 
 function recheckStreamingTime() {
-  var nowTime = new Date();
-  streamActive = nowTime >= streamingStart && nowTime <= streamingEnd;
-
-  if( streamActive ) {
-    document.getElementsByTagName('body')[0].className = 'streaming';
-  } else {
+  // var nowTime = new Date();
+  // streamActive = nowTime >= streamingStart && nowTime <= streamingEnd;
+  //
+  // if( streamActive ) {
+  //   document.getElementsByTagName('body')[0].className = 'streaming';
+  // } else {
     document.getElementsByTagName('body')[0].className = 'no-streaming';
-  }
+  // }
 }
 
 recheckStreamingTime();
@@ -95,7 +95,7 @@ recheckStreamingTime();
 
         <div id="invaders-game"></div>
 
-        <div id="game-score">
+        <!-- <div id="game-score">
           <div id="game-score-text">0</div>
           <p>score</p>
           <div class="game-friends-title">It's Multiplayer!</div>
@@ -152,7 +152,7 @@ recheckStreamingTime();
             </div>
 
           </div>
-        </div>
+        </div> -->
       </div>
 
 
@@ -192,7 +192,7 @@ recheckStreamingTime();
 
         <div class="main-menu">
 
-          <div class="tickets">
+          <!-- <div class="tickets">
             <a class="button button-primary button-game" href="#">
               <span class="icon icon-game"></span>
               Play Game
@@ -204,17 +204,17 @@ recheckStreamingTime();
               <span class="icon icon-video"></span>
               Watch Video
             </a>
-          </div>
+          </div> -->
 
         </div>
 
       </div>
 
       <div id="stream" class="container">
-        <div class="heading">
-          <a href="" class="Codecell">Codecell KJSCE 2014</a>
+        <!-- <div class="heading">
+          <a href="" class="Codecell">Codecell KJSCE 2014</a> -->
           <!--<a href="#" class="closeStream">close stream</a>-->
-        </div>
+        <!-- </div>
         <div class="realTime" st>
           <iframe width="720" id="video" height="405" src="https://www.youtube.com/embed/I4VkZ5H9PE8?version=3&enablejsapi=1" frameborder="0" allowfullscreen style="background:#000;"></iframe>
           <div class="dashboard">
@@ -243,8 +243,8 @@ recheckStreamingTime();
               <h2></h2>
               <h3>Dipen ved</h3>
             </div>
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
       </div>
     </div>
 
@@ -470,8 +470,6 @@ recheckStreamingTime();
 
   </header>
 
-
-
   <a name="speakers"></a>
   <a name="agenda"></a>
   <a name="calendar"></a>
@@ -533,13 +531,13 @@ recheckStreamingTime();
           </g>
           </svg>
         </div>
-        OUR TEAM 
+        OUR TEAM
       </h1>
 
       <ul class="talk-list">
         <li class="break wow fadeInUp">
           <h5 class="time"></h5>
-          
+
           <div class="subject icon">
             <h5 class="single-line"></h5>
           </div>
@@ -551,7 +549,7 @@ recheckStreamingTime();
             <div class="description">
               <img src="static/images/speakers/jennifer-dewalt.jpg" height="96" class="avatar" alt="">
               <h5></h5>
-              <h6>VAtsal Kanakiya</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/JenniferDewalt" target="_blank">@JenniferDewalt</a>, Wit.AI</h6>
@@ -570,7 +568,7 @@ recheckStreamingTime();
             <div class="description">
               <img src="static/images/speakers/jaydson-gomes.jpg" height="96" class="avatar" alt="">
               <h5></h5>
-              <h6>Dipen Ved</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/jaydson" target="_blank">@jaydson</a>, ES6rocks.com</h6>
@@ -589,7 +587,7 @@ recheckStreamingTime();
             <div class="description">
               <img src="static/images/speakers/sebastian-markbage.jpg" height="96" class="avatar" alt="">
               <h5></h5>
-              <h6>Sagar Doshi</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/sebmarkbage" target="_blank">@sebmarkbage</a>, Facebook</h6>
@@ -602,7 +600,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-    
+
 
         <li class="talk wow fadeInUp odd" id="mr-doob">
           <h5 class="time"></h5>
@@ -610,7 +608,7 @@ recheckStreamingTime();
             <div class="description">
               <img src="static/images/speakers/ricardo-cabello.jpg" height="96" class="avatar" alt="">
               <h5></h5>
-              <h6>Abhishek Ananthkrishnan</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/mrdoob" target="_blank">@mrdoob</a>, three.js</h6>
@@ -629,7 +627,7 @@ recheckStreamingTime();
             <div class="description">
               <img src="static/images/speakers/maria-evangelina-ferreira.jpg" height="96" class="avatar" alt="">
               <h5></h5>
-              <h6>Bhaumik Choksi</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/evaferreira92" target="_blank">@evaferreira92</a>, UTN</h6>
@@ -648,7 +646,7 @@ recheckStreamingTime();
             <div class="description">
               <img src="static/images/speakers/juan-ignacio-dopazo.jpg" height="96" class="avatar" alt="">
               <h5></h5>
-              <h6>Mansi Khara</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/juandopazo" target="_blank">@juandopazo</a>, Yahoo</h6>
@@ -667,7 +665,7 @@ recheckStreamingTime();
             <div class="description">
               <img src="static/images/speakers/nicolas-garcia.jpg" height="96" class="avatar" alt="">
               <h5></h5>
-              <h6>Chaitya shah</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/philogb" target="_blank">@philogb</a>, Twitter</h6>
@@ -680,7 +678,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-    
+
 
         <li class="talk wow fadeInUp odd" id="sara-chipps">
           <h5 class="time"></h5>
@@ -688,7 +686,7 @@ recheckStreamingTime();
             <div class="description">
               <img src="static/images/speakers/sara-chipps.jpg" height="96" class="avatar" alt="">
               <h5></h5>
-              <h6>Showndarya Madhavan</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/SaraJChipps" target="_blank">@SaraJChipps</a>, GirlDevelopIt</h6>
@@ -701,14 +699,14 @@ recheckStreamingTime();
           </div>
         </li>
 
-		
+
 	        <li class="talk wow fadeInUp" id="nicolas-garcia-belmonte">
           <h5 class="time"></h5>
           <div class="subject">
             <div class="description">
               <img src="static/images/speakers/nicolas-garcia.jpg" height="96" class="avatar" alt="">
               <h5></h5>
-              <h6>Nirali Ashar</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/philogb" target="_blank">@philogb</a>, Twitter</h6>
@@ -719,18 +717,18 @@ recheckStreamingTime();
               </div>
             </div>
           </div>
-        </li>	
-	
+        </li>
 
-		
-		
+
+
+
         <li class="talk wow fadeInUp odd" id="angel-java-lopez">
           <h5 class="time"></h5>
           <div class="subject">
             <div class="description">
               <img src="static/images/speakers/angel-java-lopez.jpg" height="96" class="avatar" alt="">
               <h5></h5>
-              <h6>LAkshmi Natesan</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/ajlopez" target="_blank">@ajlopez</a>, Southworks</h6>
@@ -749,7 +747,7 @@ recheckStreamingTime();
             <div class="description">
               <img src="static/images/speakers/nikolai-bachiyski.jpg" height="96" class="avatar" alt="">
               <h5></h5>
-              <h6>Vinithra Muralikrishnan</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/nikolayb" target="_blank">@nikolayb</a>, Automattic</h6>
@@ -762,7 +760,7 @@ recheckStreamingTime();
           </div>
         </li>
 
- 
+
 
         <li class="talk wow fadeInUp odd" id="alex-sexton">
           <h5 class="time"></h5>
@@ -770,7 +768,7 @@ recheckStreamingTime();
             <div class="description">
               <img src="static/images/speakers/alex-sexton.jpg" height="96" class="avatar" alt="">
               <h5>Faculty Advisor</h5>
-              <h6>Grishma Sharma</h6>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/SlexAxton" target="_blank">@SlexAxton</a>, Stripe</h6>
@@ -788,8 +786,8 @@ recheckStreamingTime();
           <div class="subject">
             <div class="description">
               <img src="static/images/speakers/nathan-rajlich.jpg" height="96" class="avatar" alt="">
-              <h5>FAculty Advisor</h5>
-              <h6>Deepti Pawde</h6>
+              <h5>Faculty Advisor</h5>
+              <h6>Name</h6>
               <span class="more">+</span>
               <div class="details">
                 <h6><a href="https://twitter.com/TooTallNate" target="_blank">@TooTallNate</a>, Node.js</h6>
@@ -802,7 +800,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        
+
     </ul>
   </div>
   </section>
@@ -818,7 +816,7 @@ recheckStreamingTime();
         <address class="vcard" itemprop="location">
           <div class="adr" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
             <p><strong itemprop="name">Auditorio Bs As</strong></p>
-            <p>Buenos Aires Design</p>
+            <p>KJSCE</p>
             <p class="street-address" itemprop="streetAddress">Av. Pueyrredon 2501 &nbsp; <a href="https://www.google.co.in/maps/place/K.J.+Somaiya+College+Of+Engineering/@19.0730847,72.8976334,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c627a20bcaa9:0xb2fd3bcfeac0052a!8m2!3d19.0730847!4d72.8998221?q=kjsce&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjBv93L9s7SAhWFf7wKHZmMBWcQ_AUICSgC" target="_blank">View on Google Maps</a></p>
             <meta itemprop="addressLocality" content="Ciudad de Buenos Aires, KJSCE"/>
             <meta itemprop="telephone" content=""/>
@@ -883,7 +881,7 @@ recheckStreamingTime();
           </g>
           </svg>
         </div>
-        Codecell 2014 Tickets
+        Get exclusive passes for Codecell Workshops
       </h1>
 
 
@@ -892,7 +890,7 @@ recheckStreamingTime();
           <img src="static/images/tickets-gone.png" alt=":(" />
         </figure>
 
-        <h2>All Tickets for Codecell 2014 have sold out :(</h2>
+        <h2>All Tickets for Codecell Workshops have sold out :(</h2>
         <p>Sign up and we'll contact us if we get our hands on a few more tickets. No promises, though.</p>
 
         <br/><br/>
@@ -1131,13 +1129,13 @@ recheckStreamingTime();
     </h1>
 
     <ul class="sponsor-list sponsors-platinum wow animated fadeInDown">
-      <li class="sponsor"><a href="http://wordpress.com/" target="_blank"><img src="static/images/sponsors/wordpress-logo.png" alt="Wordpress"/></a></li>
+      <!-- <li class="sponsor"><a href="http://wordpress.com/" target="_blank"><img src="static/images/sponsors/wordpress-logo.png" alt="Wordpress"/></a></li>
       <li class="sponsor"><a href="https://www.google.com" target="_blank"><img src="static/images/sponsors/google-logo.png" alt="Google"/></a></li>
-      <li class="sponsor"><a href="https://auth0.com/" target="_blank"><img src="static/images/sponsors/auth0-logo.png" alt="Auth0"/></a></li>
+      <li class="sponsor"><a href="https://auth0.com/" target="_blank"><img src="static/images/sponsors/auth0-logo.png" alt="Auth0"/></a></li> -->
     </ul>
 
     <ul class="sponsor-list sponsors-gold wow animated fadeInUp" data-wow-delay=".1s">
-      <li class="sponsor"><a href="https://www.digitalocean.com/" target="_blank"><img src="static/images/sponsors/digitalocean-logo.png" alt="DigitalOcean"/></a></li>
+      <!-- <li class="sponsor"><a href="https://www.digitalocean.com/" target="_blank"><img src="static/images/sponsors/digitalocean-logo.png" alt="DigitalOcean"/></a></li>
       <li class="sponsor"><a href="https://github.com/" target="_blank"><img src="static/images/sponsors/github-logo.png" alt="Github"/></a></li>
       <li class="sponsor"><a href="http://aerolab.co" target="_blank"><img src="static/images/sponsors/aerolab-logo.png" alt="Aerolab"/></a></li>
       <li class="sponsor"><a href="https://getmango.com" target="_blank"><img src="static/images/sponsors/mango-logo.png" alt="Mango"/></a></li>
@@ -1146,17 +1144,17 @@ recheckStreamingTime();
       <li class="sponsor"><a href="http://skycatch.com/" target="_blank"><img src="static/images/sponsors/skycatch-logo.png" alt="Skycatch"/></a></li>
       <li class="sponsor"><a href="http://www.globant.com/" target="_blank"><img src="static/images/sponsors/globant-logo.png" alt="Globant"/></a></li>
       <li class="sponsor"><a href="https://www.mozilla.org/" target="_blank"><img src="static/images/sponsors/mozilla-logo.png" alt="Mozilla"/></a></li>
-      <li class="sponsor"><a href="https://www.mandrill.com/" target="_blank"><img src="static/images/sponsors/mandrill-logo.png" alt="Mandrill"/></a></li>
+      <li class="sponsor"><a href="https://www.mandrill.com/" target="_blank"><img src="static/images/sponsors/mandrill-logo.png" alt="Mandrill"/></a></li> -->
     </ul>
 
     <ul class="sponsor-list sponsors-startup wow animated fadeInUp" data-wow-delay=".1s">
-      <li class="sponsor"><a href="http://www.terra.com" target="_blank"><img src="static/images/sponsors/terra-logo.png" alt="Terra"/></a></li>
+      <!-- <li class="sponsor"><a href="http://www.terra.com" target="_blank"><img src="static/images/sponsors/terra-logo.png" alt="Terra"/></a></li>
       <li class="sponsor"><a href="https://nodesource.com/" target="_blank"><img src="static/images/sponsors/nodesource-logo.png" alt="NodeSource"/></a></li>
       <li class="sponsor"><a href="http://www.shovelapps.com/" target="_blank"><img src="static/images/sponsors/shovelapps-logo.png" alt="ShovelApps"/></a></li>
       <li class="sponsor"><a href="http://www.mercadolibre.com.ar/" target="_blank"><img src="static/images/sponsors/mercadolibre-logo.png" alt="MercadoLibre"/></a></li>
       <li class="sponsor"><a href="http://scvsoft.com/" target="_blank"><img src="static/images/sponsors/scvsoft-logo.png" alt="SCV Soft"/></a></li>
       <li class="sponsor"><a href="https://saucelabs.com/" target="_blank"><img src="static/images/sponsors/saucelabs-logo.png" alt="Sauce Labs"/></a></li>
-      <li class="sponsor"><a href="https://xapo.com/" target="_blank"><img src="static/images/sponsors/xapo-logo.png" alt="Xapo"/></a></li>
+      <li class="sponsor"><a href="https://xapo.com/" target="_blank"><img src="static/images/sponsors/xapo-logo.png" alt="Xapo"/></a></li> -->
     </ul>
 
   </section>
@@ -1168,7 +1166,7 @@ recheckStreamingTime();
     <div class="container">
       <small>Codecell Latin America, all rights reserved &copy; 2014</small>
 
-      <p>Follow us on <a href="https://twitter.com/Codecellar" target="_blank">Twitter</a> or <a href="mailto:rauchg@gmail.com?Subject=Hi!" target="_blank">email us</a></p>
+      <p>Follow us on <a href="https://twitter.com/Codecellar" target="_blank">Twitter</a> or <a href="mailto:codecell.engg@somaiya.edu?Subject=Hi!" target="_blank">email us</a></p>
 
       <code>&lt;script&gt;Codecell.end();&lt;/script&gt;</code>
     </div>
@@ -1185,7 +1183,7 @@ recheckStreamingTime();
     </div>
 
     <div class="footer-author">
-      <p class="author">Crafted by <a href="http://aerolab.co" target="_blank">KJSCE Codecell</a><span class="icon icon-aerolab"></span></p>
+      <p class="author">Crafted by <a href="http://www.kjscecodecell.com" target="_blank">KJSCE Codecell</a><span class="icon icon-aerolab"></span></p>
     </div>
 
   </footer>
@@ -1215,90 +1213,14 @@ recheckStreamingTime();
     return check;
   }
 
-  function setupGame() {
 
-    if( ! isMobile() && ! streamActive ) {
-      // Attack Of The Drones!
-      // There's no touch controls right now
-      // Don't start the game if the stream is active
-      var gameUrl = 'https://game.Codecellar.com';
-
-      $.getScript(gameUrl+'/dist/attack_of_the_drones.js', function(){
-        Callbacks.onGameLoaded = function(){
-          $('.game-signup form').removeAttr('disabled');
-          $('#game-holder img.dancer').show();
-        };
-        initGame(gameUrl, 'static/game_assets/');
-      });
-    }
-  }
-
-
-  function killGame() {
-    if( typeof Connection !== 'undefined' && Connection !== null ) {
-      Connection.disconnect();
-    }
-    if( typeof game !== 'undefined' && game !== null ) {
-      game.destroy();
-    }
-  }
-
-
-  function tryToStartGame() {
-    if( typeof Connection !== 'undefined' && Connection.connected ) {
-      document.querySelector('#game-overlay').style.display = 'none';
-
-      startGame( document.querySelector('.game-signup input[name=name]').value, {
-        onPlayerDead: function(player){
-
-          $('#game-over .share-twitter').attr('href', 'http://twitter.com/share?text='+ encodeURIComponent("I got "+ player.lifeScore +" points in the #CodecellAr game! Join me at") +"&url=" );
-          $('#game-over .share-facebook').attr('href', 'http://www.facebook.com/sharer.php?u=&t='+ encodeURIComponent("I got "+ player.lifeScore +" points in the Codecell Game!") );
-
-          ga( 'send', 'event', 'toys', 'game', 'highscore', player.lifeScore +' points');
-        },
-        onEnemyDead: function(enemy){
-          if( enemy.type === 'ufo' ) {
-            $('.planetarium').trigger('click');
-          }
-        }
-      } );
-
-      // Show the instructions
-      $('#game-instructions').delay(300).fadeIn(500).delay(5000).fadeOut(700);
-
-      ga( 'send', 'event', 'toys', 'game', 'start');
-
-      return false;
-    } else {
-      alert("Hold on a second. We are loading the game.")
-    }
-    return false;
-  }
 
 </script>
 
 
 <script>
 
-  if( ! streamActive ) {
-    setupGame();
-  }
-
-  // Recheck if the stream should be active
-  setInterval(function(){
-    var wasStreamActive = streamActive;
-
-    recheckStreamingTime();
-
-    // Stream Started
-    if( ! wasStreamActive && streamActive ) {
-      killGame();
-    }
-    // Stream Finished
-    else if( wasStreamActive && ! streamActive ) {
-      setupGame();
-    }
-  }, 1000);
+ 
 
 </script>
 
