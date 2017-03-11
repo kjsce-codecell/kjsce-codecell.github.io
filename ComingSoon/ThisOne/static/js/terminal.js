@@ -323,7 +323,7 @@
 				response += ', <strong>exit()</strong>';
 				response += ', <strong>fbShare()</strong>';
 				response += ', <strong>helvetica()</strong>';
-				response += ', <strong>latestTweets()</strong>';
+				// response += ', <strong>latestTweets()</strong>';
 				response += ', <strong>likeasir()</strong>';
 				response += ', <strong>scrollTo()</strong>';
 				response += ', <strong>shades()</strong>';
@@ -484,7 +484,7 @@
 			var winWidth = 520; var winHeight = 350;
 			var winTop = ((screen.height-winHeight) / 2) - (winHeight / 2);
 			var winLeft = ((screen.width-winWidth) / 2) - (winWidth / 2);
-			window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.jsconfar.com%2F', 'sharer', 'top='+winTop+', left='+winLeft+', toolbar=0, status=0, width='+winWidth+', height='+winHeight, true);
+			window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fkjscecodecell%2F', 'sharer', 'top='+winTop+', left='+winLeft+', toolbar=0, status=0, width='+winWidth+', height='+winHeight, true);
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Please allow popups in your browser</span>'+breakLine()+breakLine());
 			ga( 'send', 'event', 'toys', 'terminal', 'fbShare');
 		}
@@ -492,7 +492,7 @@
 			var winWidth = 605; var winHeight = 428;
 			var winTop = ((screen.height-winHeight) / 2) - (winHeight / 2);
 			var winLeft = ((screen.width-winWidth) / 2) - (winWidth / 2);
-			window.open('https://twitter.com/home?status=JSConf+Buenos+Aires+2014+-+Conferences+for+the+Javascript+Community+http%3A%2F%2Fwww.jsconfar.com%2F', 'sharer', 'top='+winTop+',left='+winLeft+',toolbar=0,status=0,width='+winWidth+',height='+winHeight, true);
+			window.open("https://twitter.com/home?status=Checkout%20KJSCE%20CodeCell's%20new%20awesome%20website%20http%3A%2F%2Fkjscecodecell.com%2F", 'sharer', 'top='+winTop+',left='+winLeft+',toolbar=0,status=0,width='+winWidth+',height='+winHeight, true);
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Please allow popups in your browser</span>'+breakLine()+breakLine());
 			ga( 'send', 'event', 'toys', 'terminal', 'twShare');
 		}
