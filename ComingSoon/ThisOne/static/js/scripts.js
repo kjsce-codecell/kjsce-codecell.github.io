@@ -83,7 +83,7 @@ function loadGoogleMaps() {
   var script = document.createElement('script');
   script.type = 'text/javascript';
   script.async = 1;
-  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initialize_map';
+  script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCuxxRGSzVGUtdoao5TGvGfcX186UE0TZI&callback=initialize_map';
   document.body.appendChild(script);
 }
 
