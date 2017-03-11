@@ -190,7 +190,7 @@
 			if (e.keyCode == 9) {
 				e.preventDefault();
 				var toAutocomplete = '';
-				var ar_functionlist = Array('clear', 'cls', 'doge', 'dancer', 'help', 'planetarium', 'scrollTo', 'comicSans', 'helvetica', 'ieLove', 'weather', 'exit', 'lipsum', 'fbShare', 'twShare', 'latestTweets', 'likeasir', 'shades', 'perspective');
+				var ar_functionlist = Array('clear', 'cls', 'doge', 'dancer', 'help', 'planetarium', 'scrollTo', 'comicSans', 'helvetica', 'ieLove', 'weather', 'exit', 'lipsum', 'fbShare', 'twShare', 'latestTweets', 'likeasir', 'shades', 'reset');
 				var ar_terminal_lines = $("#onlineTerminal").html().split("\n");
 				var lastline = ar_terminal_lines[ar_terminal_lines.length-1].toString().replace("\r", '').replace(String.fromCharCode('155'), '').trim();
 				var ar_functionlist_length = ar_functionlist.length;
@@ -323,7 +323,7 @@
 				response += ', <strong>exit()</strong>';
 				response += ', <strong>fbShare()</strong>';
 				response += ', <strong>helvetica()</strong>';
-				// response += ', <strong>latestTweets()</strong>';
+				response += ', <strong>reset()</strong>';
 				response += ', <strong>likeasir()</strong>';
 				response += ', <strong>scrollTo()</strong>';
 				response += ', <strong>shades()</strong>';
@@ -391,7 +391,13 @@
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">I used Helvetica before it was cool.</span>'+breakLine()+breakLine());
 			ga( 'send', 'event', 'toys', 'terminal', 'helvetica');
 		}
-		function ieLove() {
+		function ieLove(func_options) {
+			if(typeof(func_options) === 'undefined') func_options = '';
+			if(func_options === 'clear'){
+				$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Phew that was a relief. *sigh*</span>'+breakLine()+breakLine());
+				document.getElementById('ielovecanvas').remove();
+				return ;
+			}
 			var imageWidthHalf, imageHeightHalf;
 			var canvas = document.createElement('canvas');
 			canvas.width = window.innerWidth;
@@ -525,7 +531,7 @@
 		function shades(func_options) {
 			if (typeof func_options === "undefined") func_options = '';
 			$('#likeasir').remove();
-			$('#shades').remove()
+			$('#shades').remove();
 			if (func_options != "clear") {
 				$('body').append($('<div style="background:url(static/images/kanye_glasses.png) center center no-repeat;background-size:100% auto;position:fixed;left:0;top:0;width:100%;height:100%;" id="shades"></div>'));
 				$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Wake up in the mornin\' feelin\' like Kanye.</span>'+breakLine()+breakLine());
@@ -534,10 +540,27 @@
 			}
 			ga( 'send', 'event', 'toys', 'terminal', 'shades');
 		}
-		function perspective() {
-			$('body').addClass('bodyPerspective');
-			ga( 'send', 'event', 'toys', 'terminal', 'perspective');
+		function tryToclear(func,arg){
+			try{
+				func(arg);
+			}
+			catch(e){
+				return;
+			}
+		}
+
+		function reset() {c
+			var c = "clear";
+			tryToclear(shades,c);
+			tryToclear(ieLove,c);
+			tryToclear(likeasir,c);
+			tryToclear(dancer,c);
+			clear();
+			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Phew.. that was rough. *sigh*</span>'+breakLine()+breakLine());	
+
+			ga( 'send', 'event', 'toys', 'terminal', 'reset');
 		}
 		// Insanity ends here
 	}
+
 
