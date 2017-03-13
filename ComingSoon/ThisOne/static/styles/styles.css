@@ -651,7 +651,8 @@ h1.logo {
 
 .illustration-holder {
   border-top: 2px solid #0e374e;
-  background: #214760;
+  /*background: #214760;*/
+  background: #1E824C;
   z-index: 10; }
 
 .illustration {
@@ -1155,7 +1156,8 @@ h1.logo {
     background-position: -210px 0px; }
 
 .section-calendar {
-  background: #214760;
+  /*background: #214760;*/
+  background: #1E824C;
   color: white;
   padding: 60px 0; }
   .section-calendar h1 {
@@ -1209,7 +1211,7 @@ h1.logo {
       .talk-list li .checkin-icon:after,
       .talk-list li .party-icon:after {
         content: "";
-        width: 126px;
+        width: 200px;
         height: 25px;
         background: #ffca00;
         position: absolute;

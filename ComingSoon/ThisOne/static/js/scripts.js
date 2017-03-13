@@ -43,7 +43,7 @@ $(document).ready(function(){
 // Google Maps
 function initialize_map() {
 
-  var place = new google.maps.LatLng(-34.585595, -58.393225);
+  var place = new google.maps.LatLng(19.072803, 72.900633);
 
   var map = new google.maps.Map(document.getElementById("map-holder"), {
     center: place,
@@ -83,7 +83,7 @@ function loadGoogleMaps() {
   var script = document.createElement('script');
   script.type = 'text/javascript';
   script.async = 1;
-  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initialize_map';
+  script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCuxxRGSzVGUtdoao5TGvGfcX186UE0TZI&callback=initialize_map';
   document.body.appendChild(script);
 }
 
