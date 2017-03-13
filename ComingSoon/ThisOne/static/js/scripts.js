@@ -60,11 +60,7 @@ function initialize_map() {
   var marker = new google.maps.Marker({
     position: place,
     icon: {
-      url: "static/styles/images/sprite.png", 
-      size: new google.maps.Size(53, 58), 
-      anchor: new google.maps.Point(27, 58),
-      origin: new google.maps.Point(230, 0),
-      scaledSize: new google.maps.Size(500, 250)
+      url: "http://i.imgur.com/z4Ditvw.png"
     },
     map: map
   });
