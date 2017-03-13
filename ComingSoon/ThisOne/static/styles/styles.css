@@ -1209,7 +1209,7 @@ h1.logo {
       .talk-list li .checkin-icon:after,
       .talk-list li .party-icon:after {
         content: "";
-        width: 175px;
+        width: 200px;
         height: 25px;
         background: #ffca00;
         position: absolute;
