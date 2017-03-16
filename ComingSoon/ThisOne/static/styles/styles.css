@@ -2833,7 +2833,8 @@ padding: 60px 0; }
   color: white; }
 
 .section-sponsors {
-  background: #ffca00;
+  /*background: #ffca00;*/
+  background: rgb(231, 76, 60);
   color: #1e3d55;
   padding: 55px 0 50px; }
   .section-sponsors h1 {
