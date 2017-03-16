@@ -10063,14 +10063,14 @@ main {
   text-align: center;
 }
 
-.actions {
+.action {
 
   display: inline-block;
   width: 100%;
   padding: 0 0 20px 0;
 }
 
-.actions span {
+.action span {
   box-shadow: 0 1px 1px rgba(0,0,0,0.2);
   background: #fff;
   color: #888;
@@ -10087,17 +10087,17 @@ main {
 
 }
 
-.actions span:hover {
+.action span:hover {
   background: #f7f7f7;
 }
 
-.actions span:active {
+.action span:active {
   background: #aaa;
   color: #fff;
   box-shadow: 0 1px 1px rgba(255,255,255,0.5);
 }
 
-.actions span.disabled {
+.action span.disabled {
   opacity: 0.8;
   color: #ddd;
 }
