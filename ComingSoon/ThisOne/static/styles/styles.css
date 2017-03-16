@@ -2655,12 +2655,14 @@ h1.logo {
   white-space: nowrap; }
 
 .section-housing {
-  background: #214760;
+  /*background: #214760;*/
+  background: rgb(43, 172, 181);
   color: white;
   padding: 60px 0; }
 
 .section-housing-2 {
-background: #214760;
+/*background: #214760;*/
+background:rgb(68, 198, 80);
 color: white;
 padding: 60px 0; }
 
