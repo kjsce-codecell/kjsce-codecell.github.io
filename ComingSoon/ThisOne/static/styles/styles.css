@@ -652,7 +652,7 @@ h1.logo {
 .illustration-holder {
   border-top: 2px solid #0e374e;
   /*background: #214760;*/
-  background: #1E824C;
+  background: rgb(68, 198, 80);
   z-index: 10; }
 
 .illustration {
@@ -1009,7 +1009,8 @@ h1.logo {
 
 #game-holder {
   position: absolute;
-  background: #ffc20d;
+  /*background: #ffc20d;*/
+  background: rgb(52, 152, 219);
   z-index: 10;
   height: 560px;
   top: 0;
@@ -1156,8 +1157,8 @@ h1.logo {
     background-position: -210px 0px; }
 
 .section-calendar {
-  /*background: #214760;*/
-  background: #1E824C;
+  /*background: #214760;  #1E824C*/
+  background: rgb(231, 76, 60);
   color: white;
   padding: 60px 0; }
   .section-calendar h1 {
@@ -2654,9 +2655,16 @@ h1.logo {
   white-space: nowrap; }
 
 .section-housing {
-  background: #214760;
+  /*background: #214760;*/
+  background: rgb(43, 172, 181);
   color: white;
   padding: 60px 0; }
+
+.section-housing-2 {
+/*background: #214760;*/
+background:rgb(68, 198, 80);
+color: white;
+padding: 60px 0; }
 
 .hotels-svg {
   display: block;
@@ -2825,7 +2833,8 @@ h1.logo {
   color: white; }
 
 .section-sponsors {
-  background: #ffca00;
+  /*background: #ffca00;*/
+  background: rgb(231, 76, 60);
   color: #1e3d55;
   padding: 55px 0 50px; }
   .section-sponsors h1 {
