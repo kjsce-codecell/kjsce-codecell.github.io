@@ -1435,6 +1435,36 @@ Watch Video
 
   Gallery
 </h1>
+  <div id="ri-grid" class="ri-grid ri-grid-size-1 ri-shadow">
+          <img class="ri-loading-image" src="images/loading.gif"/>
+          <ul>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-melia.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+            <li><a href="#"><img src="static/images/hotels/hotel-urban.jpg"/></a></li>
+          </ul>
+        </div>
+      
 
 <ul class="sponsor-list sponsors-platinum wow animated fadeInDown">
   <!-- <li class="sponsor"><a href="http://wordpress.com/" target="_blank"><img src="static/images/sponsors/wordpress-logo.png" alt="Wordpress"/></a></li>
@@ -1512,8 +1542,45 @@ Watch Video
 <script src="static/js/scripts.js?f=201411290200"></script>
 <script src="static/js/terminal.js"></script>
 
+<script src="static/js/modernizer.js"></script> 
+<script src="static/js/gallery.js"></script>   
+
 
 <script>
+$(function() {
+      //Can change this options 
+      // wXXX XXX is the screen resolution 
+      //onhover ki jaise there is also onclick i guess
+
+        $( '#ri-grid' ).gridrotator( {
+          rows : 3,
+          columns : 5,
+          maxStep : 1,
+          interval : 2000,
+          w1024 : {
+            rows : 5,
+            columns : 6
+          },
+          w768 : {
+            rows : 3,
+            columns : 3
+          },
+          w480 : {
+            rows : 3,
+            columns : 3
+          },
+          w320 : {
+            rows : 3,
+            columns : 3
+          },
+          w240 : {
+            rows : 3,
+            columns : 3
+          },
+          onhover: true,
+        } );
+      
+      });
 
 function isMobile() {
   var check = false;
