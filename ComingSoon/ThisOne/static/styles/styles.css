@@ -9990,6 +9990,8 @@ main {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+
+  /*ADD THIS EXTRA */
   margin: 10px;
 }
 
