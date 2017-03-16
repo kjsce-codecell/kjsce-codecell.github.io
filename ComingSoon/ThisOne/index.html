@@ -1496,6 +1496,40 @@ Watch Video
 </ul>
 
 </section>
+<section class="previous-council">
+
+  <!-- idhar kuch acha svg dal -->
+  <h1>Previous Councils</h1>
+  
+        <div class="baraja-demo">
+          <ul id="baraja-el" class="baraja-container">
+            <li><img src="static/images/previousC/1.jpg" alt="image1"/><h4>Coco Loko</h4><p>Total bicycle rights in blog four loko raw denim ex, helvetica sapiente odio placeat.</p></li>
+            <li><img src="static/images/previousC/2.jpg" alt="image2"/><h4>Vermouth Land</h4><p>Velit chambray fugiat, enim aesthetic esse ullamco typewriter.</p></li>
+            <li><img src="static/images/previousC/3.jpg" alt="image3"/><h4>Electrodynamics</h4><p>Before they sold out PBR magna jean shorts non seitan ea. Dolor wolf pop-up.</p></li>
+            <li><img src="static/images/previousC/4.jpg" alt="image4"/><h4>Retinal Bliss</h4><p>Locavore vero ad, before they sold out food truck bushwick helvetica.</p></li>
+            <li><img src="static/images/previousC/5.jpg" alt="image5"/><h4>Disco Fever</h4><p>Cillum laboris consequat, qui elit retro next level skateboard freegan hella.</p></li>
+            <li><img src="static/images/previousC/6.jpg" alt="image6"/><h4>Serenity</h4><p>Truffaut wes anderson hoodie 3 wolf moon labore, fugiat lomo iphone eiusmod vegan.</p></li>
+            <li><img src="static/images/previousC/7.jpg" alt="image7"/><h4>Dark Honor</h4><p>Chillwave mustache pinterest, marfa seitan umami id farm-to-table iphone.</p></li>
+            <li><img src="static/images/previousC/8.jpg" alt="image8"/><h4>Nested Happiness</h4><p>Minim post-ironic banksy american apparel iphone wayfarers.</p></li>
+            <li><img src="static/images/previousC/9.jpg" alt="image9"/><h4>Cherry Country</h4><p>Sint vinyl Austin street art odd future id trust fund, terry richardson cray.</p></li>
+            <li><img src="static/images/previousC/10.jpg" alt="image10"/><h4>Cherry Country</h4><p>Sint vinyl Austin street art odd future id trust fund, terry richardson cray.</p></li>
+            <li><img src="static/images/previousC/11.jpg" alt="image11"/><h4>Coco Loko</h4><p>Total bicycle rights in blog four loko raw denim ex, helvetica sapiente odio placeat.</p></li>
+            <li><img src="static/images/previousC/12.jpg" alt="image12"/><h4>Vermouth Land</h4><p>Velit chambray fugiat, enim aesthetic esse ullamco typewriter.</p></li>
+            <li><img src="static/images/previousC/3.jpg" alt="image3"/><h4>Electrodynamics</h4><p>Before they sold out PBR magna jean shorts non seitan ea. Dolor wolf pop-up.</p></li>
+            <li><img src="static/images/previousC/4.jpg" alt="image4"/><h4>Retinal Bliss</h4><p>Locavore vero ad, before they sold out food truck bushwick helvetica.</p></li>
+            <li><img src="static/images/previousC/5.jpg" alt="image5"/><h4>Disco Fever</h4><p>Cillum laboris consequat, qui elit retro next level skateboard freegan hella.</p></li>
+            <li><img src="static/images/previousC/6.jpg" alt="image6"/><h4>Serenity</h4><p>Truffaut wes anderson hoodie 3 wolf moon labore, fugiat lomo iphone eiusmod vegan.</p></li>
+            <li><img src="static/images/previousC/7.jpg" alt="image7"/><h4>Dark Honor</h4><p>Chillwave mustache pinterest, marfa seitan umami id farm-to-table iphone.</p></li>
+            <li><img src="static/images/previousC/8.jpg" alt="image8"/><h4>Nested Happiness</h4><p>Minim post-ironic banksy american apparel iphone wayfarers.</p></li>
+          </ul>
+        </div>
+
+        <nav class="actions light">
+          <span id="nav-prev">&lt;</span>
+          <span id="nav-next">&gt;</span>
+         
+        </nav>
+</section>
 
 
 
@@ -1541,10 +1575,11 @@ Watch Video
 <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
 <script src="static/js/scripts.js?f=201411290200"></script>
 <script src="static/js/terminal.js"></script>
-
+<!-- script for gallery -->
 <script src="static/js/modernizer.js"></script> 
 <script src="static/js/gallery.js"></script>   
-
+<!-- script for previous year councils -->
+<script src="static/js/baraja.js"></script>   
 
 <script>
 $(function() {
@@ -1579,7 +1614,24 @@ $(function() {
           },
           onhover: true,
         } );
-      
+        
+
+        var $el = $( '#baraja-el' ),
+          baraja = $el.baraja();
+
+          // navigation
+        $( '#nav-prev' ).on( 'click', function( event ) {
+
+          baraja.previous();
+        
+        } );
+
+        $( '#nav-next' ).on( 'click', function( event ) {
+
+          baraja.next();
+        
+        } );
+
       });
 
 function isMobile() {
