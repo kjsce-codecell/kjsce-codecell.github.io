@@ -498,8 +498,8 @@ svg {
   max-height: 100%; }
 
 .sprite, .icon, .large-icon, .illustration-tickets .button:before {
-  /*background: url(images/sprite.png?20141025) no-repeat -1000px -1000px;*/
-  background: url(images/logo.png);
+  background: url(images/sprite.png?20141025) no-repeat -1000px -1000px;   
+  /*background: url(images/logo.png);*/
   background-size: 500px 250px;
   display: inline-block;
   overflow: hidden;
