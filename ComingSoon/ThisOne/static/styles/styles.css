@@ -1132,6 +1132,16 @@ h1.logo {
       text-align: center;
       line-height: 140%; }
 
+/*Image hover style for our team*/
+.description img:nth-child(2){
+  opacity: 0;
+  transform: none;
+}
+.description img:nth-child(2):hover{
+  opacity: 1;
+  transform: scale(1.5);
+}
+
 .flag {
   width: 30px;
   height: 30px;
