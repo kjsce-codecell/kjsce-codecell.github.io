@@ -506,7 +506,7 @@ svg {
   vertical-align: top; }
   .sprite.logo, .logo.icon, .logo.large-icon, .illustration-tickets .logo.button:before {
     width: 207px;
-    height: 100px;
+    height: 100px;     
     background-position: 0 0; }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
