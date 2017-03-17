@@ -2709,8 +2709,24 @@ padding: 60px 0; }
     background-image: url(../images/hotels/hotel-melia.jpg); }
   .housing.hotel-urban {
     background-image: url(../images/hotels/hotel-urban.jpg); }
+  .icpc{ 
+    background-image: url(../images/events/ICPC_WS.jpg);}
+  .stl{
+    background-image: url(../images/events/Cpp_stl.jpg);}
+     .python-ws{
+    background-image: url(../images/events/python.jpg);}
+     .itCP{
+    background-image: url(../images/events/CP.jpg);}
+     .KPR1{
+    background-image: url(../images/events/KPR1.jpg);}
+     .KJCS{
+    background-image: url(../images/events/KJCS.jpg);}
+     .hackathon{
+    background-image: url(../images/events/hackathon.jpg);}
+     .crackathon{
+    background-image: url(../images/events/crackathon.jpg);}
   .housing .description {
-    margin-left: 50%;
+    margin-left: 40%;
     padding: 26px 22px 24px 29px;
     /*background: rgba(255, 202, 0, 0.95); */
     opacity: 0.95;
