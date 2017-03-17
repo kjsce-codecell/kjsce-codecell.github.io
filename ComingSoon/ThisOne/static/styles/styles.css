@@ -459,7 +459,7 @@ a.button, button.button {
   cursor: pointer;
   text-decoration: none;
   border: none;
-  background: #ffca00;
+  background: #FF9100;
   color: #1e3d55;
   font-size: 18px;
   font-weight: bold;
@@ -472,11 +472,11 @@ a.button, button.button {
   transition: background-color 200ms cubic-bezier(0.17, 0.67, 0.83, 0.67); }
   a.button.button-primary, button.button.button-primary {
     background: #214760;
-    color: #ffca00; }
+    color: #FF9100; }
     a.button.button-primary:hover, a.button.button-primary:focus, button.button.button-primary:hover, button.button.button-primary:focus {
       background: #285573; }
   a.button.button-secondary, a.button.button-cta, button.button.button-secondary, button.button.button-cta {
-    background: #ffca00;
+    background: #FF9100;
     color: #1e3d55; }
     a.button.button-secondary:hover, a.button.button-cta:hover, a.button.button-secondary:focus, a.button.button-cta:focus, button.button.button-secondary:hover, button.button.button-cta:hover, button.button.button-secondary:focus, button.button.button-cta:focus {
       background: #ffd533; }
@@ -726,7 +726,7 @@ h1.logo {
     padding: 0px 10px;
     margin: 0;
     border: 2px solid #d3a91e;
-    color: #ffca00;
+    color: #FF9100;
     font-weight: bold;
     background: #d3a91e;
     border-left: none;
@@ -1214,7 +1214,8 @@ h1.logo {
         content: "";
         width: 200px;
         height: 25px;
-        background: #ffca00;
+        /*background: #FF9100;*/
+    	background: #FF9100;
         position: absolute;
         top: 1px;
         left: 50%;
@@ -1361,9 +1362,9 @@ h1.logo {
         font-size: 1em;
         padding: 10px 0; }
       .talk-list li .details h6 {
-        color: #ffca00; }
+        color: #FF9100; }
         .talk-list li .details h6 a {
-          color: #ffca00;
+          color: #FF9100;
           text-decoration: none; }
     .talk-list li.open .subject, .talk-list li.open .time {
       -webkit-transform: translateX(-127px);
@@ -1387,9 +1388,9 @@ h1.logo {
     .talk-list li.highlight .avatar,
     .talk-list li.highlight .more,
     .talk-list li.highlight .actions a, .talk-list li.highlight:before {
-      border: 2px solid #ffca00; }
+      border: 2px solid #FF9100; }
     .talk-list li.highlight .more {
-      color: #ffca00; }
+      color: #FF9100; }
     .talk-list li.odd .time {
       float: right;
       text-align: left;
@@ -2566,7 +2567,7 @@ h1.logo {
     font-size: 18px;
     font-weight: bold;
     padding: 17px 40px 15px;
-    background: #ffca00; }
+    background: #FF9100; }
     .illustration-tickets .button:before {
       content: "";
       position: absolute;
@@ -2610,7 +2611,7 @@ h1.logo {
     padding-left: 30px;
     padding-right: 50px;
     color: #214760;
-    background: #ffca00;
+    background: #FF9100;
     min-width: 60%;
     white-space: nowrap;
     transition: width 0.5s linear; }
@@ -2650,7 +2651,7 @@ h1.logo {
   height: 75px;
   line-height: 38px;
   font-size: 16px;
-  color: #ffca00;
+  color: #FF9100;
   padding: 11px 15px 0px 5px;
   background-position: 0% -75px;
   background-repeat: repeat-x;
@@ -2837,7 +2838,7 @@ padding: 60px 0; }
   color: white; }
 
 .section-sponsors {
-  /*background: #ffca00;*/
+  /*background: #FF9100;*/
   background: rgb(231, 76, 60);
   color: #1e3d55;
   padding: 55px 0 50px; }
@@ -2962,7 +2963,8 @@ padding: 60px 0; }
   100% {
     transform: translateY(-5px); } }
 .section-footer {
-  background: #ffca00;
+  /*background: #FF9100;*/
+  background: #FF9100;
   color: #1e3d55;
   text-align: center;
   line-height: 200%; }
@@ -3004,9 +3006,9 @@ padding: 60px 0; }
   padding-bottom: 30px; }
   .footer-author p.author {
     margin-top: 0;
-    color: #ffca00; }
+    color: #FF9100; }
     .footer-author p.author a {
-      color: #ffca00; }
+      color: #FF9100; }
 
 .modal-holder {
   display: none;
@@ -3092,7 +3094,7 @@ padding: 60px 0; }
     background-color: white;
     cursor: pointer; }
     .modal .card-select.selected {
-      background-color: #ffca00; }
+      background-color: #FF9100; }
     .modal .card-select input {
       visibility: hidden;
       opacity: 0;
@@ -3296,7 +3298,7 @@ body {
       float: right;
       margin-top: 16px;
       color: #0e374e;
-      background: #ffca00;
+      background: #FF9100;
       border: 2px solid #214760;
       padding: 10px 13px 8px 13px; }
   .streaming #stream.container #video {
@@ -3322,7 +3324,7 @@ body {
         background: url(../images/breaks.png) no-repeat;
         background-size: 360px; }
       .streaming #stream.container .dashboard .break h3 {
-        color: #ffca00;
+        color: #FF9100;
         margin-bottom: 5px; }
       .streaming #stream.container .dashboard .break .sponsor {
         display: block;
@@ -3390,7 +3392,7 @@ body {
         color: #298b93;
         padding: 0.4em 0 0.2em 0; }
       .streaming #stream.container .dashboard .person .info a {
-        color: #ffca00;
+        color: #FF9100;
         text-decoration: none; }
     .streaming #stream.container .dashboard .next {
       background: #0e374e;
@@ -3402,7 +3404,7 @@ body {
       .streaming #stream.container .dashboard .next h4 {
         text-transform: uppercase;
         font-size: 0.875em;
-        color: #ffca00;
+        color: #FF9100;
         margin-bottom: 5px; }
       .streaming #stream.container .dashboard .next h2 {
         font-size: 1em;
@@ -8480,7 +8482,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       .talk-list li h5.single-line {
         display: inline-block;
         text-align: center;
-        background: #ffca00;
+        background: #FF9100;
         border: 2px solid #0e374e;
         padding: 5px 10px; }
       .talk-list li:before {
