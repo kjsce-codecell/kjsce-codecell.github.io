@@ -2693,9 +2693,9 @@ padding: 60px 0; }
 
 .housing {
   background: #bcc7cf;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-size:cover;                                                                                                                                                                         
+  background-repeat-x: no-repeat;
+  background-position: center;
   margin-bottom: 2px; }
   .housing.hotel-belair {
     background-image: url(../images/hotels/hotel-belair.jpg); }
@@ -2709,13 +2709,52 @@ padding: 60px 0; }
     background-image: url(../images/hotels/hotel-melia.jpg); }
   .housing.hotel-urban {
     background-image: url(../images/hotels/hotel-urban.jpg); }
+  .icpc{ 
+    background-image: url(../images/events/ICPC_WS.jpg);}
+  .stl{
+    background-image: url(../images/events/Cpp_stl.jpg);}
+     .python-ws{
+    background-image: url(../images/events/python.jpg);}
+     .itCP{
+    background-image: url(../images/events/CP.jpg);}
+     .KPR1{
+    background-image: url(../images/events/KPR1.jpg);}
+     .KJCS{
+    background-image: url(../images/events/KJCS.jpg);}
+     .hackathon{
+    background-image: url(../images/events/hackevent2.jpg);}
+     .crackathon{
+    background-image: url(../images/events/crackathon.jpg);}
+    .event1{
+      background-image: url(../images/events/event1.jpg);
+    }
+    .event2{
+      background-image: url(../images/events/event2.jpg);
+    }
+    .event3{
+      background-image: url(../images/events/event3.jpg);
+    }
+    .event4{
+      background-image: url(../images/events/event4.jpg);
+    }
+    .handover{
+      background-image: url(../images/events/handover.jpg);
+    }
+    .nodejs{
+      background-image: url(../images/events/nodejs.jpg);
+    }
+    .git{
+      background-image: url(../images/events/git.jpg);
+    }
+
   .housing .description {
-    margin-left: 50%;
+    margin-left: 40%;
     padding: 26px 22px 24px 29px;
     /*background: rgba(255, 202, 0, 0.95); */
     opacity: 0.95;
     background: #FF9100; }
   .housing h2 {
+
     line-height: 140%;
     font-size: 18px;
     font-weight: bold;
