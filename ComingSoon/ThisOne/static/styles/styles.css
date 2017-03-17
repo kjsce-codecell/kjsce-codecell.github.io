@@ -10069,6 +10069,11 @@ main {
   text-align: center;
 }
 
+.previous-council div{
+    display: inline-block;
+
+}
+
 .action {
 
   display: inline-block;
