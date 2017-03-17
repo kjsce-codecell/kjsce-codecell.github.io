@@ -2746,9 +2746,15 @@ padding: 60px 0; }
     .git{
       background-image: url(../images/events/git.jpg);
     }
+    .KJCC{
+      background-image: url(../images/events/KJCC.jpg);
+    }
+    .KJPR2{
+      background-image: url(../images/events/KJPR2.jpg);
+    }
 
   .housing .description {
-    margin-left: 40%;
+    margin-left: 25%;
     padding: 26px 22px 24px 29px;
     /*background: rgba(255, 202, 0, 0.95); */
     opacity: 0.95;
