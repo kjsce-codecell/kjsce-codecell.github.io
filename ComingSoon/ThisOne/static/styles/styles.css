@@ -2447,7 +2447,9 @@ h1.logo {
     height: 45%;
     top: 0;
     left: 0;
-    background: rgba(255, 202, 0, 0.8);
+    /*background: rgba(255, 202, 0, 0.8);*/
+    opacity: 0.8;
+    background: #FF9100;
     padding-top: 30px;
     padding-left: 130px; }
     .place-grid .place-cell-data h1 {
@@ -2698,7 +2700,9 @@ padding: 60px 0; }
   .housing .description {
     margin-left: 50%;
     padding: 26px 22px 24px 29px;
-    background: rgba(255, 202, 0, 0.95); }
+    /*background: rgba(255, 202, 0, 0.95); */
+    opacity: 0.95;
+    background: #FF9100; }
   .housing h2 {
     line-height: 140%;
     font-size: 18px;
