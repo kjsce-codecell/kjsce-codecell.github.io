@@ -328,7 +328,7 @@
 				response += ', <strong>scrollTo()</strong>';
 				response += ', <strong>shades()</strong>';
 				response += ', <strong>twShare()</strong>';
-				response += ', <strong>weather()</strong>';
+				// response += ', <strong>weather()</strong>';
 				response += ' or any javascript will work.'+breakLine()+breakLine()+'For more info <strong>help(\'functionName\')</strong>. e.g. <strong>help(\'doge\')</strong>';
 			} else {
 				customFunctionName = customFunctionName.replace('()', '').toLowerCase();
