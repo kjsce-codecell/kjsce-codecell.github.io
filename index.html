@@ -59,6 +59,15 @@
 </head>
 <body>
 
+  <div id="loader" class="loading-container">
+      <div class="loader"></div>
+    
+      <p>
+
+        Loading...
+      </p>
+  </div>
+
 
  
   <main>
@@ -1784,6 +1793,12 @@ Watch Video
 <script src="static/js/baraja.js"></script>   
 
 <script>
+document.onload = stopLoading();
+function stopLoading(){
+  loader = document.getElementById('loader');
+  loader.style.display = 'none';
+  return;
+}
 $(function() {
       //Can change this options 
       // wXXX XXX is the screen resolution 

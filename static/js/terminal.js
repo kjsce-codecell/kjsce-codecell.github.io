@@ -127,7 +127,7 @@
 					//$("#onlineTerminal").focus();
 				},500);
 			}
-			ga( 'send', 'event', 'toys', 'terminal', 'open');
+			//ga( 'send', 'event', 'toys', 'terminal', 'open');
 
 	    if( typeof game !== 'undefined' && typeof game.paused !== 'undefined' ) {
         GameCycle.disableGameControls();
@@ -282,7 +282,7 @@
 			if ((e.which == 65) && (kc_count == 9)) { kc_count++; }
 			if (kc_count == 10) {
 				$('main').append($('<img src="static/images/miley1.png" onload="$(this).animate({ left: $(window).width()+150 }, 2000, function() { $(this).remove(); })" style="position:absolute;left:-150px;top:'+($(window).scrollTop()+100)+'px;"/>'));
-				ga( 'send', 'event', 'toys', 'terminal', 'upupdowndownleftrightleftrightba');
+				//ga( 'send', 'event', 'toys', 'terminal', 'upupdowndownleftrightleftrightba');
 			};
 			if (resetkc) kc_count = 0;
 		});
@@ -295,12 +295,12 @@
 			if (func_options == "clear") {
 				$('.dogeText').remove();
 			} else {
-				av_doge_texts = Array('wow', 'much code', 'much JS', 'so JS', 'so code', 'very JS', 'very programmer', 'd0g3 l337 h4x0r', 'wow', 'wow');
+				av_doge_texts = Array('wow', 'much code', 'much CodeCell', 'so CodeCell', 'so code', 'very CodeCell', 'very programmer', 'd0g3 l337 h4x0r', 'wow', 'wow');
 				av_doge_colors = Array('red', 'blue', 'yellow', 'pink', 'orange', 'green', 'purple', 'cyan');
-				$("body").append('<div style="font-family:\'Comic Sans MS\', cursive, sans-serif;font-size:70px;line-height:44px;position:absolute;top:'+(Math.floor(Math.random()*$(window).height()+$(document).scrollTop()-300)+100)+'px;left:'+(Math.floor(Math.random()*$(window).width()-400)+100)+'px;color:'+av_doge_colors[Math.floor(Math.random()*av_doge_colors.length)]+'" class="dogeText">'+av_doge_texts[Math.floor(Math.random()*av_doge_texts.length)]+'</div>');
+				$("body").append('<div style="font-family:\'Comic Sans MS\', cursive, sans-serif;font-size:70px;line-height:44px;position:absolute;z-index:300;top:'+(Math.floor(Math.random()*$(window).height()+$(document).scrollTop()-300)+100)+'px;left:'+(Math.floor(Math.random()*$(window).width()-400)+100)+'px;color:'+av_doge_colors[Math.floor(Math.random()*av_doge_colors.length)]+'" class="dogeText">'+av_doge_texts[Math.floor(Math.random()*av_doge_texts.length)]+'</div>');
 			}
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">wow very random</span>'+breakLine()+breakLine());
-			ga( 'send', 'event', 'toys', 'terminal', 'doge');
+			//ga( 'send', 'event', 'toys', 'terminal', 'doge');
 			return null;
 		}
 		function dancer(func_options) {
@@ -311,7 +311,7 @@
 				$("body").append('<img style="position:absolute;top:'+Math.floor(Math.random()*$(window).height()+$(document).scrollTop())+'px;left:'+Math.floor(Math.random()*$(window).width())+'px;" src="static/images/dancers/'+(Math.floor(Math.random()*8)+1)+'.gif" alt="" class="gifDancers"/>');
 			}
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">I don\'t feel like dancing, no sir, no dancing today.</span>'+breakLine()+breakLine());
-			ga( 'send', 'event', 'toys', 'terminal', 'dancer');
+			//ga( 'send', 'event', 'toys', 'terminal', 'dancer');
 		}
 		function help(customFunctionName) {
 			if (typeof customFunctionName === "undefined") {
@@ -350,7 +350,7 @@
 				if (customFunctionName == 'weather')      response = 'Shows the weather forecast for the two days of JSConf 2014. It will be available only 5 days before the event.';
 			}
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">'+response+'</span>'+breakLine()+breakLine());
-			ga( 'send', 'event', 'toys', 'terminal', 'help');
+			////ga( 'send', 'event', 'toys', 'terminal', 'help');
 		}
 		function planetarium() {
 			$(".planetarium").click();
@@ -384,12 +384,12 @@
 		function comicSans() {
 			$('*').css({"font-family": '"Comic Sans MS", cursive, sans-serif'})
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">But... WHY?</span>'+breakLine()+breakLine());
-			ga( 'send', 'event', 'toys', 'terminal', 'comicSans');
+			//ga( 'send', 'event', 'toys', 'terminal', 'comicSans');
 		}
 		function helvetica() {
 			$('*').css({"font-family": '"Helvetica", cursive, sans-serif'})
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">I used Helvetica before it was cool.</span>'+breakLine()+breakLine());
-			ga( 'send', 'event', 'toys', 'terminal', 'helvetica');
+			//ga( 'send', 'event', 'toys', 'terminal', 'helvetica');
 		}
 		function ieLove(func_options) {
 			if(typeof(func_options) === 'undefined') func_options = '';
@@ -433,7 +433,7 @@
 				}
 			}
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Oh... IE, we love you anyway.</span>'+breakLine()+breakLine());
-			ga( 'send', 'event', 'toys', 'terminal', 'ieLove');
+			//ga( 'send', 'event', 'toys', 'terminal', 'ieLove');
 		}
 		function weather() {
 			var fiveDaysBeforeJSConf = new Date(2014, 11, 24);
@@ -462,7 +462,7 @@
 					setEndOfContenteditable(document.getElementById("onlineTerminal"));
 				});
 			//}
-			ga( 'send', 'event', 'toys', 'terminal', 'weather');
+			//ga( 'send', 'event', 'toys', 'terminal', 'weather');
 		}
 		function exit() {
 			$('.terminalHandle').click();
@@ -484,7 +484,7 @@
 			var loremipsum=["Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."];var whitespaceAtFrontRe=/^[\s\xa0]+/;var whitespaceAtEndRe=/[\s\xa0]+$/;var punctationRe=/([:!?\.])$/;var punctationFrontRe=/^([:!?\.]\s+)/;var capatializedRe=/^[^\wÃ„Ã–ÃœÃ€Ã€ÃÃˆÃ‰Ã‡]*[A-ZÃ„Ã–ÃœÃ€Ã€ÃÃˆÃ‰Ã‡]/;var simpleExpressionRe=/^[\(\[]?.[:\.\)\]]?$/;var singleWordRe=/^\w*$/;var charAtFrontRe=/^[a-z]/i;var headlineRe=/^H[1-3]$/i;var lastTextHadPunctation=false;var foundMain=false;var idx=0;var getLoremIpsum=function(e,t,n){if(!foundMain&&t){idx=0;foundMain=true}var r=loremipsum[idx];var i=r.length;while(i<e){if(++idx>=loremipsum.length)idx=0;r+=" "+loremipsum[idx];i=r.length}if(i>e){var s=r.substring(0,e);var o=r.substring(e).replace(/\s.*$/,"");if(!n&&(o.length<3||singleWordRe.test(s)&&charAtFrontRe.test(r.charAt(e)))){r=s+o}else{r=s.replace(/,?\s\w*$/,"")}if(r.length>3)r=r.replace(/\s\w$/,"")}r=r.replace(/\s+$/,"");if(++idx>=loremipsum.length)idx=0;return r};var replaceText=function(e,t){var n=e.nodeValue;if(!n)return;var r=n.length;n=n.replace(whitespaceAtFrontRe,"");var i=n.length!=r;r=n.length;n=n.replace(whitespaceAtEndRe,"");var s=n.length!=r;r=n.length;if(r>0&&!simpleExpressionRe.test(n)){var o=getLoremIpsum(r,t,singleWordRe.test(n));var u=punctationRe.exec(n);if(u){o=o.replace(/[,\.]+$/,"").replace(/\s+$/,"")+u[1]}else{o=o.replace(/,\s*$/,"")}var a=o.charAt(0);var f=o.substring(1);o=(lastTextHadPunctation||capatializedRe.test(n)?a.toUpperCase():a.toLowerCase())+f;u=punctationFrontRe.exec(n);if(u)o=u[1]+o;lastTextHadPunctation=punctationRe.test(o);if(i)o=" "+o;if(s)o+=" ";e.nodeValue=o}};var scanElement=function(e,t){var n=e.firstChild;while(n){var r=n.nodeType;var i=n.nextSibling;if(r==1){var s=n.nodeName;if(s!="SCRIPT"&&s!="STYLE"&&s!="EMBED"){scanElement(n,t||headlineRe.test(s))}}else if(r==3){replaceText(n,t)}n=i}};var b=getDocumentBody();if(b){scanElement(b,false)}
 
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Lorem what?.</span>'+breakLine()+breakLine());
-			ga( 'send', 'event', 'toys', 'terminal', 'lipsum');
+			//ga( 'send', 'event', 'toys', 'terminal', 'lipsum');
 		}
 		function fbShare() {
 			var winWidth = 520; var winHeight = 350;
@@ -492,7 +492,7 @@
 			var winLeft = ((screen.width-winWidth) / 2) - (winWidth / 2);
 			window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fkjscecodecell%2F', 'sharer', 'top='+winTop+', left='+winLeft+', toolbar=0, status=0, width='+winWidth+', height='+winHeight, true);
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Please allow popups in your browser</span>'+breakLine()+breakLine());
-			ga( 'send', 'event', 'toys', 'terminal', 'fbShare');
+			//ga( 'send', 'event', 'toys', 'terminal', 'fbShare');
 		}
 		function twShare() {
 			var winWidth = 605; var winHeight = 428;
@@ -500,7 +500,7 @@
 			var winLeft = ((screen.width-winWidth) / 2) - (winWidth / 2);
 			window.open("https://twitter.com/home?status=Checkout%20KJSCE%20CodeCell's%20new%20awesome%20website%20http%3A%2F%2Fkjscecodecell.com%2F", 'sharer', 'top='+winTop+',left='+winLeft+',toolbar=0,status=0,width='+winWidth+',height='+winHeight, true);
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Please allow popups in your browser</span>'+breakLine()+breakLine());
-			ga( 'send', 'event', 'toys', 'terminal', 'twShare');
+			//ga( 'send', 'event', 'toys', 'terminal', 'twShare');
 		}
 		function latestTweets() {
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Getting the latest tweets from @jsconfar</span>'+breakLine()+breakLine());
@@ -514,7 +514,7 @@
 				}
 				setEndOfContenteditable(document.getElementById("onlineTerminal"));
 			});
-			ga( 'send', 'event', 'toys', 'terminal', 'latestTweets');
+			//ga( 'send', 'event', 'toys', 'terminal', 'latestTweets');
 		}
 		function likeasir(func_options) {
 			if (typeof func_options === "undefined") func_options = '';
@@ -526,7 +526,7 @@
 			} else {
 				$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Too fancy. *sigh*</span>'+breakLine()+breakLine());
 			}
-			ga( 'send', 'event', 'toys', 'terminal', 'likeasir');
+			//ga( 'send', 'event', 'toys', 'terminal', 'likeasir');
 		}
 		function shades(func_options) {
 			if (typeof func_options === "undefined") func_options = '';
@@ -538,7 +538,7 @@
 			} else {
 				$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">I was feeling like a total douche. *sigh*</span>'+breakLine()+breakLine());
 			}
-			ga( 'send', 'event', 'toys', 'terminal', 'shades');
+			//ga( 'send', 'event', 'toys', 'terminal', 'shades');
 		}
 		function tryToclear(func,arg){
 			try{
@@ -558,7 +558,7 @@
 			clear();
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Phew.. that was rough. *sigh*</span>'+breakLine()+breakLine());	
 
-			ga( 'send', 'event', 'toys', 'terminal', 'reset');
+			//ga( 'send', 'event', 'toys', 'terminal', 'reset');
 		}
 		// Insanity ends here
 	}
