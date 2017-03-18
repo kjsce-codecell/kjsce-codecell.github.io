@@ -120,7 +120,7 @@
 				$("#contTerminal").resizable({ handles: 'w', resize: function() { $(this).css("left", "auto"); } });
 				setTimeout(function() {
 					$('#contTerminal').removeClass('terminalsizeanimated');
-					welcomeText = "<span>/* Welcome to the JS Terminal."+breakLine()+"Try <strong>help()</strong> to find out what you can do with the Terminal. Have fun! */</span>"+breakLine()+breakLine();
+					welcomeText = "<span>/* Welcome to the CodeCell Terminal."+breakLine()+"Try <strong>help()</strong> to find out what you can do with the Terminal. Have fun! */</span>"+breakLine()+breakLine();
 					//$("#onlineTerminal").html(welcomeText);
 					$("#onlineTerminal").writeText(welcomeText);
 					//setEndOfContenteditable(document.getElementById("onlineTerminal"));
