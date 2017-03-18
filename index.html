@@ -1793,12 +1793,16 @@ Watch Video
 <script src="static/js/baraja.js"></script>   
 
 <script>
-document.onready = stopLoading();
-function stopLoading(){
-  loader = document.getElementById('loader');
-  loader.style.display = 'none';
-  return;
-}
+
+var interval = setInterval(function() {
+    if(document.readyState === 'complete') {
+     var loader = document.getElementById('loader');
+      loader.style.display = 'none';
+        clearInterval(interval);
+        done();
+    }    
+}, 100);
+
 $(function() {
       //Can change this options 
       // wXXX XXX is the screen resolution 
