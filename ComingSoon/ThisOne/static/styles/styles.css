@@ -8895,6 +8895,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .section-earlybird .countdown .counter:last-child {
     border-right-width: 2px; } }
 
+
+#codecell-heading{
+   font-size: 60px;
+}
+
 @media only screen and (max-width: 800px) {
   #didYouSee{
     display: none;
@@ -8905,8 +8910,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media only screen and (max-width: 500px) {
   .section-header .hello{
-    font-size: 22px;
+    font-size: 21px;
   }
+#codecell-heading{
+   font-size: 45px;
+}
+
 }
 
 
@@ -8917,7 +8926,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-size: 21px; }
   .section-header code {
     font-size: 11px; }
+  
+#codecell-heading{
+   font-size: 41px;
+}
+
   }
+
+
 
 
 
@@ -8937,6 +8953,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       top: auto;
       right: 0;
       left: 0; }
+      #codecell-heading{
+   font-size: 35px;
+}
 
   .countdown .counter {
     font-size: 15px;
@@ -8951,6 +8970,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .housing p {
     font-size: 14px; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #codecell-heading{
+   font-size: 35px;
+}
   .intro-holder {
     background-image: url(images/illustration-sky@2x.png);
     -webkit-background-size: 1400px 380px;
