@@ -8891,6 +8891,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .section-earlybird .countdown .counter:last-child {
     border-right-width: 2px; } }
 
+@media only screen and (max-width: 800px) {
+  #didYouSee{
+    display: none;
+  }
+}
+
+
+
 @media only screen and (max-width: 500px) {
   .section-header .hello{
     font-size: 22px;
