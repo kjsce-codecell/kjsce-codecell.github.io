@@ -362,6 +362,10 @@ th {
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'Caviar'; 
+  src: url("fonts/Caviar_Dreams_Bold-webfont.woff");
+}
+@font-face {
   font-family: 'InputMono';
   src: url("fonts/inputmono-bold-webfont.eot");
   src: url("fonts/inputmono-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/inputmono-bold-webfont.woff") format("woff"), url("fonts/inputmono-bold-webfont.ttf") format("truetype");
@@ -589,7 +593,7 @@ svg {
 
 .intro-holder {
   padding-top: 24px;
-  background: #ffc20d url(images/illustration-sky.png) no-repeat 50% 100%;
+  background: rgb(52, 152, 219) url(images/illustration-sky.png) no-repeat 50% 100%;
   position: relative; }
   .intro-holder > .container {
     position: relative; }
@@ -739,7 +743,7 @@ h1.logo {
 /* Styles for Attack of the Drones */
 #game-holder {
   position: relative;
-  background: #ffc20d;
+  background: rgb(52, 152, 219);
   z-index: 10; }
 
 #game-holder > img {
@@ -1000,7 +1004,7 @@ h1.logo {
   line-height: 29px; }
 
 .intro-holder {
-  background: #ffc20d;
+  background: rgb(52, 152, 219);
   padding-top: 0px;
   min-height: 560px;
   z-index: 0; }
@@ -1010,7 +1014,7 @@ h1.logo {
 
 #game-holder {
   position: absolute;
-  /*background: #ffc20d;*/
+  /*background: rgb(52, 152, 219);*/
   background: rgb(52, 152, 219);
   z-index: 10;
   height: 560px;
