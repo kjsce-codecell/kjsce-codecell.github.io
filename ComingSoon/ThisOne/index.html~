@@ -148,28 +148,29 @@
 
   <h1 class="sprite logo wow animated fadeInDown"><span class="screenreader">Codecell</span></h1>
 
-  
-  <meta itemprop="url" content=""/>
-  <meta itemprop="startDate" content="2016-11-29"/>
-  <meta itemprop="image" content="static/images/Codecell_KJSCE_logo.png"/>
-
-  <div id="codecell-heading" class="hello wow animated fadeInUp" data-wow-delay="1.5s" style="font-family: Caviar;">KJSCE Codecell</div>
-  <div class="hello wow animated fadeInUp" data-wow-delay="2.0s"></div>
-  <br>
-  <br>
-    
- <div class="hello wow animated fadeInUp" data-wow-delay="2.0s" style="font-size:25px;"><p>Changing the world</p></div><div class="hello wow animated fadeInUp" data-wow-delay="4.5s" style="font-size:25px;"><p>one bit at a time</p></div>
-  <br>
-  <address class="wow animated fadeInUp" data-wow-delay="1.5s" style="margin-bottom:150px;">
+  <!-- <address class="wow animated fadeInUp" data-wow-delay="1s">
+    <time datetime="2014-11-29T09:00-03:00">
+      <span class="icon icon-date"></span>
+      November 29
+    </time>
     <span class="adr">
       <span class="icon icon-place"></span>
-      <span class="street-address">KJSCE, Mumbai</span>
+      <span class="street-address">Mumbai</span>
     </span>
+  </address> -->
 
-  </address>
-<div class="hello wow animated fadeInUp" data-wow-delay="2.5s" style="font-size:25px;">
-      <p>The Codechef Campus Chapter of KJSCE</p></div>
-  
+  <meta itemprop="url" content=""/>
+  <meta itemprop="startDate" content="2014-11-29"/>
+  <meta itemprop="image" content="static/images/Codecell_KJSCE_logo.png"/>
+
+  <div class="hello wow animated fadeInUp" data-wow-delay="1.5s">Welcome to KJSCE Codecell</div>
+
+  <!--<code>&lt;script src=&quot;Codecell2014.js&quot;&gt;&lt;/script&gt;</code> -->
+
+  <div class="hello wow animated fadeInUp" data-wow-delay="2.0s" style="color:#db5b24">Changing the world, one bit at a time!</div>
+  <div class="hello wow animated fadeInUp" data-wow-delay="2.5s">
+  <img style="border-radius: 50%; height: 200px; width: 200px;" src="https://s-media-cache-ak0.pinimg.com/originals/88/f0/53/88f053d05241cbeb20697f3019a4e98e.gif">
+  </div>
 
 
   <div class="main-menu">
@@ -442,10 +443,10 @@ Watch Video
       <div class="stat-number">
         <div class="wow animated fadeIn" data-wow-delay="1.5s">
           <strong>19</strong>
-          Teams took part in ACMICPC
+          Participants in ICPC 2016
         </div>
       </div>
-      <figcaption>To cultivate interest for participating in the epitome of coding competitions</figcaption>
+      <figcaption>To nurture and cultivate interest for participating in the epitome of coding competitions</figcaption>
     </figure>
   </div>
 
@@ -528,19 +529,19 @@ Watch Video
         <h5 class="single-line">Faculty Advisors</h5>
       </div>
     </li>
-    <li class="talk wow fadeInUp" id="
-                                      ti-pawade">
+    <li class="talk wow fadeInUp" id="deepti-pawade">
       <h5 class="time"></h5>
       <div class="subject">
         <div class="description">
           <img src="static/images/speakers/deepti-pawade.jpg" height="96" class="avatar" alt="">
-          <!-- <img src="static/images/speakers/deepti-pawade.jpg" height="96" class="avatar" alt=""> -->
+          <img src="static/images/speakers/deepti-pawade.jpg" height="96" class="avatar" alt="">
+          
+          <h5></h5>
           <h5>Deepti Pawade</h5>
-          <h6>Faculty Advisor</h6>
           <span class="more">+</span>
           <div class="details">
             <h6><a href="https://www.somaiya.edu/kjsce/academic/faculty/0000160863/ms__dipti_yogesh_pawade/0#Personal_Profile" target="_blank">Information Technology</a>, KJSCE</h6>
-            <p>Any event or workshop can never be successfully organized without her help and guidance.Has always got our back, she always strives to make the council and its activities popular among students. </p>
+            <p>With no real coding experience, I decided to sit down and teach myself to code by making one website a day, every day, for 180 days. In this session, I'll cover what inspired me to take the path of self directed learning and what challenges I faced along the way. The first websites I made were simple and only used a tiny bit of html and css. By the end I was making dynamic, interactive apps. In this talk I'll present a selection of some of my favorite websites from the project which include games, toys, physics simulations, data visualizations and real time communication apps.</p>
             <div class="actions">
               <a href="" class="button md-close"></a>
             </div>
@@ -554,13 +555,13 @@ Watch Video
       <div class="subject">
         <div class="description">
           <img src="static/images/speakers/grishma-sharma.jpg" height="96" class="avatar" alt="">
-           <!-- <img src="static/images/speakers/grishma-sharma.jpg" height="96" class="avatar" alt=""> -->
+           <img src="static/images/speakers/grishma-sharma.jpg" height="96" class="avatar" alt="">
+          <h5></h5>
           <h5>Grishma Sharma</h5>
-          <h6>Faculty Advisor</h6>
           <span class="more">+</span>
           <div class="details">
             <h6><a href="https://www.somaiya.edu/kjsce/academic/faculty/0000160102/mrs__grishma_jaideep_sharma/0#Personal_Profile" target="_blank">Computer Department</a>, KJSCE</h6>
-            <p>May it be dates or lab permissions, she is the one to look out for as her influence makes our job easier in the event handling part. She always is on our side and makes sure our say about things is taken seriously.</p>
+            <p>ES6 is the sixth version of the language we love. The ECMAScript sixth version will be released in mid 2015, but all majors browsers are currently implementing the features we’ll have soon. In this talk you will know why ES6 Rocks! Also, you’ll learn how to write your code today with the new set of features and syntax both on node and the browser.</p>
             <div class="actions">
               <a href="" class="button md-close"></a>
             </div>
@@ -1169,8 +1170,7 @@ Watch Video
             <h2>Introduction to Programming Logic in Python</h2>
             <p>Hands-on Python. A high-level language is easier to understand.<br>
                 <a href="static/reports/1.pdf" target="_blank">&lt;Report&gt;</a>
-                <!-- <a href=" " target="_blank">&lt;Reference Material&gt;</a> -->
-                <a>&lt;Reference Material&gt;</a>
+                <a href=" " target="_blank">&lt;Reference Material&gt;</a>
             </p>
           </div>
         </div>
@@ -1190,9 +1190,7 @@ Watch Video
             <h2>Introduction to Competitive Programming</h2>
             <p>Workshop on how to approach competitve programming problems.<br>
                 <a href="static/reports/1.pdf" target="_blank">&lt;Report&gt;</a>
-                <!-- <a href=" " target="_blank">&lt;Reference Material&gt;</a> -->
-            <a>&lt;Reference Material&gt;</a>
-            
+                <a href=" " target="_blank">&lt;Reference Material&gt;</a>
             </p>
           </div>
         </div>
@@ -1212,8 +1210,7 @@ Watch Video
           <div class="description-inner">
             <h2>Workshop on Git, Github, Unix, Open Source</h2>
             <p>Introduction to Open Source World<br>
-                <!-- <a href="" target="_blank">&lt;Report&gt;</a> -->
-                <a>&lt;Report&gt;</a>
+                <a href="" target="_blank">&lt;Report&gt;</a>
                 <a href="https://github.com/KJSCE-Codecell/Git-CheatSheet" target="_blank">&lt;Reference Material&gt;</a>
             </p>
           </div>
@@ -1233,8 +1230,7 @@ Watch Video
           <div class="description-inner">
             <h2>Workshop on NodeJS</h2>
             <p>Introduction to npm and awesome framework of JS, NodeJS<br>
-                <!-- <a href="" target="_blank">&lt;Report&gt;</a> -->
-                <a>&lt;Report&gt;</a>
+                <a href="" target="_blank">&lt;Report&gt;</a>
                 <a href="https://github.com/KJSCE-Codecell/NodeJS-CheatSheet" target="_blank">&lt;Reference Material&gt;</a>
             </p>
           </div>
@@ -1254,8 +1250,7 @@ Watch Video
           <div class="description-inner">
             <h2>Workshop on Dynamic Programming</h2>
             <p>Those who cannot remember the past are condemned to repeat it<br>
-                <!-- <a href="" target="_blank">&lt;Report&gt;</a> -->
-                <a>&lt;Report&gt;</a>
+                <a href="" target="_blank">&lt;Report&gt;</a>
                 <a href="https://github.com/KJSCE-Codecell/Dynamic-Programming-Solutions" target="_blank">&lt;Reference Material&gt;</a>
             </p>
           </div>
@@ -1390,9 +1385,7 @@ Watch Video
           </div>
           <div class="description-inner">
             <h2>C++ STL Practice Contest</h2>
-            <p>A closed contest for KJSCE Students on Codechef for practice<br>
-
-            <a href="static/reports/1.pdf" target="_blank">&lt;Report&gt;</a>
+            <p>A closed contest for KJSCE Students on Codechef for practice<br><a href="static/reports/1.pdf" target="_blank">&lt;Report&gt;</a>
             <a href="https://www.codechef.com/KCPR2016" target="_blank">&lt;Contest Link&gt;</a><!--  <a href="" target="_blank">&lt;reservations&gt;</a> --></p>
           </div>
         </div>
@@ -1490,8 +1483,7 @@ Watch Video
           <div class="description-inner">
             <h2>KJSCE Practice Round 2</h2>
             <p>A closed contest for KJSCE students on Codechef for practice<br>
-                <!-- <a href="" target="_blank">&lt;Report&gt;</a> -->
-                <a>&lt;Report&gt;</a>
+                <a href="" target="_blank">&lt;Report&gt;</a>
                 <a href="https://www.codechef.com/KCPR2017" target="_blank">&lt;Contest Link&gt;</a>
             </p>
           </div>
@@ -1511,8 +1503,7 @@ Watch Video
           <div class="description-inner">
             <h2>KJSCE Coding Challenge</h2>
             <p>National level coding competition on Departmental Day 2017<br>
-                <!-- <a href=" " target="_blank">&lt;Report&gt;</a> -->
-                <a>&lt;Report&gt;</a>
+                <a href=" " target="_blank">&lt;Report&gt;</a>
                 <a href="https://www.codechef.com/KJSC17" target="_blank">&lt;Contest Link&gt;</a>
             </p>
           </div>
@@ -1590,38 +1581,6 @@ Watch Video
             <li><a href="#"><img src="static/images/gallery/10.jpg"/></a></li>
             <li><a href="#"><img src="static/images/gallery/11.jpg"/></a></li>
             <li><a href="#"><img src="static/images/gallery/12.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/13.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/14.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/15.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/16.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/17.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/18.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/19.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/20.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/21.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/22.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/23.jpg"/></a></li>
-            <li><a href="#"><img src="static/images/gallery/24.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/25.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/26.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/27.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/28.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/29.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/30.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/31.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/32.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/33.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/34.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/35.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/36.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/37.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/38.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/39.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/40.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/41.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/42.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/43.jpg"/></a></li>
-		<li><a href="#"><img src="static/images/gallery/44.jpg"/></a></li>
             
           </ul>
         </div>
@@ -1774,7 +1733,6 @@ Watch Video
   </div>
 
   <div class="footer-author">
-    <p id="didYouSee" class="author">Did you see our <a href="#" onclick="launchJSTerminal(); return false;">Terminal?</a><span class="icon icon-aerolab"></span></p>
     <p class="author">Crafted by <a href="http://www.kjscecodecell.com" onclick="alert('To understand recursion, one must first understand resursion.')">KJSCE Codecell</a><span class="icon icon-aerolab"></span></p>
   </div>
 
