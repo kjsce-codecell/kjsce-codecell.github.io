@@ -3478,6 +3478,7 @@ body:not(.streaming) #stream {
 
 .planetarium {
   position: absolute;
+  z-index:1000;
   top: 9px;
   left: 50%;
   margin-left: -373px; }
@@ -3685,7 +3686,7 @@ body:not(.streaming) #stream {
   -ms-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   position: relative;
-  z-index: 100; }
+  z-index: 1000; }
 
 .obelisk-group .obelisk {
   -webkit-animation-name: obelisk-drop-shadow;
