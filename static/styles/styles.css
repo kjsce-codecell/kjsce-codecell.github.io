@@ -17,7 +17,6 @@ html {
  * Remove default margin.
  */
 body {
-  overflow-x: hidden;
   margin: 0; }
 
 /* HTML5 display definitions
