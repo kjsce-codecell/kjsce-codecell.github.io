@@ -8890,13 +8890,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     border-left-width: 2px; }
   .section-earlybird .countdown .counter:last-child {
     border-right-width: 2px; } }
+
+@media only screen and (max-width: 500px) {
+  .section-header .hello{
+    font-size: 22px;
+  }
+}
+
+
 @media only screen and (max-width: 400px) {
   .section-header address {
     font-size: 16px; }
   .section-header .hello {
-    font-size: 34px; }
+    font-size: 21px; }
   .section-header code {
     font-size: 11px; }
+  }
+
+
 
   .speaker h2 {
     font-size: 17px; }
