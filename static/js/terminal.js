@@ -295,7 +295,7 @@
 			if (func_options == "clear") {
 				$('.dogeText').remove();
 			} else {
-				av_doge_texts = Array('wow', 'much code', 'much CodeCell', 'so CodeCell', 'so code', 'very CodeCell', 'very programmer', 'd0g3 l337 h4x0r', 'wow', 'wow');
+				av_doge_texts = Array('Sagar?', 'much code', 'much CodeCell', 'so CodeCell', 'so code', 'very CodeCell', 'very programmer', 'd0g3 l337 h4x0r', 'Whats Doge?', 'wow');
 				av_doge_colors = Array('red', 'blue', 'yellow', 'pink', 'orange', 'green', 'purple', 'cyan');
 				$("body").append('<div style="font-family:\'Comic Sans MS\', cursive, sans-serif;font-size:70px;line-height:44px;position:absolute;z-index:300;top:'+(Math.floor(Math.random()*$(window).height()+$(document).scrollTop()-300)+100)+'px;left:'+(Math.floor(Math.random()*$(window).width()-400)+100)+'px;color:'+av_doge_colors[Math.floor(Math.random()*av_doge_colors.length)]+'" class="dogeText">'+av_doge_texts[Math.floor(Math.random()*av_doge_texts.length)]+'</div>');
 			}
@@ -328,6 +328,7 @@
 				response += ', <strong>scrollTo()</strong>';
 				response += ', <strong>shades()</strong>';
 				response += ', <strong>twShare()</strong>';
+				response += ', <strong>ieLove()</strong>';
 				// response += ', <strong>weather()</strong>';
 				response += ' or any javascript will work.'+breakLine()+breakLine()+'For more info <strong>help(\'functionName\')</strong>. e.g. <strong>help(\'doge\')</strong>';
 			} else {
@@ -338,16 +339,16 @@
 				if (customFunctionName == 'comicsans')    response = 'Changes the font style of the entire site to Comic Sans. It should be a crime if you ask me.';
 				if (customFunctionName == 'dancer')       response = 'Shows a totally random gif dancer on a random place on the screen. Do you feel like dancing?';
 				if (customFunctionName == 'doge')         response = 'Shows Doge text on the screen.'+breakLine()+breakLine()+'<strong>doge(\'clear\')</strong> removes it all.';
-				if (customFunctionName == 'exit')         response = 'It closes the close JS Terminal.';
-				if (customFunctionName == 'fbShare')      response = 'Share JSConf with you friends on Facebook.';
+				if (customFunctionName == 'exit')         response = 'It closes the Terminal.';
+				if (customFunctionName == 'fbShare')      response = 'Share Codecell with you friends on Facebook.';
 				if (customFunctionName == 'help')         response = 'Captain Obvious is obvious o/';
 				if (customFunctionName == 'helvetica')    response = 'Changes the font style of the entire site to Helvetica. Ironically.';
-				if (customFunctionName == 'latestTweets') response = 'Get the latest tweets from @jsconfar.';
+				if (customFunctionName == 'latestTweets') response = 'Get the latest tweets';
 				if (customFunctionName == 'likeasir')     response = 'See the world through the eyes of a gentleman.';
 				if (customFunctionName == 'scrollto')     response = 'It takes you to the specified object. E.g. <strong>scrollTo(\'footer\')</strong>. Much better than clicking. Isn\'t it?';
 				if (customFunctionName == 'shades')       response = 'See the world through the eyes of a douchebag.';
-				if (customFunctionName == 'twShare')      response = 'Share JSConf with you friends on Twitter.';
-				if (customFunctionName == 'weather')      response = 'Shows the weather forecast for the two days of JSConf 2014. It will be available only 5 days before the event.';
+				if (customFunctionName == 'twShare')      response = 'Share Codecell with you friends on Twitter.';
+				//if (customFunctionName == 'weather')      response = 'Shows the weather forecast for the two days of JSConf 2014. It will be available only 5 days before the event.';
 			}
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">'+response+'</span>'+breakLine()+breakLine());
 			////ga( 'send', 'event', 'toys', 'terminal', 'help');
@@ -436,13 +437,13 @@
 			//ga( 'send', 'event', 'toys', 'terminal', 'ieLove');
 		}
 		function weather() {
-			var fiveDaysBeforeJSConf = new Date(2014, 11, 24);
+			var fiveDaysBeforeJSConf = new Date(2017, 03, 18);
 			var today = new Date();
 			//if (today.getTime() < fiveDaysBeforeJSConf.getTime()) {
 				//$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Too soon. The weather forecast will be available five days before the event.</span>'+breakLine()+breakLine());
 			//} else {
-				$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Loading weather condition for JSConf 2014 Buenos Aires...</span>'+breakLine()+breakLine());
-				var uri = "//api.worldweatheronline.com/free/v1/weather.ashx?q=Buenos%20Aires&format=json&num_of_days=2&date=2014-11-29&lang=es&key=c0bc674c45172b0ab46399b10bd4c0e1bf532d17";
+				$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Loading weather condition for KJSCE...</span>'+breakLine()+breakLine());
+				var uri = "";//"//api.worldweatheronline.com/free/v1/weather.ashx?q=Buenos%20Aires&format=json&num_of_days=2&date=2014-11-29&lang=es&key=c0bc674c45172b0ab46399b10bd4c0e1bf532d17";
 				$.getJSON(uri, function(data) {
 					var weatherResponse = $("#onlineTerminal").html().trim()+'<span class="response">'+
 					'Date: <strong>'+data['data']['weather'][0]['date']+'</strong>'+breakLine()+
