@@ -1,18 +1,31 @@
 body{
 	text-align: center;
-	background: #ffcdd2;
+	background: rgba(10, 144, 255, 0.4) !important; 
   font-family: sans-serif;
   font-weight: 100;
 }
 
+.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
+.block{
+	display: block;
+}
+
 h1{
-  color: #d32f2f ;
+  color: #4682B4 ;
   font-weight: 100;
   font-size: 40px;
-  margin: 40px 0px 20px;
+  margin-bottom: 10px;
+
 }
 
 #clockdiv{
+	margin-top: 20px;
 	font-family: sans-serif;
 	color: #fff;
 	display: inline-block;
@@ -24,18 +37,28 @@ h1{
 #clockdiv > div{
 	padding: 10px;
 	border-radius: 3px;
-	background: #ff8a80;
+	background: #00BFFF;
 	display: inline-block;
 }
 
 #clockdiv div > span{
 	padding: 15px;
 	border-radius: 3px;
-	background: #f44336;
+	background: #1E90FF;
 	display: inline-block;
 }
 
 .smalltext{
 	padding-top: 5px;
 	font-size: 16px;
+}
+#notblue{
+	background: transparent !important;;
+}
+
+button{
+	margin: 2%;
+}
+#notblue > div{
+	margin-top: 10px;
 }

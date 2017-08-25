@@ -37,5 +37,5 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 // count down timer:
-var deadline = new Date(Date.now() + 1 * 30 * 60 * 60 * 1000);
+var deadline = new Date(2017, 07, 27, 10, 00, 00, 00);
 initializeClock('clockdiv', deadline);
