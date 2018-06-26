@@ -2717,7 +2717,7 @@ padding: 60px 0; }
     background-image: url(../images/events/ICPC_WS.jpg);}
   .stl{
     background-image: url(../images/events/Cpp_stl.jpg);}
-     .python-ws{
+  .python-ws{
     background-image: url(../images/events/17-18/pythonws.jpg);
     background-position: 0px ,0px;
     background-size:35%, 100%;
@@ -2739,13 +2739,16 @@ padding: 60px 0; }
       background-image: url(../images/events/event1.jpg);
     }
     .event2{
-      background-image: url(../images/events/event2.jpg);
+      background-image: url(../images/events/17-18/Cpp_stl.jpg);
     }
     .event3{
       background-image: url(../images/events/event3.jpg);
     }
     .event4{
       background-image: url(../images/events/event4.jpg);
+    }
+    .be-workshop{
+      background-image: url(../images/events/event2.jpg);
     }
     .handover{
       background-image: url(../images/events/handover.jpg);
