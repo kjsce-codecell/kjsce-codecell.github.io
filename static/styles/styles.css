@@ -1230,7 +1230,7 @@ h1.logo {
         width: 200px;
         height: 25px;
         /*background: #FF9100;*/
-    	background: #FF9100;
+      background: #FF9100;
         position: absolute;
         top: 1px;
         left: 50%;
@@ -2717,29 +2717,23 @@ padding: 60px 0; }
     background-image: url(../images/events/ICPC_WS.jpg);}
   .stl{
     background-image: url(../images/events/Cpp_stl.jpg);}
-  .python-ws{
-    background-image: url(../images/events/17-18/pythonws.jpg);
-    background-position: 0px ,0px;
-    background-size:35%, 100%;
-    background-repeat: repeat;
-  }
+     .python-ws{
+    background-image: url(../images/events/python.jpg);}
      .itCP{
     background-image: url(../images/events/CP.jpg);}
      .KPR1{
-    background-image: url(../images/events/17-18/KPR1.jpg);
-    background-position: 0px ,0px;}
+    background-image: url(../images/events/KJPR27.jpg);}
      .KJCS{
-    background-image: url(../images/events/17-18/KJCS.jpg);
-    background-position: 0px ,0px;}
+    background-image: url(../images/events/codeSpree.jpg);}
      .hackathon{
     background-image: url(../images/events/hackevent2.jpg);}
      .crackathon{
-    background-image: url(../images/events/crackathon.jpg);}
+    background-image: url(../images/events/Crackathon.jpg);}
     .event1{
       background-image: url(../images/events/event1.jpg);
     }
     .event2{
-      background-image: url(../images/events/17-18/Cpp_stl.jpg);
+      background-image: url(../images/events/event2.jpg);
     }
     .event3{
       background-image: url(../images/events/event3.jpg);
@@ -2747,46 +2741,20 @@ padding: 60px 0; }
     .event4{
       background-image: url(../images/events/event4.jpg);
     }
-    .be-workshop{
-      background-image: url(../images/events/event2.jpg);
-    }
     .handover{
       background-image: url(../images/events/handover.jpg);
     }
-    .numtheory{
-      background-image: url(../images/events/17-18/numtheory.jpg);
-      background-size: 35% 100%;
-      background-position: 0px ,0px;
-      background-repeat: repeat;
+    .nodejs{
+      background-image: url(../images/events/nodejs.jpg);
     }
-    .jsws{
-      background-image: url(../images/events/17-18/jsws.jpg);
-      background-size: 35% 100%;
-      background-position: 0px ,0px;
-      background-repeat: repeat;
-    }
-    .gsocmeet{
-      background-image: url(../images/events/17-18/gsoc_meet.jpg);
-      background-size: 35% 100%;
-      background-position: 0px ,0px;
-      background-repeat: repeat;
-    }
-    .graphalgo{
-      background-image: url(../images/events/17-18/graph.jpg);
-      background-size: 35% 100%;
-      background-position: 0px ,0px;
-      background-repeat: repeat;
-      
+    .git{
+      background-image: url(../images/events/git.jpg);
     }
     .KJCC{
-      background-image: url(../images/events/17-18/KJCC.jpg);
-      background-size: 35% 100%;
-      background-position: 0px ,0px;
-      
+      background-image: url(../images/events/code_challenge.jpg);
     }
     .KJPR2{
-      background-image: url(../images/events/17-18/KJPR2.jpg);
-      background-position: 0px ,0px;
+      background-image: url(../images/events/Contest.jpg);
     }
     .ICPC_C{
       background-image: url(../images/events/ICPC_c.jpg);
