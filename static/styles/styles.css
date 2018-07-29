@@ -3253,7 +3253,7 @@ body {
   top: 0;
   right: 0;
   height: 100%;
-  z-index: 25;
+  z-index: 9999;
   overflow: visible;
   background: #132838;
   overflow-x: hidden;
