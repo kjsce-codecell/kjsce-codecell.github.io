@@ -190,7 +190,7 @@
 			if (e.keyCode == 9) {
 				e.preventDefault();
 				var toAutocomplete = '';
-				var ar_functionlist = Array('clear', 'cls', 'doge', 'dancer', 'help', 'planetarium', 'scrollTo', 'comicSans', 'helvetica', 'ieLove', 'weather', 'exit', 'lipsum', 'fbShare', 'twShare', 'latestTweets', 'likeasir', 'shades', 'reset');
+				var ar_functionlist = Array('clear', 'cls', 'doge', 'dancer', 'help', 'planetarium', 'scrollTo', 'comicSans', 'helvetica', 'ieLove', 'weather', 'exit', 'lipsum', 'fbShare', 'twShare', 'latestTweets', 'likeasir', 'shades', 'reset', 'stl', 'newsletter', 'feedback');
 				var ar_terminal_lines = $("#onlineTerminal").html().split("\n");
 				var lastline = ar_terminal_lines[ar_terminal_lines.length-1].toString().replace("\r", '').replace(String.fromCharCode('155'), '').trim();
 				var ar_functionlist_length = ar_functionlist.length;
@@ -328,6 +328,9 @@
 				response += ', <strong>scrollTo()</strong>';
 				response += ', <strong>shades()</strong>';
 				response += ', <strong>twShare()</strong>';
+				response += ', <strong>stl()</strong>';
+				response += ', <strong>newsletter()</strong>';
+				response += ', <strong>feedback()</strong>';
 				response += ', <strong>ieLove()</strong>';
 				// response += ', <strong>weather()</strong>';
 				response += ' or any javascript will work.'+breakLine()+breakLine()+'For more info <strong>help(\'functionName\')</strong>. e.g. <strong>help(\'doge\')</strong>';
@@ -348,6 +351,9 @@
 				if (customFunctionName == 'scrollto')     response = 'It takes you to the specified object. E.g. <strong>scrollTo(\'footer\')</strong>. Much better than clicking. Isn\'t it?';
 				if (customFunctionName == 'shades')       response = 'See the world through the eyes of a douchebag.';
 				if (customFunctionName == 'twShare')      response = 'Share Codecell with you friends on Twitter.';
+				if (customFunctionName == 'stl')      response = 'Opens STL Reference material by Codecell team';
+				if (customFunctionName == 'newsletter')      response = 'Opens our exquisitive newsletter, written only for you !';
+				if (customFunctionName == 'feedback')      response = 'Opens up the perfect place, to showcase your love for us !';
 				//if (customFunctionName == 'weather')      response = 'Shows the weather forecast for the two days of JSConf 2014. It will be available only 5 days before the event.';
 			}
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">'+response+'</span>'+breakLine()+breakLine());
@@ -502,6 +508,15 @@
 			window.open("https://twitter.com/home?status=Checkout%20KJSCE%20CodeCell's%20new%20awesome%20website%20http%3A%2F%2Fkjscecodecell.com%2F", 'sharer', 'top='+winTop+',left='+winLeft+',toolbar=0,status=0,width='+winWidth+',height='+winHeight, true);
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Please allow popups in your browser</span>'+breakLine()+breakLine());
 			//ga( 'send', 'event', 'toys', 'terminal', 'twShare');
+		}
+		function stl(){
+			window.open("http://www.kjscecodecell.com/standard-library-in-x/");
+		}
+		function newsletter(){
+			window.open("https://www.kjscecodecell.com/newsletters/");
+		}
+		function feedback(){
+			window.open("https://docs.google.com/forms/d/e/1FAIpQLSfTynr8BuRkcfYi-yC60fQQP21X6L2_vf0bVihlaIBmYEuesA/viewform");
 		}
 		function latestTweets() {
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Getting the latest tweets from @jsconfar</span>'+breakLine()+breakLine());
