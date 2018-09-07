@@ -329,6 +329,7 @@
 				response += ', <strong>shades()</strong>';
 				response += ', <strong>twShare()</strong>';
 				response += ', <strong>stl()</strong>';
+				response += ', <strong>pyDocs()</strong>';
 				response += ', <strong>newsletter()</strong>';
 				response += ', <strong>feedback()</strong>';
 				response += ', <strong>ieLove()</strong>';
@@ -352,6 +353,7 @@
 				if (customFunctionName == 'shades')       response = 'See the world through the eyes of a douchebag.';
 				if (customFunctionName == 'twShare')      response = 'Share Codecell with you friends on Twitter.';
 				if (customFunctionName == 'stl')      response = 'Opens STL Reference material by Codecell team';
+				if (customFunctionName == 'pyDocs')      response = 'Opens Python reference material by Codecell team';
 				if (customFunctionName == 'newsletter')      response = 'Opens our exquisitive newsletter, written only for you !';
 				if (customFunctionName == 'feedback')      response = 'Opens up the perfect place, to showcase your love for us !';
 				//if (customFunctionName == 'weather')      response = 'Shows the weather forecast for the two days of JSConf 2014. It will be available only 5 days before the event.';
@@ -511,6 +513,9 @@
 		}
 		function stl(){
 			window.open("http://www.kjscecodecell.com/standard-library-in-x/");
+		}
+		function pyDocs(){
+			window.open("http://www.kjscecodecell.com/Introduction-to-programming/python/");
 		}
 		function newsletter(){
 			window.open("https://www.kjscecodecell.com/newsletters/");
