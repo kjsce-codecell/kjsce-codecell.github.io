@@ -2726,8 +2726,11 @@ padding: 60px 0; }
      .itCP{
     background-image: url(../images/events/CP.jpg);}
      .KPR1{
-    background-image: url(../images/events/17-18/KPR1.jpg);
-    background-position: 0px ,0px;}
+    background-image: url(../images/events/KPR32018.jpg);
+    background-position: 0px ,0px;
+    background-size:100%, 100%;
+    
+  }
      .KJCS{
     background-image: url(../images/events/17-18/KJCS.jpg);
     background-position: 0px ,0px;}
