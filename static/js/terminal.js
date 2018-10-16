@@ -516,7 +516,7 @@
 			window.open("https://www.kjscecodecell.com/newsletters/");
 		}
 		function feedback(){
-			window.open("https://goo.gl/forms/3iMZZiZPhF6lA4mk1");
+			window.open("https://docs.google.com/forms/d/e/1FAIpQLSdzGtKn60fMCSWavn8c2E4kQSkaDBVvRgrDdDMdMB0h8PvBKQ/viewform");
 		}
 		function latestTweets() {
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Getting the latest tweets from @jsconfar</span>'+breakLine()+breakLine());
