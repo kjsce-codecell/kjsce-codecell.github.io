@@ -2750,8 +2750,20 @@ padding: 60px 0; }
     .be-workshop{
       background-image: url(../images/events/event2.jpg);
     }
+    .panel{
+      background-image: url(../images/events/Panel.jpg);
+      background-size: 25% 100%;
+      background-position: 0px ,0px;
+      background-repeat: repeat;
+    }
     .handover{
       background-image: url(../images/events/handover.jpg);
+    }
+    .handover1{
+      background-image: url(../images/events/LR-2003.jpg);
+      background-size: 35% 100%;
+      background-position: 1000px ,0px;
+      background-repeat: repeat;
     }
     .numtheory{
       background-image: url(../images/events/17-18/numtheory.jpg);
