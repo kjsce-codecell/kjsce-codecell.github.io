@@ -190,7 +190,7 @@
 			if (e.keyCode == 9) {
 				e.preventDefault();
 				var toAutocomplete = '';
-				var ar_functionlist = Array('clear', 'cls', 'doge', 'dancer', 'help', 'planetarium', 'scrollTo', 'comicSans', 'helvetica', 'ieLove', 'weather', 'exit', 'lipsum', 'fbShare', 'twShare', 'latestTweets', 'likeasir', 'shades', 'reset', 'stl', 'newsletter', 'feedback');
+				var ar_functionlist = Array('clear', 'cls', 'doge', 'dancer', 'help', 'planetarium', 'scrollTo', 'comicSans', 'helvetica', 'ieLove', 'weather', 'exit', 'lipsum', 'fbShare', 'twShare', 'latestTweets', 'likeasir', 'shades', 'reset', 'stl', 'newsletter', 'feedback','git');
 				var ar_terminal_lines = $("#onlineTerminal").html().split("\n");
 				var lastline = ar_terminal_lines[ar_terminal_lines.length-1].toString().replace("\r", '').replace(String.fromCharCode('155'), '').trim();
 				var ar_functionlist_length = ar_functionlist.length;
@@ -332,6 +332,7 @@
 				response += ', <strong>pyDocs()</strong>';
 				response += ', <strong>newsletter()</strong>';
 				response += ', <strong>feedback()</strong>';
+				response += ', <strong>git()</strong>'
 				response += ', <strong>ieLove()</strong>';
 				// response += ', <strong>weather()</strong>';
 				response += ' or any javascript will work.'+breakLine()+breakLine()+'For more info <strong>help(\'functionName\')</strong>. e.g. <strong>help(\'doge\')</strong>';
@@ -353,6 +354,7 @@
 				if (customFunctionName == 'shades')       response = 'See the world through the eyes of a douchebag.';
 				if (customFunctionName == 'twShare')      response = 'Share Codecell with you friends on Twitter.';
 				if (customFunctionName == 'stl')      response = 'Opens STL Reference material by Codecell team';
+				if (customFunctionName == 'git')      response = 'Opens Git-Github Reference material by Codecell team';	
 				if (customFunctionName == 'pyDocs')      response = 'Opens Python reference material by Codecell team';
 				if (customFunctionName == 'newsletter')      response = 'Opens our exquisitive newsletter, written only for you !';
 				if (customFunctionName == 'feedback')      response = 'Opens up the perfect place, to showcase your love for us !';
@@ -513,6 +515,10 @@
 		}
 		function stl(){
 			window.open("http://www.kjscecodecell.com/standard-library-in-x/");
+		}
+
+		function git(){
+			window.open("https://www.kjscecodecell.com/Git-CheatSheet/");
 		}
 		function pyDocs(){
 			window.open("http://www.kjscecodecell.com/Introduction-to-programming/python/");
