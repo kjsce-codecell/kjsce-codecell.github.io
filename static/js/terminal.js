@@ -694,7 +694,7 @@
 		}
 
 		function feedback() {
-			window.open("https://goo.gl/forms/rW512h2vzIYOqXsF3");
+			window.open("https://goo.gl/forms/s6iUAgCHCfHDOuxg2");
 		}
 
 		function latestTweets() {
