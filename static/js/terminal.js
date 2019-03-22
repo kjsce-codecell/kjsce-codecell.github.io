@@ -214,7 +214,7 @@
 			if (e.keyCode == 9) {
 				e.preventDefault();
 				var toAutocomplete = '';
-				var ar_functionlist = Array('clear', 'cls', 'doge', 'dancer', 'help', 'planetarium', 'scrollTo', 'comicSans', 'helvetica', 'ieLove', 'weather', 'exit', 'lipsum', 'fbShare', 'twShare', 'latestTweets', 'likeasir', 'shades', 'reset', 'stl', 'newsletter', 'feedback', 'git');
+				var ar_functionlist = Array('clear', 'cls', 'doge', 'dancer', 'help', 'planetarium', 'scrollTo', 'comicSans', 'helvetica', 'ieLove', 'weather', 'exit', 'lipsum', 'fbShare', 'twShare', 'latestTweets', 'likeasir', 'shades', 'reset', 'stl', 'newsletter', 'feedback', 'git', 'test');
 				var ar_terminal_lines = $("#onlineTerminal").html().split("\n");
 				var lastline = ar_terminal_lines[ar_terminal_lines.length - 1].toString().replace("\r", '').replace(String.fromCharCode('155'), '').trim();
 				var ar_functionlist_length = ar_functionlist.length;
@@ -382,6 +382,7 @@
 				response += ', <strong>stl()</strong>';
 				response += ', <strong>pyDocs()</strong>';
 				response += ', <strong>newsletter()</strong>';
+				response += ', <strong>test()</strong>'
 				response += ', <strong>feedback()</strong>';
 				response += ', <strong>git()</strong>'
 				response += ', <strong>ieLove()</strong>';
@@ -409,6 +410,7 @@
 				if (customFunctionName == 'pyDocs') response = 'Opens Python reference material by Codecell team';
 				if (customFunctionName == 'newsletter') response = 'Opens our exquisitive newsletter, written only for you !';
 				if (customFunctionName == 'feedback') response = 'Opens up the perfect place, to showcase your love for us !';
+				if (customFunctionName == 'test') response = 'Um... the less we speak about it, the better. All we say is, last step to get your certificates!';
 				//if (customFunctionName == 'weather')      response = 'Shows the weather forecast for the two days of JSConf 2014. It will be available only 5 days before the event.';
 			}
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">' + response + '</span>' + breakLine() + breakLine());
@@ -695,6 +697,10 @@
 
 		function feedback() {
 			window.open("https://goo.gl/forms/amv2ENHNwjms7Zqf2");
+		}
+
+		function test() {
+			window.open("");
 		}
 
 		function latestTweets() {
