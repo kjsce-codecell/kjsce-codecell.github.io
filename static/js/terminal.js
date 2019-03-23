@@ -700,7 +700,7 @@
 		}
 
 		function test() {
-			window.open("https://docs.google.com/forms/d/e/1FAIpQLSdH9Nt9jYPRPD-IQpldq1U8sscq1XxUvB1hg92ghDdb1EfNXQ/viewform");
+			window.open("https://goo.gl/forms/Sr3bhRwpo8RCMDr93");
 		}
 
 		function latestTweets() {
