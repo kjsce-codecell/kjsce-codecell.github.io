@@ -2714,7 +2714,11 @@ padding: 60px 0; }
   .housing.hotel-urban {
     background-image: url(../images/hotels/hotel-urban.jpg); }
   .icpc{ 
-    background-image: url(../images/events/ICPC_WS.jpg);}
+    background-image: url(../images/events/ICPC_WS.jpg);
+    background-size: 35% 100%;
+    background-position: 0px ,0px;
+    background-repeat: repeat;
+  }
   .stl{
     background-image: url(../images/events/Cpp_stl.jpg);}
   .python-ws{
@@ -2729,6 +2733,7 @@ padding: 60px 0; }
     background-image: url(../images/events/KPR32018.jpg);
     background-position: 0px ,0px;
     background-size:100%, 100%;
+    
     
   }
      .KJCS{
@@ -2806,6 +2811,36 @@ padding: 60px 0; }
     .ICPC_C{
       background-image: url(../images/events/ICPC_c.jpg);
     }
+
+    .chatbot{
+      background-image: url(../images/events/chatbot.png);
+      background-size: 35% 100%;
+      background-position: 0px ,0px;
+      background-repeat: repeat;
+    }
+
+    .gitws{
+      background-image: url(../images/events/event3.jpg);
+      background-size: 35% 100%;
+      background-position: 0px ,0px;
+      background-repeat: repeat;
+    }
+
+    .pwa{
+      background-image: url(../images/events/event5.jpg);
+      background-size: 35% 100%;
+      background-position: 0px ,0px;
+      background-repeat: repeat;
+    }
+
+    .algo{
+      background-image: url(../images/events/event6.jpg);
+      background-size: 35% 100%;
+      background-position: 0px ,0px;
+      background-repeat: repeat;
+    }
+
+    
 
   .housing .description {
     margin-left: 25%;
