@@ -2714,135 +2714,135 @@ padding: 60px 0; }
   .housing.hotel-urban {
     background-image: url(../images/hotels/hotel-urban.jpg); }
   .icpc{ 
-    background-image: url(../images/events/ICPC_WS.jpg);
+    background-image: url(../images/compressed/events/ICPC_WS.jpg);
     background-size: 35% 100%;
     background-position: 0px ,0px;
     background-repeat: repeat;
   }
   .stl{
-    background-image: url(../images/events/Cpp_stl.jpg);}
+    background-image: url(../images/compressed/events/Cpp_stl.jpg);}
   .python-ws{
-    background-image: url(../images/events/17-18/pythonws.jpg);
+    background-image: url(../images/compressed/events/17-18/pythonws.jpg);
     background-position: 0px ,0px;
     background-size:35%, 100%;
     background-repeat: repeat;
   }
      .itCP{
-    background-image: url(../images/events/CP.jpg);}
+    background-image: url(../images/compressed/events/CP.jpg);}
      .KPR1{
-    background-image: url(../images/events/KPR32018.jpg);
+    background-image: url(../images/compressed/events/KPR32018.jpg);
     background-position: 0px ,0px;
     background-size:100%, 100%;
     
     
   }
      .KJCS{
-    background-image: url(../images/events/kjcs2018.png);
+    background-image: url(../images/compressed/events/kjcs2018.png);
     
     background-size: 35% 100%;
     background-position: 0px ,0px;
     background-repeat: repeat;
   }
      .hackathon{
-    background-image: url(../images/events/hackevent2.jpg);}
+    background-image: url(../images/compressed/events/hackevent2.jpg);}
      .crackathon{
-    background-image: url(../images/events/17-18/crackathon.jpg);
+    background-image: url(../images/compressed/events/17-18/crackathon.jpg);
     background-size: 35% 100%;
     background-position: 0px ,0px;
     background-repeat: repeat;
   }
     .event1{
-      background-image: url(../images/events/event1.jpg);
+      background-image: url(../images/compressed/events/event1.jpg);
     }
     .event2{
-      background-image: url(../images/events/17-18/Cpp_stl.jpg);
+      background-image: url(../images/compressed/events/17-18/Cpp_stl.jpg);
     }
     .event3{
-      background-image: url(../images/events/event3.jpg);
+      background-image: url(../images/compressed/events/event3.jpg);
     }
     .event4{
-      background-image: url(../images/events/event4.jpg);
+      background-image: url(../images/compressed/events/event4.jpg);
     }
     .be-workshop{
-      background-image: url(../images/events/event2.jpg);
+      background-image: url(../images/compressed/events/event2.jpg);
     }
     .panel{
-      background-image: url(../images/events/Panel.jpg);
+      background-image: url(../images/compressed/events/Panel.jpg);
       background-size: 25% 100%;
       background-position: 0px ,0px;
       background-repeat: repeat;
     }
     .handover{
-      background-image: url(../images/events/handover.jpg);
+      background-image: url(../images/compressed/events/handover.jpg);
     }
     .handover1{
-      background-image: url(../images/events/LR-2003.jpg);
+      background-image: url(../images/compressed/events/LR-2003.jpg);
       background-size: 35% 100%;
       background-position: 1000px ,0px;
       background-repeat: repeat;
     }
     .numtheory{
-      background-image: url(../images/events/17-18/numtheory.jpg);
+      background-image: url(../images/compressed/events/17-18/numtheory.jpg);
       background-size: 35% 100%;
       background-position: 0px ,0px;
       background-repeat: repeat;
     }
     .jsws{
-      background-image: url(../images/events/17-18/jsws.jpg);
+      background-image: url(../images/compressed/events/17-18/jsws.jpg);
       background-size: 35% 100%;
       background-position: 0px ,0px;
       background-repeat: repeat;
     }
     .gsocmeet{
-      background-image: url(../images/events/17-18/gsoc_meet.jpg);
+      background-image: url(../images/compressed/events/17-18/gsoc_meet.jpg);
       background-size: 35% 100%;
       background-position: 0px ,0px;
       background-repeat: repeat;
     }
     .graphalgo{
-      background-image: url(../images/events/17-18/graph.jpg);
+      background-image: url(../images/compressed/events/17-18/graph.jpg);
       background-size: 35% 100%;
       background-position: 0px ,0px;
       background-repeat: repeat;
       
     }
     .KJCC{
-      background-image: url(../images/events/kjsc2019.png);
+      background-image: url(../images/compressed/events/kjsc2019.png);
       background-size: 35% 100%;
       background-position: 0px ,0px;
       
     }
     .KJPR2{
-      background-image: url(../images/events/17-18/KJPR2.jpg);
+      background-image: url(../images/compressed/events/17-18/KJPR2.jpg);
       background-position: 0px ,0px;
     }
     .ICPC_C{
-      background-image: url(../images/events/ICPC_c.jpg);
+      background-image: url(../images/compressed/events/ICPC_c.jpg);
     }
 
     .chatbot{
-      background-image: url(../images/events/chatbot.png);
+      background-image: url(../images/compressed/events/chatbot.png);
       background-size: 35% 100%;
       background-position: 0px ,0px;
       background-repeat: repeat;
     }
 
     .gitws{
-      background-image: url(../images/events/event3.jpg);
+      background-image: url(../images/compressed/events/event3.jpg);
       background-size: 35% 100%;
       background-position: 0px ,0px;
       background-repeat: repeat;
     }
 
     .pwa{
-      background-image: url(../images/events/event5.jpg);
+      background-image: url(../images/compressed/events/event5.jpg);
       background-size: 35% 100%;
       background-position: 0px ,0px;
       background-repeat: repeat;
     }
 
     .algo{
-      background-image: url(../images/events/event6.jpg);
+      background-image: url(../images/compressed/events/event6.jpg);
       background-size: 35% 100%;
       background-position: 0px ,0px;
       background-repeat: repeat;
