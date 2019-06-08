@@ -2737,12 +2737,20 @@ padding: 60px 0; }
     
   }
      .KJCS{
-    background-image: url(../images/events/17-18/KJCS.jpg);
-    background-position: 0px ,0px;}
+    background-image: url(../images/events/kjcs2018.png);
+    
+    background-size: 35% 100%;
+    background-position: 0px ,0px;
+    background-repeat: repeat;
+  }
      .hackathon{
     background-image: url(../images/events/hackevent2.jpg);}
      .crackathon{
-    background-image: url(../images/events/crackathon.jpg);}
+    background-image: url(../images/events/17-18/crackathon.jpg);
+    background-size: 35% 100%;
+    background-position: 0px ,0px;
+    background-repeat: repeat;
+  }
     .event1{
       background-image: url(../images/events/event1.jpg);
     }
@@ -2799,7 +2807,7 @@ padding: 60px 0; }
       
     }
     .KJCC{
-      background-image: url(../images/events/17-18/KJCC.jpg);
+      background-image: url(../images/events/kjsc2019.png);
       background-size: 35% 100%;
       background-position: 0px ,0px;
       
