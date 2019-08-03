@@ -696,11 +696,11 @@
 		}
 
 		function feedback() {
-			window.open("https://forms.gle/Gr17M3rw5oHv8fGp6");
+			window.open("https://forms.gle/NeZvbMKtXk1LqfcJ6");
 		}
 
 		function test() {
-			window.open("https://goo.gl/forms/Sr3bhRwpo8RCMDr93");
+			window.open("https://forms.gle/4SfXPVm8k9siu5zq9");
 		}
 
 		function latestTweets() {
