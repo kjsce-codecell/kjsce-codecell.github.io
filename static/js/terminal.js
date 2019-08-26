@@ -696,7 +696,7 @@
 		}
 
 		function feedback() {
-			window.open("https://forms.gle/NeZvbMKtXk1LqfcJ6");
+			window.open("https://forms.gle/oApTYvYyjr3kNCk69");
 		}
 
 		function test() {
