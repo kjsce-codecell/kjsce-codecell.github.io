@@ -696,7 +696,7 @@
 		}
 
 		function feedback() {
-			window.open("https://forms.gle/Se3F4pp4qByCMdkQ6");
+			window.open("https://docs.google.com/forms/d/e/1FAIpQLSc_22gDAQHTHHv5dAP206n32jyTxHMzsGtULSH-GkdQ9Mk5qg/viewform?usp=sf_link");
 		}
 
 		function test() {
