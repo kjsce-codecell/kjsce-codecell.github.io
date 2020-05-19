@@ -60,7 +60,7 @@ function initialize_map() {
   var marker = new google.maps.Marker({
     position: place,
     icon: {
-      url: "http://i.imgur.com/z4Ditvw.png"
+      url: "https://i.imgur.com/z4Ditvw.png"
     },
     map: map
   });
