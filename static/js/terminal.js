@@ -720,26 +720,52 @@
 		}
 
 		function likeasir(func_options) {
+			location.href = "#our-team"
 			if (typeof func_options === "undefined") func_options = '';
-			$('#likeasir').remove();
-			$('#shades').remove()
+			$('.avatar').each((index,element) => {
+				var src = $(element).attr('src').split('.');
+				var path = src[0].split('_');
+				$(element).attr('src',path[0] + '_'+ path[1] + '.jpg');
+			});
 			if (func_options != "clear") {
-				$('body').append($('<div style="background:url(static/images/likeasir.png) center center no-repeat;background-size:auto 100%;position:fixed;left:0;top:0;width:100%;height:100%;" id="likeasir"></div>'));
+				$('.avatar').each((index,element) => {
+					var src = $(element).attr('src');
+					var path = src.split('.');
+					$(element).attr('src',path[0]+'_likeasir.jpg');
+				});
 				$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">I mustache you a question, but I\'ll shave it for later.</span>' + breakLine() + breakLine());
 			} else {
+				$('.avatar').each((index,element) => {
+					var src = $(element).attr('src').split('.');
+					var path = src[0].split('_');
+					$(element).attr('src',path[0] + '_'+ path[1]+ '.jpg');
+				});
 				$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Too fancy. *sigh*</span>' + breakLine() + breakLine());
 			}
 			//ga( 'send', 'event', 'toys', 'terminal', 'likeasir');
 		}
 
 		function shades(func_options) {
+			location.href = "#our-team";
 			if (typeof func_options === "undefined") func_options = '';
-			$('#likeasir').remove();
-			$('#shades').remove();
+			$('.avatar').each((index,element) => {
+				var src = $(element).attr('src').split('.');
+				var path = src[0].split('_');
+				$(element).attr('src',path[0] + '_'+ path[1] + '.jpg');
+			});
 			if (func_options != "clear") {
-				$('body').append($('<div style="background:url(static/images/kanye_glasses.png) center center no-repeat;background-size:100% auto;position:fixed;left:0;top:0;width:100%;height:100%;" id="shades"></div>'));
+				$('.avatar').each((index,element) => {
+					var src = $(element).attr('src');
+					var path = src.split('.');
+					$(element).attr('src',path[0]+'_shades.jpg');
+				});
 				$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Wake up in the mornin\' feelin\' like Kanye.</span>' + breakLine() + breakLine());
 			} else {
+				$('.avatar').each((index,element) => {
+					var src = $(element).attr('src').split('.');
+					var path = src[0].split('_');
+					$(element).attr('src',path[0] + '_'+ path[1]+ '.jpg');
+				});
 				$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">I was feeling like a total douche. *sigh*</span>' + breakLine() + breakLine());
 			}
 			//ga( 'send', 'event', 'toys', 'terminal', 'shades');
