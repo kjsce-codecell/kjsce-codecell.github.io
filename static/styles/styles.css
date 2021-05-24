@@ -11500,6 +11500,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .talk-list li .subject .details p {
     padding-bottom: 70px;
   }
+  
+  .talk-list li .subject .details h6:nth-of-type(2) {
+    padding-bottom: 50px;
+  }
 
   .talk-list li .subject .description {
     margin-left: 0;
