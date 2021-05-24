@@ -13707,6 +13707,15 @@ main {
 
 }
 
+.previous-council > .container {
+	display: block;
+	margin-top: 20px;
+}
+
+.container small {
+	font-size: 14px;
+}
+
 .action {
 
   display: inline-block;
