@@ -796,6 +796,10 @@ only screen and (min-resolution: 2dppx) {
   color: #1e3d55;
 }
 
+.png-to-color-dark-blue {
+  filter: invert(74%) sepia(10%) saturate(3008%) hue-rotate(164deg) brightness(123%) contrast(199%);
+}
+
 .section-header .hello {
   margin-bottom: 25px;
   font-size: 36px;
