@@ -380,6 +380,7 @@
 				response += ', <strong>shades()</strong>';
 				response += ', <strong>twShare()</strong>';
 				response += ', <strong>stl()</strong>';
+				response += ', <strong>cp()</strong>';
 				response += ', <strong>pyDocs()</strong>';
 				response += ', <strong>newsletter()</strong>';
 				response += ', <strong>test()</strong>'
@@ -406,6 +407,7 @@
 				if (customFunctionName == 'shades') response = 'See the world through the eyes of a douchebag.';
 				if (customFunctionName == 'twShare') response = 'Share Codecell with you friends on Twitter.';
 				if (customFunctionName == 'stl') response = 'Opens STL Reference material by Codecell team';
+				if (customFunctionName == 'cp') response = 'Opens Logic Building (for competitive programming) Reference material by Codecell team';
 				if (customFunctionName == 'git') response = 'Opens Git-Github Reference material by Codecell team';
 				if (customFunctionName == 'pyDocs') response = 'Opens Python reference material by Codecell team';
 				if (customFunctionName == 'newsletter') response = 'Opens our exquisitive newsletter, written only for you !';
@@ -680,7 +682,11 @@
 		}
 
 		function stl() {
-			window.open("http://www.kjscecodecell.com/standard-library-in-x/");
+			window.open("https://www.kjscecodecell.com/standard-library-in-x/");
+		}
+		
+		function cp() {
+			window.open("https://www.kjscecodecell.com/CP-Bootcamp-2021/");
 		}
 
 		function git() {
@@ -688,7 +694,7 @@
 		}
 
 		function pyDocs() {
-			window.open("http://www.kjscecodecell.com/Introduction-to-programming/python/");
+			window.open("https://www.kjscecodecell.com/Introduction-to-programming/python/");
 		}
 
 		function newsletter() {
