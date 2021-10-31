@@ -810,8 +810,19 @@ only screen and (min-resolution: 2dppx) {
   margin-bottom: 32px;
 }
 
+.home-buttons-container {
+  display: flex; 
+  justify-content: center;
+}
+
+@media(max-width: 860px) {
+  .home-buttons-container {
+    flex-direction: column;
+  }
+}
+
 .section-header .blog-link {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   background-color: #003955;
   margin-bottom: 50px;
@@ -845,8 +856,8 @@ only screen and (min-resolution: 2dppx) {
 
 .beta {
   margin-bottom: 10px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .intro-holder {
