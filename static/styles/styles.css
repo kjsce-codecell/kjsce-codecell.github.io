@@ -814,10 +814,16 @@ only screen and (min-resolution: 2dppx) {
   display: flex; 
   justify-content: center;
 }
+.btn-discord {
+  margin-right: 25px;
+}
 
 @media(max-width: 860px) {
   .home-buttons-container {
     flex-direction: column;
+  }
+  .btn-discord {
+    margin-right: 0px;
   }
 }
 
