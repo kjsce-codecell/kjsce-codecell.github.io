@@ -810,8 +810,25 @@ only screen and (min-resolution: 2dppx) {
   margin-bottom: 32px;
 }
 
+.home-buttons-container {
+  display: flex; 
+  justify-content: center;
+}
+.btn-discord {
+  margin-right: 25px;
+}
+
+@media(max-width: 860px) {
+  .home-buttons-container {
+    flex-direction: column;
+  }
+  .btn-discord {
+    margin-right: 0px;
+  }
+}
+
 .section-header .blog-link {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   background-color: #003955;
   margin-bottom: 50px;
@@ -845,8 +862,8 @@ only screen and (min-resolution: 2dppx) {
 
 .beta {
   margin-bottom: 10px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .intro-holder {
@@ -11797,6 +11814,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @media only screen and (max-width: 670px) {
+  .section-header .blog-link {
+    font-size: 25px;
+    color: white;
+  }
+
+  .beta {
+    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
   .speaker-list {
     margin-left: auto;
     margin-right: auto;
@@ -11988,13 +12016,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .section-header .blog-link {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     /* background-color: pink; */
   }
 
   .beta {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     width: 30px;
     height: 30px;
   }
@@ -12104,6 +12132,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .speaker p {
   font-size: 15px;
 }
+
+/* for smaller screen make sure the home screen logo does not overflow */
+@media only screen and (max-width: 377px) {
+  .home-screen-logo {
+    height: 6vh !important;
+  }
 }
 
 @media only screen and (max-width: 370px) {
