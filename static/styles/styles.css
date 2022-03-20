@@ -813,25 +813,34 @@ only screen and (min-resolution: 2dppx) {
 .home-buttons-container {
   display: flex; 
   justify-content: center;
+  margin-bottom:30px;
 }
 .btn-discord {
   margin-right: 25px;
+}
+.btn-hack{
+  margin-left: 25px;
 }
 
 @media(max-width: 860px) {
   .home-buttons-container {
     flex-direction: column;
+    margin-bottom: 10px;
   }
   .btn-discord {
     margin-right: 0px;
   }
+  .btn-hack{
+    margin-left:0px
+  }
 }
 
 .section-header .blog-link {
-  font-size: 30px;
+  font-size: 15px;
   color: white;
   background-color: #003955;
   margin-bottom: 50px;
+  
   text-decoration: none;
   padding-left: 20px;
   border-radius: 20px;
@@ -859,6 +868,7 @@ only screen and (min-resolution: 2dppx) {
   -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
 }
+
 
 .beta {
   margin-bottom: 10px;
@@ -11816,6 +11826,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media only screen and (max-width: 670px) {
   .section-header .blog-link {
     font-size: 25px;
+    
     color: white;
   }
 
@@ -12016,7 +12027,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .section-header .blog-link {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     /* background-color: pink; */
   }
