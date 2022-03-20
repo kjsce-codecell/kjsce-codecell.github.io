@@ -813,25 +813,34 @@ only screen and (min-resolution: 2dppx) {
 .home-buttons-container {
   display: flex; 
   justify-content: center;
+  margin-bottom:30px;
 }
 .btn-discord {
   margin-right: 25px;
+}
+.btn-hack{
+  margin-left: 25px;
 }
 
 @media(max-width: 860px) {
   .home-buttons-container {
     flex-direction: column;
+    margin-bottom: 10px;
   }
   .btn-discord {
     margin-right: 0px;
   }
+  .btn-hack{
+    margin-left:0px
+  }
 }
 
 .section-header .blog-link {
-  font-size: 30px;
+  font-size: 15px;
   color: white;
   background-color: #003955;
   margin-bottom: 50px;
+  
   text-decoration: none;
   padding-left: 20px;
   border-radius: 20px;
@@ -860,8 +869,9 @@ only screen and (min-resolution: 2dppx) {
   transition: all 250ms linear;
 }
 
+
 .beta {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   width: 30px;
   height: 30px;
 }
@@ -11816,11 +11826,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media only screen and (max-width: 670px) {
   .section-header .blog-link {
     font-size: 25px;
+    
     color: white;
   }
 
   .beta {
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     width: 30px;
     height: 30px;
   }
@@ -12016,13 +12027,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .section-header .blog-link {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     /* background-color: pink; */
   }
 
   .beta {
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     width: 30px;
     height: 30px;
   }
@@ -13937,4 +13948,12 @@ ul.baraja-container li {
   right: 0;
   left: 0;
   z-index: 10000;
+}
+
+
+#Hack{
+  background-color: #fd4556;
+  color: white;
+  padding:15px;
+  border: 1px solid black
 }
