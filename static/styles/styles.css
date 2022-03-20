@@ -11831,7 +11831,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .beta {
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     width: 30px;
     height: 30px;
   }
@@ -12033,7 +12033,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .beta {
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     width: 30px;
     height: 30px;
   }
