@@ -12163,10 +12163,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 /* for smaller screen make sure the home screen logo does not overflow */
-@media only screen and (max-width: 377px) {
+@media only screen and (max-width: 720px) {
   .home-screen-logo {
     height: 6vh !important;
     position: relative;
+  }
+  .red-logo img{
+    height: 6vh !important;
+  }
+
+  .red-logo{
+    top: -8%;
+  }
+
+  .blue-logo img{
+    height: 6vh !important;
   }
   
 }
