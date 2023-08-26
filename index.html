@@ -4085,6 +4085,9 @@ Watch Video
         Past Committee Members
       </h1>
       
+
+      <!-- Fix names and positions before uncommenting -->
+
       <!-- <div class="council-10">
         <div class="baraja-demo">
           <p style="color: #214760;font-size:24px">2023-24</p>
@@ -4097,7 +4100,7 @@ Watch Video
               <h4>Mrs. Avani Sakhapara</h4>
               <p>Faculty Advisor</p>
             </li>
-            <!-- committee heads 
+            committee heads 
             <li>
               <h4>Mr. Arya Nair</h4>
               <p>Committee Head</p>
@@ -4106,12 +4109,13 @@ Watch Video
               <h4>Mr. Pargat Dhanjal</h4>
               <p>Committee Head</p>
             </li>
-            <!-- Tech Head 
+            --
+            Tech Head 
             <li>
               <h4>Mr. Gaurish Baliga</h4>
               <p>Technical Head</p>
             </li>
-            <!-- Tech Team 
+             Tech Team 
             <li>
               <h4>Mr. Vinay Kanse</h4>
               <p>Technical Team</p>
@@ -4144,12 +4148,12 @@ Watch Video
               <h4>Mr. Harshal Dulera</h4>
               <p>Technical Team - FY Rep.</p>
             </li>
-            <!--Marketing head 
+            Marketing head 
             <li>
               <h4>Mrs. Kashvi Mody</h4>
               <p>Marketing Head</p>
             </li>
-            <!--Marketing Team 
+            Marketing Team 
             <li>
               <h4>Mrs. Hardik Shah</h4>
               <p>Marketing Team</p>
@@ -4170,12 +4174,13 @@ Watch Video
               <h4>Mrs. Diya Parelkar</h4>
               <p>Marketing Team - FY Rep.</p>
             </li>
-            <!-- creative Head 
+             creative Head 
             <li>
               <h4>Mr. Dhruv Bhagatkar</h4>
               <p>Creative Head</p>
             </li>
-            <!-- creative Team 
+            
+            creative Team
             <li>
               <h4>Mr. Chinmay Mhatre</h4>
               <p>Creative Team</p>
@@ -4202,11 +4207,11 @@ Watch Video
           <span id="nav-prev8">&lt;</span>
           <span id="nav-next8">&gt;</span>
         </nav>
-      </div> -->
-<div class="council-9">
+      </div>  -->
+      <div class="council-9">
         <div class="baraja-demo">
           <p style="color: #214760;font-size:24px">2022-23</p>
-          <ul id="council-8" class="baraja-container">
+          <ul id="council-9" class="baraja-container">
             <li>
               <h4>Mrs. Smita Sankhe</h4>
               <p>Faculty Advisor</p>
@@ -4316,8 +4321,8 @@ Watch Video
           </ul>
         </div>
         <nav class="action light">
-          <span id="nav-prev8">&lt;</span>
-          <span id="nav-next8">&gt;</span>
+          <span id="nav-prev9">&lt;</span>
+          <span id="nav-next9">&gt;</span>
         </nav>
       </div>
       <div class="council-8">
@@ -5132,6 +5137,17 @@ Watch Video
           rows: 3,
           columns: 3
         },
+
+      });
+
+      var $el9 = $('#council-9'),
+        baraja9 = $el9.baraja();
+      $('#nav-prev9').on('click', function (event) {
+        baraja9.previous();
+
+      });
+      $('#nav-next9').on('click', function (event) {
+        baraja9.next();
 
       });
 
