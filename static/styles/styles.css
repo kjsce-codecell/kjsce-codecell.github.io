@@ -3692,6 +3692,15 @@ h1.logo {
   padding: 60px 0;
 }
 
+.section-housing-3 {
+  /* background: #214760; */
+  /* background:rgb(68, 198, 80); */
+  background: #FFCD37;
+  /* background: rgb(231, 76, 60); */
+  color: white;
+  padding: 60px 0;
+}
+
 .hotels-svg {
   display: block;
   position: relative;
@@ -3771,6 +3780,13 @@ h1.logo {
 
 }
 
+.BIGO {
+  background-image: url(../images/events/BigOLogo.png);
+  
+  background-size: 250px 250px !important;
+  background-position: 0%, 50% !important;
+  background-repeat: repeat;
+}
 .KJCS {
   background-image: url(../images/compressed/events/kjcs2018.png);
 
@@ -3780,7 +3796,8 @@ h1.logo {
 }
 
 .hackathon {
-  background-image: url(../images/compressed/events/hackevent2.jpg);
+  background-image: url(../images/events/hack-7.png);
+  background-position: 22px, 0px;
 }
 
 .crackathon {
