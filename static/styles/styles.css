@@ -3796,7 +3796,8 @@ h1.logo {
 }
 
 .hackathon {
-  background-image: url(../images/compressed/events/hackevent2.jpg);
+  background-image: url(../images/events/hack-7.png);
+  background-position: 22px, 0px;
 }
 
 .crackathon {
