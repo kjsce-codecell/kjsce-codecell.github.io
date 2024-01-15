@@ -529,6 +529,13 @@ ul.block-list,
   list-style: none;
 }
 
+.housing-list iframe{
+  scale: 0.9;
+  @media(max-width: 860px) {
+    width: 300px;
+  }
+}
+
 ul.block-list:before,
 .speaker-list:before,
 .talk-list li:before,
