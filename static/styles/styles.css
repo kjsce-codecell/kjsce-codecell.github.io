@@ -530,9 +530,8 @@ ul.block-list,
 }
 
 .housing-list iframe{
-  scale: 0.9;
-  @media(max-width: 860px) {
-    width: 300px;
+  @media(max-width: 768px) {
+    height: 750px;
   }
 }
 
