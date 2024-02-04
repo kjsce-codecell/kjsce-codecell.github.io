@@ -11555,8 +11555,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .talk-list li .subject .details p {
     padding-bottom: 70px;
   }
+
   
-  .talk-list li .subject .details h6:nth-of-type(2) {
+  .talk-list li .subject .details:last-child {
     padding-bottom: 50px;
   }
 
