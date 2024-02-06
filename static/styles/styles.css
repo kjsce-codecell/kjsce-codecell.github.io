@@ -11551,19 +11551,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: auto !important;
     line-height: inherit;
   }
-
-  .talk-list li .subject .details p {
-    padding-bottom: 70px;
-  }
   
-  .talk-list li .subject .details h6:nth-of-type(2) {
+  .talk-list li .subject .details:last-child {
     padding-bottom: 50px;
+  }
+
+  .talk-list li.open .subject .description{
+/* TODO:  Hours spent fixing this: 48hrs
+	  tries: 3
+    Please increment the counter after you give up trying to fix this	 
+*/
+    max-height: 12000px;
   }
 
   .talk-list li .subject .description {
     margin-left: 0;
     margin-top: 96px;
-    min-height: 80px;
+    max-height: 0;
+    transition: 0.4s ease-in;
   }
 
   .talk-list li .subject .description #avatar {
