@@ -2027,7 +2027,7 @@ h1.logo {
 }
 
 .event-starts-0810 {
-  left: 1.11111%;
+  left: 1.1111%;
 }
 
 .event-ends-0810 {
@@ -11557,6 +11557,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .talk-list li.open .subject .description{
+/* TODO:  Hours spent fixing this: 48hrs
+	  tries: 3
+    Please increment the counter after you give up trying to fix this	 
+*/
     max-height: 12000px;
   }
 
