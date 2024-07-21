@@ -4576,36 +4576,34 @@ Watch Video
       </h1>
 
 
-      <!-- Fix names and positions before uncommenting -->
-
-      <!-- <div class="council-10">
+      <div class="council-10">
         <div class="baraja-demo">
           <p style="color: #214760;font-size:24px">2023-24</p>
-          <ul id="council-8" class="baraja-container">
-            <li>
-              <h4>Mrs. Smita Sankhe</h4>
-              <p>Faculty Advisor</p>
-            </li>
+          <ul id="council-10" class="baraja-container">
             <li>
               <h4>Mrs. Avani Sakhapara</h4>
               <p>Faculty Advisor</p>
             </li>
-            committee heads 
             <li>
-              <h4>Mr. Arya Nair</h4>
-              <p>Committee Head</p>
+              <h4>Mrs. Smita Sankhe</h4>
+              <p>Faculty Advisor</p>
             </li>
+            <!-- Committee Heads  -->
             <li>
               <h4>Mr. Pargat Dhanjal</h4>
               <p>Committee Head</p>
             </li>
+            <li>
+              <h4>Mr. Arya Nair</h4>
+              <p>Committee Head</p>
+            </li>
             --
-            Tech Head 
+            <!-- Tech Head  -->
             <li>
               <h4>Mr. Gaurish Baliga</h4>
               <p>Technical Head</p>
             </li>
-             Tech Team 
+             <!-- Tech Team  -->
             <li>
               <h4>Mr. Vinay Kanse</h4>
               <p>Technical Team</p>
@@ -4623,7 +4621,7 @@ Watch Video
               <p>Technical Team</p>
             </li>
             <li>
-              <h4>Mrs. Apurva Dharam</h4>
+              <h4>Ms. Apurva Dharam</h4>
               <p>Technical Team</p>
             </li>
             <li>
@@ -4631,46 +4629,54 @@ Watch Video
               <p>Technical Team</p>
             </li>
             <li>
-              <h4>Mr. Rahil Kothari</h4>
+              <h4>Mr. Viraj Bhartiya</h4>
               <p>Technical Team - FY Rep.</p>
             </li>
             <li>
-              <h4>Mr. Harshal Dulera</h4>
+              <h4>Mr. Kumar Tanay</h4>
               <p>Technical Team - FY Rep.</p>
             </li>
-            Marketing head 
+            <!-- Marketing Head  -->
             <li>
-              <h4>Mrs. Kashvi Mody</h4>
+              <h4>Ms. Kashvi Mody</h4>
               <p>Marketing Head</p>
             </li>
-            Marketing Team 
+            <!-- Marketing Team  -->
             <li>
-              <h4>Mrs. Hardik Shah</h4>
+              <h4>Mr. Hardik Shah</h4>
+              <p>Marketing Team</p>
+            </li>
+            <li>
+              <h4>Ms. Diya Parelkar</h4>
+              <p>Marketing Team</p>
+            </li>
+            <li>
+              <h4>Ms. Jiya Trivedi</h4>
               <p>Marketing Team</p>
             </li>
             <li>
               <h4>Mr. Parsh Jain</h4>
               <p>Marketing Team</p>
-            </li>
+            </li>        
             <li>
-              <h4>Mrs. Diya Parelkar</h4>
-              <p>Marketing Team</p>
-            </li>
-            <li>
-              <h4>Mrs. Jiya Trivedi</h4>
-              <p>Marketing Team</p>
-            </li>
-            <li>
-              <h4>Mrs. Diya Parelkar</h4>
+              <h4>Mr. Aditya Belgaonkar</h4>
               <p>Marketing Team - FY Rep.</p>
             </li>
-             creative Head 
+            <li>
+              <h4>Mr. Mohak Jaiswal</h4>
+              <p>Marketing Team - FY Rep.</p>
+            </li>
+            <li>
+              <h4>Mr. Shreyans Tatiya</h4>
+              <p>Marketing Team - FY Rep.</p>
+            </li>
+            <!-- Creative Head  -->
             <li>
               <h4>Mr. Dhruv Bhagatkar</h4>
               <p>Creative Head</p>
             </li>
             
-            creative Team
+            <!-- Creative Team -->
             <li>
               <h4>Mr. Chinmay Mhatre</h4>
               <p>Creative Team</p>
@@ -4680,7 +4686,7 @@ Watch Video
               <p>Creative Team</p>
             </li>
             <li>
-              <h4>Mrs. Sharanya Choudhari</h4>
+              <h4>Ms. Sharanya Chaudhari</h4>
               <p>Creative Team</p>
             </li>
             <li>
@@ -4688,16 +4694,21 @@ Watch Video
               <p>Creative Team</p>
             </li>
             <li>
-              <h4>Mr. Shubham Shah</h4>
+              <h4>Ms. Shreya Mishra</h4>
+              <p>Creative Team - FY Rep.</p>
+            </li>
+            <li>
+              <h4>Mr. Vivek Jain</h4>
               <p>Creative Team - FY Rep.</p>
             </li>
           </ul>
         </div> 
         <nav class="action light">
-          <span id="nav-prev8">&lt;</span>
-          <span id="nav-next8">&gt;</span>
+          <span id="nav-prev10">&lt;</span>
+          <span id="nav-next10">&gt;</span>
         </nav>
-      </div>  -->
+      </div> 
+      
       <div class="council-9">
         <div class="baraja-demo">
           <p style="color: #214760;font-size:24px">2022-23</p>
@@ -5627,6 +5638,17 @@ Watch Video
           rows: 3,
           columns: 3
         },
+
+      });
+
+      var $el10 = $('#council-10'),
+        baraja10 = $el10.baraja();
+      $('#nav-prev10').on('click', function (event) {
+        baraja10.previous();
+
+      });
+      $('#nav-next10').on('click', function (event) {
+        baraja10.next();
 
       });
 
