@@ -1,0 +1,11 @@
+{
+  "name": "kjsce-codecell.github.io",
+  "version": "1.0.0",
+  "description": "The KJSCE CodeCell Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KJSCE CodeCell",
+  "license": "ISC"
+}
