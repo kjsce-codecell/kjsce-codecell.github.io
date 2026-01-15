@@ -3796,14 +3796,14 @@ h1.logo {
 
 .crackathon {
   background-image: url(../images/events/crackathon.jpg);
-  background-size: 248px 149px !important;
+  background-size: 248px 180px !important;
   background-position: 0px, 0px;
   background-repeat: repeat;
 }
 
 .KJCS {
   background-image: url(../images/events/codespree.jpg);
-  background-size: 249px 130px !important;
+  background-size: 249px 180px !important;
   background-position: 0px, 0px !important;
 }
 
@@ -3815,7 +3815,7 @@ h1.logo {
 
 .ctf {
   background-image: url(../images/events/ctf.jpg);
-  background-size: 250px 144px !important;
+  background-size: 250px 180px !important;
   background-position: 0px, 0px;
 }
 
@@ -3827,7 +3827,7 @@ h1.logo {
 
 .cwc {
   background-image: url(../images/compressed/events/cwc.png);
-  background-size: 250px 200px !important;
+  background-size: 250px 180px !important;
   background-position: 0px, 0px;
 }
 
@@ -3950,6 +3950,7 @@ h1.logo {
   /*background: rgba(255, 202, 0, 0.95); */
   opacity: 0.95;
   background: #FF9100;
+  height: 180px;
 }
 
 .housing h2 {
