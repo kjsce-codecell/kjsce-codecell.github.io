@@ -3789,46 +3789,51 @@ h1.logo {
 .BIGO {
   background-image: url(../images/events/BigOLogo.png);
   
-  background-size: 250px 250px !important;
+  background-size: contain !important;
   background-position: 0%, 50% !important;
-  background-repeat: repeat;
+  background-repeat: no-repeat !important;
 }
 
 .crackathon {
   background-image: url(../images/events/crackathon.jpg);
-  background-size: 248px 180px !important;
+  background-size: contain !important;
   background-position: 0px, 0px;
-  background-repeat: repeat;
+  background-repeat: no-repeat !important;
 }
 
 .KJCS {
   background-image: url(../images/events/codespree.jpg);
-  background-size: 249px 180px !important;
-  background-position: 0px, 0px !important;
+  background-size: contain !important;
+  background-position: 0px, 0px;
+  background-repeat: no-repeat !important;
 }
 
 .hackathon {
   background-image: url(../images/events/hack8.jpg);
-  background-size: 250px 180px !important;
+  background-size: contain !important;
   background-position: 0px, 0px;
+  background-repeat: no-repeat !important;
 }
 
 .ctf {
   background-image: url(../images/events/ctf.jpg);
-  background-size: 250px 180px !important;
+  background-size: contain !important;
   background-position: 0px, 0px;
-}
-
-.intcp {
-  background-image: url(../images/compressed/events/intcp.jpg);
-  background-size: 250px 180px !important;
-  background-position: 0px, 0px;
+  background-repeat: no-repeat !important;
 }
 
 .cwc {
   background-image: url(../images/compressed/events/cwc.png);
-  background-size: 250px 180px !important;
+  background-size: contain !important;
   background-position: 0px, 0px;
+  background-repeat: no-repeat !important;
+}
+
+.intcp {
+  background-image: url(../images/compressed/events/intcp.jpg);
+  background-size: contain !important;
+  background-position: 0px, 0px;
+  background-repeat: no-repeat !important;
 }
 
 /* .event1 {
@@ -3945,7 +3950,7 @@ h1.logo {
 
 
 .housing .description {
-  margin-left: 25%;
+  margin-left: 18%;
   padding: 26px 22px 24px 29px;
   /*background: rgba(255, 202, 0, 0.95); */
   opacity: 0.95;
@@ -11729,8 +11734,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @media only screen and (max-width: 940px) {
+  
+  .crackathon, .KJCS, .hackathon, .ctf {
+    background-image: none;
+  }
+
+  .intcp, .cwc{
+    background-image: none;
+  }
+
   .housing .description {
     padding: 22px 24px;
+    margin-left: 0;
   }
 
   .housing h2 {
@@ -11770,7 +11785,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media only screen and (max-width: 840px) {
   .housing .description {
-    margin-left: 36%;
+    margin-left: 0;
   }
 
   .streaming #game-holder {
