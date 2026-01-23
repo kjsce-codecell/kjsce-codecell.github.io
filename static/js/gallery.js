@@ -127,7 +127,7 @@
 		// note: for performance issues, the number "can't" be > options.maxStep
 		step : 'random',
 		// change it as you wish..
-		maxStep : 3,
+		maxStep : 5,
 		// prevent user to click the items
 		preventClick : true,
 		// animation type
@@ -146,7 +146,7 @@
 		animEasingIn: 'linear',
 		// the item(s) will be replaced every 3 seconds
 		// note: for performance issues, the time "can't" be < 300 ms
-		interval : 3000,
+		interval : 2800,
 		// if false the animations will not start
 		// use false if onhover is true for example
 		slideshow : true,
